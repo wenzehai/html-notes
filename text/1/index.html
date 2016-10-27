@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		css notes
+	</title>
+	<style type="text/css">
+		#one {
+			text-shadow: 5px 5px 5px #6600ff;				/*字体阴影效果*/
+		}
+		#two {
+			box-shadow: 1px 1px 2px 2px #ccc;				/*边框阴影*/
+			color:rgba(0,0,0,0);							/*透明度设置使文字变透明*/
+			text-shadow: 0 0 10px black;					/*文字阴影*/
+		}
+		div.hide {
+			overflow: hidden;
+		}
+		div.scroll {
+			overflow: scroll;
+		}
+		div.clip {
+			border: 1px solid;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: clip;
+		}
+		div.elli {
+			overflow: hidden;								/*超出显示部分隐藏*/
+			white-space: nowrap;							/*强制在一行显示*/
+			text-overflow: ellipsis;						/*使用省略号*/
+		}
+	</style>
+</head>
+<body>
+<p id="one">
+	these text will be show with shadow
+</p>
+<p id="two">
+	these text will be show with shadow
+</p>
+</body>
+</html>
