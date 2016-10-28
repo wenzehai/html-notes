@@ -1,0 +1,47 @@
+ <!-- 自适应宽度的水平居中，这里举例的是导航条，通过table来实现,table的间距还不知道怎么设置-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="Generator" content="EditPlus">
+	<meta name="Author" content="">
+	<meta name="keywords" content="">
+	<meta name="Description" content="">
+	<title>
+		table自适应宽度水平居中
+	</title>
+	<style type="text/css">
+		.navbar {
+			display: table;			
+			margin: 0 auto;
+		}
+		.navbar ul {
+			list-style-type: none;
+		}
+		.navbar li {
+			display: table-cell;
+			cell-padding: 10px;
+			width: 20px;
+			border: 1px solid gray;
+		}
+		.navbar li+li {											/*从第二个li元素开始，margin-left属性设置为20px*/
+			margin-left: 20px;
+		}
+		.navbar a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+<div class="navbar">
+	<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">GOODS</a></li>
+		<li><a href="#">CONTACTS</a></li>
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">NEWS</a></li>
+	</ul>
+</div>
+
+</body>
+</html>

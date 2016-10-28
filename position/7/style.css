@@ -1,0 +1,111 @@
+html body {
+			margin: 0;
+			padding: 0;
+			height: 100%;						/*设置height为100%，便于后续子元素百分比的设置*/
+		}
+		.container {
+			min-height: 100%;
+			height: auto !important;
+			height: 100%;						/*IE6不识别min-height*/
+			position: relative;					/*便于该container包含的元素进行绝对定位；大概的意思是，整个container页面是相对于浏览器窗口100%大小，里面的就用绝对的定位*/
+		}
+		.clearfix {								/*清除浮动，但是div里面无内容，看不见，很重要*/
+			clear: both;
+		}
+		#header {
+			background: #ff0;
+			padding: 10px;
+		}
+		/*主体部分，先设置一个div总宽度，里面的内容拼起来等于总宽度*/
+		#page {
+			width: 1920px;
+			margin: 0 auto;
+			padding-bottom: 60px;
+			clear: both;
+		}
+		#left {
+			width: 220px;
+			height: 500px;
+			float: left;
+			margin-right: 20px;
+			background: lime;
+		}
+		#content {
+			width: 800px;
+			height: 500px;
+			float: left;
+			margin-right: 20px;
+			background: orange;
+		}
+		#right {
+			background: green;
+			height: 500px;
+			float: right;
+			width: 220px;
+		}
+		#footer {
+			position:absolute;								/*通过bottom：0来绝对定位*/
+			bottom: 0;
+			width: 100%;
+			height: 60px;									/*这个高度决定了page部分的padding-bottom值，两个要一样活着后者要比前者大*/
+			background: #6cf;
+			clear: both;									/*两边没有其他元素*/
+		}
+		#gallery {
+			font: 11px verdana,arial,sans-serif;
+			width: 800px;
+			padding: 15px 0 0 0 ;
+			line-height: 15px;
+		}
+		#gallery .on {
+			color: #c00;
+			padding: 0 20px;
+			margin-right: 2px;
+			margin-top: 1px;
+			float: left;
+			background: url(tabs_2.gif) repeat-x left bottom;
+			border: 1px solid #000;
+			border-bottom: 0;
+			cursor: pointer;
+			height: 33px;
+			line-height: 32px;
+			position: relative;
+			z-index: 100;
+		}
+		#gallery .off {
+			color: #000;
+			height: 33px;
+			margin-right: 2px;
+			line-height: 33px;
+			padding: 0 20px;
+			float: left;
+			margin-top: 1px;			
+			background: url(tabs_0.gif) repeat-x left bottom;
+			border: 1px solid #ddd;
+			border-bottom-color: #000;
+			cursor: pointer;
+			position: relative;
+			z-index: 100;
+		}
+		.show {
+			clear: left;
+			background: #fff;
+			width: 708px;
+			margin-top: 0;
+			top: -1px;
+			border: 1px solid #000;
+			padding: 20px;
+			position: relative;
+			z-index: 50;
+			font: 11px verdana, arial,sans-serif;
+			line-height: 18px;
+		}
+		.show img {
+			float: left;
+			margin: 0 10px 10px 0;
+		}
+		.hide {
+			display: none;
+			width: 0;
+			overflow: hidden;
+		}

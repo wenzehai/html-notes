@@ -1,0 +1,46 @@
+ <!-- 自适应宽度的水平居中，这里举例的是导航条，通过行内元素的原理来实现 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="Generator" content="EditPlus">
+	<meta name="Author" content="">
+	<meta name="keywords" content="">
+	<meta name="Description" content="">
+	<title>
+		使用@font-face自定义字体
+	</title>
+	<style type="text/css">
+		.navbar {
+			text-align: center;									/*在最外层就设置文字水平居中*/
+		}
+		.navbar ul {											
+			display: inline-block;								/*将对象呈递为内联对象，但是对象的内容作为快对象呈递*/
+			display: inline;
+			*zoom: 1;											/*支持IE8以下版本浏览器*/
+			*list-style-type: none;								/*支持IE8以下版本浏览器*/
+		}
+		.navbar li {
+			float: left;
+		}
+		.navbar li+li {											/*从第二个li元素开始，margin-left属性设置为20px*/
+			margin-left: 20px;
+		}
+		.navbar a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+<div class="navbar">
+	<ul>
+		<li><a href="#">HOME</a></li>
+		<li><a href="#">GOODS</a></li>
+		<li><a href="#">CONTACTS</a></li>
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">NEWS</a></li>
+	</ul>
+</div>
+
+</body>
+</html>

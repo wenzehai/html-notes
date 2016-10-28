@@ -1,0 +1,43 @@
+<!-- 图文混排,文字进入到图片下方，原理是图片浮动，文字不浮动。 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<mete charset="utf-8">
+	<title>
+		css notes
+	</title>
+	<style type="text/css">
+	#wrap {
+		background: #ccc;
+		width: 600px;
+		clear: both;
+		border: 1px solid gray;
+	}
+	#picture {
+		float: left;
+		width: 200px;
+		height: 50px;
+		border: 1px solid gray;
+		margin-right: 20px;							/*通过调整图片的margin来隔开文字与图片的距离*/
+		margin-bottom: 20px;						/*通过调整图片的margin来隔开文字与图片的距离*/
+	}
+	#content {
+		/*float: right;*/							
+		width: 600px;
+		margin-left: 10px;
+		border: 1px solid gray;
+	}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="picture">
+		<img src="https://www.baidu.com/img/bd_logo1.png" width="200px" height="50px">
+	</div>
+	<div id="content">
+		this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.this is some text.
+	</div>
+</div>
+</p>
+</body>
+</html>
