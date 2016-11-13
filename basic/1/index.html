@@ -1,0 +1,251 @@
+<!-- 超实用的代码段 -->
+
+<!-- 
+-webkit-
+-moz-
+-o-
+IE
+老版本的Safari	
+Mozilla,Netsacpe
+Firefox，Safari，Opera
+
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>超实用的代码段</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		/*清除浮动的方法*/
+		.clearfix:before, .container:after {
+			content:"";
+			display: table;
+		}
+		.clearfix:after {
+			clear: both;
+		}					/*IE6/7*/
+		.clearfix {
+			zoom: 1;
+		}
+		/*跨浏览器设置透明度*/
+		.transparent {
+			filter:alpha(opacity=50);	/*IE*/
+			-khtml-opacity: 0.5;		/*老版本的Safari*/
+			-moz-opacity: 0.5;			/*Mozilla,Netsacpe*/
+			opacity: 0.5;				/*fx，Safari，opera*/
+		}
+		#container {
+			-webkit-border-radius: 4px 3px 6px 10px;
+			-moz-border-radius: 4px 3px 6px 10px;
+			-o-border-radius: 4px 3px 6px 10px;
+			border-radius: 4px 3px 6px 10px;
+
+		}
+		/*CSS字体属性的简写*/
+		body {
+			font: font-style font-variant font-weight font-size line-height font-family;
+		}
+		/*自定义文本选择的高亮效果*/
+		::selection {
+			background: #e2eae2;
+		}
+		::-moz-selection {
+			background: #e2eae2;
+		}
+		::-webkit-selection {
+			background: #e2eae2;
+		}
+		/*锚链接伪类的设置*/
+		a:link {
+			color: blue;
+		}
+		a:visited {
+			color: purple;
+		}
+		a:hover {
+			color: red;
+		}
+		a:active {
+			color: yellow;
+		}
+		/*全屏背景*/
+		html {
+			background: url('images/bg.jpg') no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		/*垂直居中内容*/
+		.container {
+			min-height: 6.5em;
+			display: table-cell;
+			vertical-align: middle;
+		}
+		/*强制垂直滚动条*/
+		html {
+			height: 101%;
+		}
+		/*设置自定义字体*/
+		@font-face {
+			font-family: 'Mywebfont';
+			src: url('webfont.eot');				/*IE9 Compat Modes*/
+			src: url('webfont.eot?#iefix') format('embedded-opentype'),	/*IE6-IE8*/
+			url('webfont.woff') format('woff'),			/*Modern Browsers*/
+			url('webfont.ttf') format('turetype'),		/*Safari, Android, iOS*/
+			url('webfont,svg#svgFontName') format('svg');	/*Legacy iOS*/
+		}
+		body {
+			font-family: 'Mywebfont', Arial, sans-serif;
+		}
+
+		/*自定义段落首字母*/
+		p:first-letter {
+			display: block;
+			margin: 5px 0 0 5px;
+			float: left;
+			color: #ff3366;
+			font-size: 5.4em;
+			font-family: Georgia, Times New Roman, serif;
+		}
+		/*CSS3盒子模型内部阴影*/
+		#mydiv {
+			-webkit-box-shadow: inset 2px 0 4px #000;
+			-moz-box-shadow: inset 2px 0 4px #000;
+			box-shadow: inset 2px 0 4px #000;
+		}
+		/*CSS3盒子外部阴影*/
+		#mydiv {
+			-webkit-box-shadow: 0 2px 2px -2px rgba(0,0,0,0.52);
+			-moz-box-shadow: 0 2px 2px -2px rgba(0,0,0,0.52);
+			box-shadow: 0 2px 2px -2px rgba(0,0,0,0.52);
+		}
+		/*固定宽度的居中布局*/
+		#page-wrap {
+			width: 800px;
+			margin: 0 auto;
+		}
+		/*禁用移动webkit浏览器中的高亮显示*/
+		body {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		/*CSS省略号*/
+		div {
+			width: 200px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			-o-text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		/*CSS斑马条纹*/
+		tbody tr:nth-child(odd) {
+			background-color: #ccc;
+		}
+		/*文本动画*/
+		ul {
+			animation: 6s linear 0 normal none infinite change;
+			-webkit-animation: 6s linear 0 normal none infinite change;
+			-moz-animation: 6s linear 0 normal none infinite change;
+			-o-animation: 6s linear 0 normal none infinite change;
+		}
+		@-webkit-keyframes change {
+			0%	{margin-top:0;}
+			15%	{margin-top:0;}
+			25%	{margin-top:-40;}
+			40%	{margin-top:-40;}
+			50%	{margin-top:-80;}
+			65%	{margin-top:-80;}
+			75%	{margin-top:-40;}
+			85%	{margin-top:-40;}
+			100%{margin-top:0;}
+		@keyframes change {
+			0%	{margin-top:0;}
+			15%	{margin-top:0;}
+			25%	{margin-top:-40;}
+			40%	{margin-top:-40;}
+			50%	{margin-top:-80;}
+			65%	{margin-top:-80;}
+			75%	{margin-top:-40;}
+			85%	{margin-top:-40;}
+			100%{margin-top:0;}
+
+		}
+		/*文字阴影*/
+		div {
+			text-shadow: 5px 5px 5px #6600ff;
+		}
+		/*文字水平居中*/
+		.container {
+			text-align: center;
+		}
+		/*文字垂直居中*/
+		.container {
+			height: 35px;
+			line-height: 35px;
+		}
+		/*让子元素相对于父元素垂直居中*/
+		<div id="big">
+			<div id="small"></div>
+		</div>
+		#big {
+			position: relative;
+			height: 480px;
+		}
+		#small {
+			position: absolute;
+			top: 50%;
+			height: 240px;
+			margin-top: -120px;
+		}
+		/*图片宽度自适应*/
+		img {
+			max-width: 100%;
+		}
+		_img {
+			width: 100%;
+		}
+		/*简单的3D按钮*/
+		#button {
+			background: #888;
+			border: 1px solid;
+			border-color: #999 #777 #777 #999;
+		}
+		/*用图片美化列表*/
+		ul {
+			list-style: none;
+		}
+		ul li {
+			background-image: url('path-to-your-image');
+			background-repeat: none;
+			background-position: 0 0.5em;
+		}
+		/*用CSS画三角形*/
+		.triangle {
+			border-color: transparent transparent green trasparent;
+			border-style: solid;
+			border-width: 0 300px 300px 300px;
+			height: 0px;
+			width: 0px;
+		}
+		/*禁止自动换行*/
+		h1 {
+			white-sapce: nowrap;
+		}
+		/*使用图片替换<h1>又不影响seo*/
+		h1 {
+			text-indent: -999px;
+			background: url("h1-image.jpg") no-repeat;
+			width: 200px;
+			height: 50px;
+		}
+		</style>
+</head>
+<body>
+
+</body>
+</html>
