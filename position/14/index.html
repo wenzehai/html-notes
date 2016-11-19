@@ -1,0 +1,82 @@
+<!-- 轮播图切图 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>轮播图切图</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		div {
+			position: relative;
+			margin: 0 auto;
+			margin-top: 100px;
+			width: 1226px;
+			height: 460px;
+			border: 1px solid gray;
+		}
+		div .left {
+			position: absolute;
+			left: 0px;
+			top: 200px;
+			display: block;
+			width: 50px;
+			height: 80px;
+			background: rgba(0,0,0,0.3);
+			font-size: 40px;
+			line-height: 80px;
+			border-radius: 2px;
+			text-align: center;
+			color: #fff;
+		}
+		div .right {
+			position: absolute;
+			right: 0px;
+			top: 200px;
+			display: block;
+			width: 50px;
+			height: 80px;
+			background: rgba(0,0,0,0.3);
+			font-size: 40px;
+			line-height: 80px;
+			border-radius: 2px;
+			text-align: center;
+			color: #fff;
+		}
+		ul {
+			position: absolute;
+			right: 60px;
+			bottom: 20px;
+			width:120px;
+			height: 20px; 
+			list-style: none;
+		}
+		ul li {
+			float: left;
+			width: 20px;
+			height: 20px;
+			border: 1px solid #333;
+			box-sizing: border-box;			/*控制盒子大小的范围*/
+			background: rgba(0,0,0,0.2);
+			text-align: center;
+			line-height: 20px;
+			margin-right: 10px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<img src="slider.jpg">
+	<span class="left">&lt;</span>
+	<span class="right">&gt;</span>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</div>
+</body>
+</html>

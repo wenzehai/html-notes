@@ -1,0 +1,56 @@
+<!-- 京东导航条,导航条中出现hot标签 -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>京东导航条</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+	ul {
+		list-style: none;
+		width: 800px;
+		height: 50px;
+		margin:0 auto;
+		margin-top: 150px;
+		background: red;
+	}
+	li {
+		position: relative;
+		width: 100px;
+		/*height: 80px;*/
+		float: left;
+		background: #333;
+		text-align: center;
+		line-height: 50px;
+		color: #fff;
+	}
+	ul li:nth-of-type(4) {
+		
+		background-color: #666;
+	}
+	ul li img {
+		position: absolute;
+		top: -7px;
+		left: 50%;						/*解决突变会随着li变化而位置不定的问题*/
+		margin-left: -8px;
+	}
+	</style>
+</head>
+<body>
+<ul>
+	<li>秒杀</li>
+	<li>优惠券</li>
+	<li>闪购</li>
+	<li>拍卖
+	<img src="hot.png">
+	</li>
+	<li>服装城</li>
+	<li>京东超市</li>
+	<li>生鲜</li>
+	<li>全球购</li>
+</ul>
+</body>
+</html>
