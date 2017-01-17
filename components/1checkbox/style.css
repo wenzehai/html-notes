@@ -1,0 +1,78 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑", Arial;
+	font-size: 24px;
+	color: rgba(0,0,0,0.7);
+}
+.content {
+	width: 750px;
+	height: 180px;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+	position: relative;
+	border: 1px solid rgba(0,0,0,0.3);
+}
+.content label {
+	display: inline-block;
+	width: 100%;
+	height: 90px;
+	box-sizing: border-box;
+	line-height: 90px;
+	padding-left: 30px;
+	position: relative;
+}
+.content .first {
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.checkslider {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	border-radius: 50px;
+	border: 3px solid #e94f4f;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background-color: #e94f4f;
+	box-sizing: content-box;
+	transition: all 0.3s ease; 
+ 	-webkit-transition: all 0.4s ease;
+ 	-moz-transition: all 0.4s ease; 
+ 	-o-transition: all 0.4s ease;  
+
+}
+.checkslider:after {
+	content: "";
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	-webkit-border-radius: 25px;
+	-o-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	display: inline-block;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	transition: all .25s ease;
+}
+.checkslider:checked {
+	background-color: #09ba07;
+	border: 3px solid #09ba07;
+}
+.checkslider:checked:after {
+	position: absolute;
+	left: 50px;
+	top: 0px;
+}
