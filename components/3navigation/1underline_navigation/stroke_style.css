@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "微软雅黑";
+}
+section {
+	height: 100vh;
+	background-color: #e74c3c;
+	color:fff;
+}
+h2 {
+	text-align: center;
+	font-weight: 800;
+	padding: 50px 0;
+	color: #fff;
+}
+nav {
+	width: 80%;
+	padding: 50px 0;
+	background-color: #fff;
+	box-shadow: 0 5px 0 #dedede;
+	margin: 0 auto;
+
+}
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #aaa;
+	font-weight: 800;
+	margin: 0 10px;
+	position: relative;
+}
+nav ul li a,
+nav ul li a:after {
+	transition: all .5s;				/*过渡效果*/
+}
+nav ul li a:after {
+	content: ".";
+	position: absolute;
+	left: 0;			/*这三个定位一定要,要不然横线会改变方向，改成从左向右运动*/
+	bottom: 0;			/*这三个定位一定要,要不然横线会改变方向，改成从左向右运动*/
+	right: 0;			/*这三个定位一定要,要不然横线会改变方向，改成从左向右运动*/
+	width: 0%;
+	height: 1px;
+	margin: auto;		/*同上面的绝对定位，用来控制横线的运动方向,要不然横线会改变方向，改成从左向右运动*/
+	width: 0%;
+	color: transparent;			/*让原点隐藏*/
+	background-color: #aaa;		/*通过改变after宽度，来让背景颜色显示与不显示*/
+}
+nav ul li a:hover {
+	color: #555;
+}
+nav ul li a:hover:after {
+	width: 100%;
+}
