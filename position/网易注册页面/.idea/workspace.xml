@@ -22,18 +22,7 @@
     <favorites_list name="网易注册页面" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="16-网易注册界面-2017-2-4.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/16-网易注册界面-2017-2-4.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75261325" vertical-offset="0" max-vertical-offset="1566">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -189,8 +178,16 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/16-网易注册界面-2017-2-4.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75261325" vertical-offset="0" max-vertical-offset="1566">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1566">
           <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16-网易注册界面-2017-2-4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46929318" vertical-offset="0" max-vertical-offset="8559">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>

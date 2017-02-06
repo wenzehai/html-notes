@@ -6,35 +6,212 @@
     <style>
         body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
             margin:0;
-            padding:0
+            padding:0;
+            font-family: "微软雅黑";
+        }
+        body a {
+            text-decoration: none;
+        }
+        body {
+            background: #f9f9f9;
         }
         .header {
             width: 960px;
             height: 80px;
             margin: 0 auto;
-            /*background-color:red;*/
-            padding: 30px;
+            background-color: #f9f9f9;
+            padding: 30px 0;
+            box-sizing: border-box;
         }
         .header .logo {
             background: url(images/163logo.jpg) no-repeat 0 0;
+            width: 644px;
+            float: left;
         }
         .header .logo a {
             display: inline-block;
             width: 120px;
             height: 28px;
+
+        }
+        .header .links {
+            width: 150px;
+            float: right;
+            text-align: right;
             /*background-color: red;*/
+        }
+        .header .links a {
+            text-decoration: none;
+            font-size: 14px;
+            line-height: 28px;
         }
         .content {
             width: 960px;
             height: 680px;
             margin: 0 auto;
-            background-color: blue;
+            /*background-color: blue;*/
         }
         .footer {
             width: 960px;
             height: 80px;
             margin: 0 auto;
-            background-color: green;
+            padding: 14px 0 0 0;
+            text-align: center;
+            color: #e0e0e0;
+            font-size: 12px;
+        }
+        .footer a {
+            color: #e0e0e0;
+            font-size: 12px;
+
+        }
+        .content .top {
+            background: url(images/center.jpg) repeat-x 0 0 ;
+            height: 38px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .content .top p {
+            line-height: 38px;
+            text-indent: 2em;
+            color: #fff;
+            font-size: 16px;
+        }
+        .content .bottom .aside {
+            float: right;
+            width: 317px;
+            box-sizing: border-box;
+            border: 1px solid #e0e0e0;
+            border-top: none;
+            background: #f5f5f5;
+            padding: 105px 0 0 45px;
+            height: 642px;
+        }
+        .content .bottom .articale {
+            float: left;
+            width: 643px;
+            height: 642px;
+            box-sizing: border-box;
+            border: 1px solid #e0e0e0;
+            border-top: none;
+            padding: 50px 0 0 77px;
+        }
+        .content .bottom .articale .menu_nav {
+            height: 66px;
+            background: url(images/menu_icon.jpg) no-repeat 39px 0;
+
+        }
+        .content .bottom .articale .menu_nav ul{
+            width: 412px;
+            height: 34px;
+            padding-left: 39px;
+        }
+        .content .bottom .articale .menu_nav ul li {
+            float: left;
+            width: 136px;
+            /*background: red;*/
+            list-style: none;
+            text-align: center;
+            line-height: 34px;
+            box-sizing: border-box;
+        }
+        .content .bottom .articale .msg_form {
+            /*background: green;*/
+            height: 642px;
+        }
+        .content .bottom .articale .msg_form .line {
+            height: 27px;
+            /*background: yellow;*/
+            position: relative;
+        }
+        .content .bottom .articale .msg_form .code input {
+            width:210px;
+        }
+        .content .bottom .articale .msg_form .code .codediv {
+            position: absolute;
+            top: -12px;
+            right: 75px;
+            text-align: center;
+        }
+        .content .bottom .articale .msg_form .code .codediv a {
+            text-decoration: none;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+        .content .bottom .articale .msg_form .tos {
+            margin: 25px 0 19px 100px;
+            font-size: 12px;
+            height: 12px;
+            position: relative;
+        }
+        .content .bottom .articale .msg_form .tos input[type=checkbox] {
+            display: inline-block;
+            margin: 0 8px;
+            border: none;
+            box-sizing: border-box;
+            position: relative;
+            top: 2px;
+        }
+        .content .bottom .articale .msg_form .tos p {
+            display: inline-block;
+            line-height: 12px;
+        }
+        .content .bottom .articale .msg_form .getcode {
+            width: 143px;
+            height: 27px;
+            margin: 0  0  16px 102px;
+            /*background: red;*/
+        }
+        .content .bottom .articale .msg_form .line .infotitle {
+            float: left;
+            width: 83px;
+            /*background: red;*/
+            text-align: right;
+            line-height: 27px;
+            font-size: 14px;
+        }
+        .content .bottom .articale .msg_form .line .infotitle span {
+            color: red;
+        }
+        .content .bottom .articale .msg_form .line form {
+            /*background: pink;*/
+            display: inline-block;
+            float: right;
+            width: 465px;
+        }
+        .content .bottom .articale .msg_form .line p {
+            display: inline-block;
+            /*background: green;*/
+        }
+        .content .bottom .articale .msg_form .line form input[type="text"] {
+            width: 248px;
+            height: 27px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            border: 1px solid gray;
+        }
+        .content .bottom .articale .msg_form .infomsg {
+            color: #999;
+            font-size: 12px;
+            margin: 8px 0 22px 0;
+            padding-left: 97px;
+            /*background: purple;*/
+        }
+        .content .bottom .articale .msg_form .infomsg:nth-child(2) {
+            margin: 8px 0 34px 0;
+        }
+        .content .bottom .articale .msg_form .infomsg:nth-child(4) {
+            margin: 8px 0 10px 0;
+        }
+        .content .bottom .articale .msg_form .signInBtn input {
+            width: 120px;
+            height: 38px;
+            margin: 0 0 0 100px;
+            background: url("images/button.jpg") no-repeat 0 0 ;
+            border: none;
+            color: white;
+            font-size: 18px;
+
         }
     </style>
 </head>
@@ -45,9 +222,91 @@
         <a href="#"></a>
         <a href="#"></a>
     </div>
-    <div class="links"></div>
+    <div class="links">
+        <a href="#">了解更多</a>
+        |
+        <a href="#">反馈意见</a>
+    </div>
 </div>
-<div class="content"></div>
-<div class="footer"></div>
+<div class="content">
+    <div class="top">
+        <p>欢迎注册无限容量的网易邮箱！邮件地址可以登录使用其他网易旗下产品。</p>
+    </div>
+    <div class="bottom">
+        <div class="articale">
+            <div class="menu_nav">
+                <ul>
+                    <li>字母邮箱注册</li>
+                    <li>注册手机号码邮箱</li>
+                    <li>注册VIP邮箱</li>
+                </ul>
+            </div>
+            <div class="msg_form">
+                <div class="line">
+                    <p class="infotitle"><span>*</span>手机号码</p>
+                    <form action="http://www.baidu.com">
+                        <input type="text"/>
+                        <p>@163.com</p>
+                    </form>
+                </div>
+                <p class="infomsg">请填写手机号码</p>
+                <div class="line code">
+                    <p class="infotitle"><span>*</span>图片验证码</p>
+                    <form action="http://www.baidu.com">
+                        <input type="text"/>
+                        <div class="codediv">
+                            <img src="images/code.jpg" /><br/><p><a href="#">看不清楚？换张图片</a></p>
+                        </div>
+                    </form>
+                </div>
+                <p class="infomsg">请填写图片中的字符，不区分大小写</p>
+                <input type="submit" value="免费获取验证码" class="getcode"/>
+                <div class="line">
+                    <p class="infotitle"><span>*</span>短信验证码</p>
+                    <form action="http://www.baidu.com">
+                        <input type="text"/>
+                        <p>@163.com</p>
+                    </form>
+                </div>
+                <p class="infomsg">请查收手机短信，并填写短信中的验证码</p>
+                <div class="line">
+                    <p class="infotitle"><span>*</span>密码</p>
+                    <form action="http://www.baidu.com">
+                        <input type="text">
+                    </form>
+                </div>
+                <p class="infomsg">6-16个字符，区分大小写</p>
+                <div class="line">
+                    <p class="infotitle"><span>*</span>确认密码</p>
+                    <form action="http://www.baidu.com">
+                        <input type="text">
+                    </form>
+                </div>
+                <p class="infomsg">请再次填写密码</p>
+                <div class="tos">
+                    <input type="checkbox" checked="checked"/><p>同意<a href="#">“服务条款”</a>和<a href="#">“用户须知”</a>、<a href="#">“隐私权相关政策”</a></p>
+                </div>
+                <div class="signInBtn">
+                    <form><input type="submit" value="立即注册"/></form>
+                </div>
+            </div>
+
+        </div>
+        <div class="aside">
+            <img src="images/ad.jpg" alt="网易邮箱"/>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p>
+        <a href="#">关于网易</a>
+        <a href="#">关于网易免费邮</a>
+        <a href="#">邮箱官方博客</a>
+        <a href="#">客户服务</a>
+        <a href="#">隐私政策</a>
+        |
+        网易公司版权所有 1997-2017
+    </p>
+</div>
 </body>
 </html>
