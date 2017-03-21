@@ -1,0 +1,257 @@
+html {color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+    margin:0;padding:0;
+    font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+    font-size: 22px;
+}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+/*ol,ul{list-style:none}*/
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+
+.clearfix {
+    clear: both;
+}
+article {
+    width: 750px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border: 1px solid lightgray;
+    /*background-color: #39cd6f;*/
+    background: url(images/bg_illustration_02.jpg) #4fe18e no-repeat;
+}
+article header {
+    padding: 25px 40px;
+    box-sizing: border-box;
+    height: 55px;
+}
+article header img {
+    float: left;
+}
+article header .marquee {
+    position: relative;
+    background: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    display: inline-block;
+    float: right;
+    width: 585px;
+    height: 55px;
+    box-sizing: border-box;
+    position: relative;
+}
+article header .marquee .marquee_content {
+    line-height: 55px;
+    color: rgba(255,255,255,1);
+    margin-left: 20px;
+    font-size: 24px;
+}
+.content {
+    margin-top: 606px;
+}
+.content .tickets {
+    width: 695px;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: rgba(0,0,0,0.1);
+    padding: 26px;
+    box-sizing: border-box;
+}
+.content .tickets .tickets_gallery .tickets_gallery_details01 {
+    width: 645px;
+    height: 175px;
+    border-radius: 4px;
+    background: url("images/blue_bg.png") repeat-x;
+    padding: 28px;
+    box-sizing: border-box;
+
+}
+.content .tickets .tickets_gallery .tickets_gallery_details01 .tickets_gallery_details01_price {
+    font-size: 30px;
+    color: #f82b00;
+    position: relative;
+    float: left;
+    width: 155px;
+    text-align: center;
+}
+.content .tickets .tickets_gallery .tickets_gallery_details01 .tickets_gallery_details01_price span {
+    font-size: 48px;
+}
+.content .tickets .tickets_gallery .tickets_gallery_details01 .tickets_gallery_details_list {
+    margin-left: 28px;
+    border-left: 1px dashed #8a8a8a;
+    float: right;
+    width: 405px;
+    padding: 5px 5px 5px 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #8a8a8a;
+}
+.content .tickets .tickets_gallery .tickets_gallery_details02 {
+    width: 645px;
+    height: 175px;
+    border-radius: 4px;
+    background: url("images/blue_bg.png") repeat-x;
+    padding: 28px;
+    box-sizing: border-box;
+    margin-top: 13px;
+
+}
+.content .tickets .tickets_gallery .tickets_gallery_details02 .tickets_gallery_details02_price {
+    font-size: 30px;
+    color: #f82b00;
+    position: relative;
+    float: left;
+    width: 155px;
+    text-align: center;
+}
+.content .tickets .tickets_gallery .tickets_gallery_details02 .tickets_gallery_details02_price span {
+    font-size: 48px;
+}
+.content .tickets .tickets_gallery .tickets_gallery_details02 .tickets_gallery_details_list {
+    margin-left: 28px;
+    border-left: 1px dashed #8a8a8a;
+    float: right;
+    width: 405px;
+    padding: 5px 5px 5px 30px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #8a8a8a;
+}
+.content .tickets .tickets_btn {
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(255,255,255,0.8);
+}
+.content .tickets .tickets_btn span {
+    color: #ffe700;
+    line-height: 20px;
+ }
+.content .tickets .tickets_btn a {
+    color: #ffe700;
+}
+.content .tickets .tickets_btn input[type="submit"] {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    width: 511px;
+    height: 84px;
+    background: #3190e8;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 400;
+    border-style: none;
+}
+.content .shouqi .shouqi_header {
+    border-left: 185px solid rgba(255,255,255,0.8);
+    border-right: 185px solid rgba(255,255,255,0.8);
+    width: 644px;
+    margin:57px auto;
+    box-sizing: border-box;
+    height: 2px;
+    position: relative;
+}
+.content .shouqi .shouqi_header h2 {
+    font-size: 30px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    vertical-align: top;
+    position: absolute;
+    top: -22px;
+    left: 17px;
+}
+.content .shouqi .shouqi_container {
+    width: 695px;
+    margin: 0 auto;
+}
+.content .shouqi .shouqi_container .line {
+    height: 86px;
+    /*background: blue;*/
+    position: relative;
+    margin-top: 30px;
+}
+.content .shouqi .shouqi_container img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .shouqi .shouqi_container .line .meta_content {
+    width: 370px;
+    /*background: red;*/
+    margin-left: 110px;
+    float: left;
+    position: relative;
+}
+.content .shouqi .shouqi_container .line .meta_price {
+    float: right;
+    width: 150px;
+    /*background: lightcoral;*/
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffe700;
+    line-height: 86px;
+
+}
+.content .shouqi .shouqi_container .line .meta_content p {
+    /*font-size: 24px;*/
+    line-height: 40px;
+    color: rgba(255,255,255,0.6);
+    text-align: left;
+}
+.content .shouqi .shouqi_container .line .meta_content .top {
+    position: relative;
+}
+.content .shouqi .shouqi_container .line .meta_content .top .name {
+    width: 145px;
+    float: left;
+    display: inline-block;
+    color: #ffe700;
+    font-weight: 600;
+    overflow: hidden; /*自动隐藏文字*/
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+}
+.content .shouqi .shouqi_container .line .meta_content .top .date {
+    width: 200px;
+    float: right;
+    display: inline-block;
+}
+.content .shouqi .shouqi_container .line .meta_content .bottom .slogan {
+    width: 400px;
+    display: inline-block;
+}
+.content .rules .rules_header {
+    border-left: 185px solid rgba(255,255,255,0.8);
+    border-right: 185px solid rgba(255,255,255,0.8);
+    width: 644px;
+    margin:57px auto;
+    box-sizing: border-box;
+    height: 2px;
+    position: relative;
+}
+.content .rules .rules_header h2 {
+    font-size: 30px;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    vertical-align: top;
+    position: absolute;
+    top: -22px;
+    left: 80px;
+}
+.content .rules .rules_list {
+    padding-left: 57px;
+    color: rgba(255,255,255,0.8);
+    margin: 0 auto;
+    width: 640px;
+    box-sizing: border-box;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
