@@ -4,53 +4,105 @@
     <meta charset="UTF-8">
     <title>表单练习</title>
     <link type="text/css" rel="style.css">
+    <style type="text/css">
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            margin-top: 100px;
+            border: 1px solid gray;
+        }
+        .container .getdata {
+            /*height: 300px;*/
+            background: lightblue;
+
+        }
+        .container .question {
+            color: red;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .container .getdata .goods {
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            width: 340px;
+            height: 450x;
+            border: 1px solid gray;
+            margin-right: 20px;
+        }
+        .container .getdata .goods img {
+            border: 1px solid #000;
+        }
+        .container .form {
+            background: lightgreen;
+        }
+    </style>
 </head>
 <body>
-<form action="http://www.520it.com">
-    <fieldset>
-        <legend>注册界面</legend>
-        <p>
-            账号：<input type="text" name="account">
-        </p>
-        <p>
-            密码：<input type="password" name="password">
-        </p>
-        <p>
-            性别：
-            <input type="radio" name="gendar">男
-            <input type="radio" name="gendar">女
-            <input type="radio" name="gendar" checked="checked">保密
-        </p>
-        <p>
-            爱好：
-            <input type="checkbox" name="hobby">篮球
-            <input type="checkbox" name="hobby">足球
-            <input type="checkbox" name="hobby" checked="checked">大保健
-        </p>
-        <p>
-            简介：
-            <textarea cols="30" rows="10" name="description">
+<div class="container">
+    <div class="getdata">
+        <p class="question">问题一：在页面onload加载时，这个div是怎样动态获取服务器的商品图片数据、商品名称数据的？</p>
+         <div class="goods">
+             <img src="images/goods.png">
+             <p class="goods_name">小米note3</p>
+         </div>
+    </div>
+    <div class="form">
+        <p class="question">问题二：表单数据怎样提交到服务器的</p>
+        <p class="question">问题三：客户端怎样对提交的表单数据做验证（正则表达式？）</p>
+        <p class="question">问题四：服务器端的验证也是用正则表达式？</p>
+        <form action="http://www.520it.com">
+            <fieldset>
+                <legend>注册界面</legend>
+                <p>
+                    账号：<input type="text" name="account">
+                </p>
+                <p>
+                    密码：<input type="password" name="password">
+                </p>
+                <p>
+                    性别：
+                    <input type="radio" name="gendar">男
+                    <input type="radio" name="gendar">女
+                    <input type="radio" name="gendar" checked="checked">保密
+                </p>
+                <p>
+                    爱好：
+                    <input type="checkbox" name="hobby">篮球
+                    <input type="checkbox" name="hobby">足球
+                    <input type="checkbox" name="hobby" checked="checked">大保健
+                </p>
+                <p>
+                    简介：
+                    <textarea cols="30" rows="10" name="description">
 
-            </textarea>
-        </p>
-        <p>
-            生日：
-            <input type="date" name="birthday">
-        </p>
-        <p>
-            邮箱：
-            <input type="email" name="email">
-        </p>
-        <p>
-            电话：
-            <input type="number" name="phone">
-        </p>
-        <p>
-            <input type="submit" value="注册">
-            <input type="reset" value="清空">
-        </p>
-    </fieldset>
+                    </textarea>
+                </p>
+                <p>
+                    生日：
+                    <input type="date" name="birthday">
+                </p>
+                <p>
+                    邮箱：
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    电话：
+                    <input type="number" name="phone">
+                </p>
+                <p>
+                    <input type="submit" value="注册">
+                    <input type="reset" value="清空">
+                </p>
+            </fieldset>
 
 </form>
+    </div>
+    <div class="server">
+    <p class="question">服务端是怎样储存逻辑代码、数据库中的表、图片文件的？怎样一个文件结构</p>
+    <p class="question">接口的概念？</p>
+    </div>
+</div>
+
 </body>
 </html>
