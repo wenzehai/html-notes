@@ -1,0 +1,55 @@
+<html>
+<head>
+<style type="text/css">
+.container {
+	width: 100%;
+	margin: 0;
+	border: 1px solid gray;
+	line-height: 150%;
+}
+.header, .footer {
+	padding: 0.4em;
+	color: white;
+	background-color: gray;
+	clear: left;
+}
+h1.header {
+	padding: 0;
+	margin: 0;
+}
+.left {
+	float: left;
+	width: 160px;
+	margin: 0;
+	padding: 1em;
+}
+.content {
+	
+	margin-left: 190px;				/*这里并没有将contentfloat：left，而是直接用margin隔开left的距离；建议用float：left*/
+	border-left: 1px solid gray;
+	padding: 1em;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<div class="header">
+	<h1>This is a header</h1>
+		
+	</div>
+	<div class="left">
+		<p> W3School.com.cn you will find all the Web-building tutorials you need,
+from basic HTML and XHTML to</p>
+	</div>
+	<div class="content">
+		<h2>This is a header</h2>
+		<p>this is a pargraph</p>
+	</div>
+	<div class="footer">
+		
+	</div>
+</div>
+
+</body>
+</html>

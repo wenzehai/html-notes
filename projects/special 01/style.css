@@ -26,7 +26,7 @@ article {
     margin-top: 100px;
     border: 1px solid lightgray;
     /*background-color: #39cd6f;*/
-    background: url(images/bg_illustration_02.jpg) #4fe18e no-repeat;
+    background: url(images/bg_illustration_02.jpg) #69e1fc top center no-repeat;
 }
 article header {
     padding: 25px 40px;
