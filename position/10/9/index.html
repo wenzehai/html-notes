@@ -1,0 +1,32 @@
+<!-- 将div居中 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>将div居中</title>
+	<style type="text/css">
+		body,form {
+			padding: 0px;
+			margin: 0px;
+		}
+		body {
+			overflow: hidden;
+		}
+		.popup {
+			height: 400px;
+			width: 500px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -200px;						/*绝对定位是左上角，需要将框相对移动一下才能显示成居中*/
+			margin-left: -250px;
+			border: 1px solid #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="popup">
+		超实用的css代码段
+	</div>
+</body>
+</html>

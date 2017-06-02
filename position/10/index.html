@@ -1,0 +1,71 @@
+<!-- 媒体查询以及多css文件的调用方法 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ipad布局</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="portrait.css" media="all and (orientation:portrait)">
+    <link rel="stylesheet" type="text/css" href="landscape.css">
+   <!-- 根据屏幕宽度来选择加载不同的css文件 -->	
+    <link rel="stylesheet" type="text/css" href="index-banner320.css" media="screen and (max-width:479px">											<!-- 屏幕宽度小于480px -->
+    <link rel="stylesheet" type="text/css" href="index-banner480px" media="screen and (min-width: 479px) and (max-width: 639px)">					<!-- 屏幕宽度结余480-640px -->
+    <link rel="stylesheet" type="text/css" href="index-banner640px.css" media="screen and (min-width: 639px)">										<!-- 屏幕宽度大于640px -->
+
+    <style type="text/css">
+    	@media only screen and (device-width: 768px) {
+    		 /* ipad普通布局 */ 
+    	}
+    	@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {								/*多个条件用and来连接形成和关系，来筛选合格情况*/
+    		 /* ipad竖屏 */ 
+    	}
+    	@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape)  {
+    		 /* ipad横屏 */ 
+    	}
+    	/* Smartphones (portrait and landscape) ----------- */
+		@media only screen 
+		and (min-device-width : 320px) and (max-device-width : 480px) {  
+		  /* Styles */
+		}  
+		
+		/* Smartphones (landscape) ----------- */
+		@media only screen and (min-width : 321px) {
+		  /* Styles */
+		}  
+		/* Smartphones (portrait) ----------- */
+		@media only screen and (max-width : 320px) {
+		  /* Styles */ 
+		} 
+		/* iPads (portrait and landscape) ----------- */
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+		  /* Styles */ 
+		} 
+		<font></font>  
+		/* iPads (landscape) ----------- */
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+		  /* Styles */
+		} 
+		/* iPads (portrait) ----------- */
+		@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+		  /* Styles */
+		}   
+		/* Desktops and laptops ----------- */
+		@media only screen and (min-width : 1224px) {
+		  /* Styles */
+		}
+		/* Large screens ----------- */
+		@media only screen and (min-width : 1824px) {
+		  /* Styles */
+		} 
+		/* iPhone 4 ----------- */
+		@media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {
+		  /* Styles */
+		}
+    </style>
+
+</head>
+<body>
+<div class="popup">Something so important!</div>
+
+</body>
+</html>
