@@ -4,10 +4,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-		<title>WeUI</title>
+		<title>行情填报</title>
 		<!-- 引入 WeUI -->
 		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" />
-		<!--<link rel="stylesheet" href="css/style.css" />-->
 		<style>
 			.clearfix:after {
 				content: '';
@@ -32,7 +31,7 @@
 			.addBtn {
 				line-height: 2.2;
 				width: 50%;
-				margin: 30px auto 100px auto;
+				margin: 30px auto 30px auto;
 			}
 			
 			.weui-cells {
@@ -50,7 +49,7 @@
 				top: 38px;
 				right: 0;
 				border: 1px solid #a1d7f5;
-				max-height: 200px;
+				max-height: 240px;
 				overflow: scroll;
 				box-shadow: 0 0 4px rgba(200, 200, 200, 0.4);
 				width: 100%;
@@ -60,67 +59,58 @@
 			
 			.suplier_items>li {
 				background: #FFFFFF;
-				display: none;
 				padding-left: 10px;
 				line-height: 40px;
 				border-bottom: 1px solid #e5e5e5;
 			}
-			
-			.weui-cells {
+			/*.weui-cells {
 				border-left: 6px solid #1aad19;
-			}
+			}*/
 		</style>
-		<!--<script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>-->
-		<!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>-->
 		<script src="js/jquery-1.8.2.min.js"></script>
-		
-		<!--<script src="js/script.js"></script>-->
+
 		<script type="text/javascript">
 			$(function() {
 
 				//弹出列表框  
-				$(".suplier").live("click",function(){
+				$(".suplier").live("click", function() {
 					$(this).parent().find(".suplier_items").css('display', 'block');
-					
 					var top = $(this).offset().top;
 					$(window).scrollTop(top);
 					return false;
 				});
 
 				//隐藏列表框  
-				$("body").live("click",function() {
+				$("body").live("click", function() {
 					$(this).parent().find(".suplier_items").css('display', 'none');
 				});
 
 				//文本框输入  
-				$(".suplier").live("keyup",function() {
-					 var ul = $(this).parent().find(".suplier_items");
-					 var li = $(this).parent().find(".suplier_item")
+				$(".suplier").live("keyup", function() {
+					var ul = $(this).parent().find(".suplier_items");
+					var li = $(this).parent().find(".suplier_item")
 					ul.css('display', 'block'); //只要输入就显示列表框  
 
 					if($(this).val().length <= 0) {
 						li.css('display', 'block'); //如果什么都没填，跳出，保持全部显示状态  
 						return;
-					}
-
-					li.css('display', 'none'); //如果填了，先将所有的选项隐藏  
-					 for (var i = 0; i < li.length; i++) {  
+					} else {
+						li.css('display', 'none'); //如果填了，先将所有的选项隐藏  
+						for(var i = 0; i < li.length; i++) {
 							//模糊匹配，将所有匹配项显示  
-							if (li.eq(i).text().substr(0, $(this).val().length) == $(this).val()) {  
-								li.eq(i).css('display', 'block');  
-							}  
-						}  
-
+							console.log($(this))
+							if(li.eq(i).text().substr(0, $(this).val().length) == $(this).val()) {
+								li.eq(i).css('display', 'block');
+							}
+						}
+					}
 				});
-				
-				
+
 				//项点击  
-				$(".suplier_item").live("click",function() {
+				$(".suplier_item").live("click", function() {
 					$(this).parent().parent().find(".suplier").val($(this).text());
 				});
-				
-				
-				
+
 				/*
 				//弹出列表框  
 				$(".suplier").click(function() {
@@ -165,74 +155,90 @@
 				
 				*/
 				//增加一行按钮
-				
-				var emptyBox  = '<div class="suplierBox">'+
-								'<div class="weui-cells__title">物料信息<span class="deleteBtn">删除</span></div>'+
-								'<div class="weui-cells">'+
-									'<div class="weui-cell">'+
-										'<div class="weui-cell__hd">'+
-											'<label for="" class="weui-label">需货公司</label>'+
-										'</div>'+
-										'<div class="weui-cell__bd">'+
-											'<input class="weui-input suplier" type="text" placeholder="请输入需货公司" />'+
-											'<ul class="suplier_items  clearfix">'+
-												'<li class="suplier_item">周杰伦</li>'+
-											'</ul>'+
-										'</div>'+
-									'</div>'+
-									'<div class="weui-cell">'+
-										'<div class="weui-cell__hd">'+
-											'<label for="" class="weui-label">提货地点</label>'+
-										'</div>'+
-										'<div class="weui-cell__bd">'+
-											'<input class="weui-input suplier" type="text" placeholder="请输入提货地点" />'+
-											'<ul class="suplier_items  clearfix">'+
-												'<li class="suplier_item">周杰伦</li>'+
-											'</ul>'+
-										'</div>'+
-									'</div>'+
-									'<div class="weui-cell">'+
-										'<div class="weui-cell__hd"><label class="weui-label">原料价格</label></div>'+
-										'<div class="weui-cell__bd">'+
-											'<input class="weui-input" type="text" placeholder="请输入原料价格" />'+
-										'</div>'+
-									'</div>'+
-									'<div class="weui-cell">'+
-										'<div class="weui-cell__hd"><label class="weui-label">运费</label></div>'+
-										'<div class="weui-cell__bd">'+
-											'<input class="weui-input" type="text" placeholder="请输入运费" />'+
-										'</div>'+
-									'</div>'+
-								'</div>'+
-									'</div>';
-				
-				
-				
-				$(".addBtn").click(function(){
-					var lastSuplierBox = $("div.suplierBox:last");	
+
+				var emptyBox = '<div class="suplierBox">' +
+					'<div class="weui-cells__title">物料信息<span class="deleteBtn">删除</span></div>' +
+					'<div class="weui-cells">' +
+					'<div class="weui-cell">' +
+					'<div class="weui-cell__hd">' +
+					'<label for="" class="weui-label">需货公司</label>' +
+					'</div>' +
+					'<div class="weui-cell__bd suplierCon">' +
+					'<input class="weui-input suplier" type="text" placeholder="请输入需货公司" />' +
+					'<ul class="suplier_items  clearfix">' +
+						'<li class="suplier_item">周杰伦</li>' +
+						'<li class="suplier_item">周杰</li>' +
+						'<li class="suplier_item">林俊杰</li>' +
+						'<li class="suplier_item">林宥嘉</li>' +
+						'<li class="suplier_item">林妙可</li>' +
+						'<li class="suplier_item">唐嫣</li>' +
+						'<li class="suplier_item">唐家三少</li>' +
+						'<li class="suplier_item">唐朝盛世</li>' +
+						'<li class="suplier_item">奥迪A4L</li>' +
+						'<li class="suplier_item">奥迪A6L</li>' +
+						'<li class="suplier_item">奥迪A8L</li>' +
+						'<li class="suplier_item">奥迪R8</li>' +
+					'</ul>' +
+					'</div>' +
+					'</div>' +
+					'<div class="weui-cell">' +
+					'<div class="weui-cell__hd">' +
+					'<label for="" class="weui-label">提货地点</label>' +
+					'</div>' +
+					'<div class="weui-cell__bd suplierCon">' +
+					'<input class="weui-input suplier" type="text" placeholder="请输入提货地点" />' +
+					'<ul class="suplier_items  clearfix">' +
+						'<li class="suplier_item">周杰伦</li>' +
+						'<li class="suplier_item">周杰</li>' +
+						'<li class="suplier_item">林俊杰</li>' +
+						'<li class="suplier_item">林宥嘉</li>' +
+						'<li class="suplier_item">林妙可</li>' +
+						'<li class="suplier_item">唐嫣</li>' +
+						'<li class="suplier_item">唐家三少</li>' +
+						'<li class="suplier_item">唐朝盛世</li>' +
+						'<li class="suplier_item">奥迪A4L</li>' +
+						'<li class="suplier_item">奥迪A6L</li>' +
+						'<li class="suplier_item">奥迪A8L</li>' +
+						'<li class="suplier_item">奥迪R8</li>' +
+					'</ul>' +
+					'</div>' +
+					'</div>' +
+					'<div class="weui-cell">' +
+					'<div class="weui-cell__hd"><label class="weui-label">原料价格</label></div>' +
+					'<div class="weui-cell__bd">' +
+					'<input class="weui-input" type="number" placeholder="请输入原料价格" />' +
+					'</div>' +
+					'</div>' +
+					'<div class="weui-cell">' +
+					'<div class="weui-cell__hd"><label class="weui-label">运费</label></div>' +
+					'<div class="weui-cell__bd">' +
+					'<input class="weui-input" type="number" placeholder="请输入运费" />' +
+					'</div>' +
+					'</div>' +
+					'</div>' +
+					'</div>';
+
+				$(".addBtn").live("click", function() {
+					var lastSuplierBox = $("div.suplierBox:last");
 					var suplierBox = $(".suplierBox");
-					$(emptyBox).insertAfter(lastSuplierBox);
+					var baseInfo = $(".baseInfo");
+					if(lastSuplierBox.length > 0) {
+						$(lastSuplierBox).after(emptyBox);
+					} else {
+						$(baseInfo).after(emptyBox);
+					}
+
 					if(suplierBox.length < 1) {
-						$("span.deleteBtn").css("display","none");
-					}else {
-						$("span.deleteBtn").css("display","block");
+						$("span.deleteBtn").css("display", "none");
+					} else {
+						$("span.deleteBtn").css("display", "block");
 					}
 				});
-//				$(".addBtn").click(function(){
-//					var lastSuplierBox = $("div.suplierBox:last");	
-//					var suplierBox = $(".suplierBox");
-//					lastSuplierBox.clone(true).insertAfter(lastSuplierBox);
-//					if(suplierBox.length < 1) {
-//						$("span.deleteBtn").css("display","none");
-//					}else {
-//						$("span.deleteBtn").css("display","block");
-//					}
-//				});
-				
-				$("span.deleteBtn").live("click",function(){
+
+				$("span.deleteBtn").live("click", function() {
 					$(this).parent().parent().remove();
 				});
-				
+
 			});
 		</script>
 	</head>
@@ -240,7 +246,7 @@
 	<body>
 		<!--基础信息-->
 		<div class="weui-cells__title">基础信息</div>
-		<div class="weui-cells">
+		<div class="weui-cells baseInfo">
 			<div class="weui-cell">
 				<div class="weui-cell__hd"><label class="weui-label">填报人</label></div>
 				<div class="weui-cell__bd"><span class="des">周润发</span></div>
@@ -270,7 +276,7 @@
 					<div class="weui-cell__hd">
 						<label for="" class="weui-label">需货公司</label>
 					</div>
-					<div class="weui-cell__bd">
+					<div class="weui-cell__bd suplierCon">
 						<input class="weui-input suplier" type="text" placeholder="请输入需货公司" />
 						<ul class="suplier_items  clearfix">
 							<li class="suplier_item">周杰伦</li>
@@ -292,7 +298,7 @@
 					<div class="weui-cell__hd">
 						<label for="" class="weui-label">提货地点</label>
 					</div>
-					<div class="weui-cell__bd">
+					<div class="weui-cell__bd suplierCon">
 						<input class="weui-input suplier" type="text" placeholder="请输入提货地点" />
 						<ul class="suplier_items  clearfix">
 							<li class="suplier_item">周杰伦</li>
@@ -313,24 +319,34 @@
 				<div class="weui-cell">
 					<div class="weui-cell__hd"><label class="weui-label">原料价格</label></div>
 					<div class="weui-cell__bd">
-						<input class="weui-input" type="text" placeholder="请输入原料价格" />
+						<input class="weui-input"  type="number" placeholder="请输入原料价格" />
 					</div>
 				</div>
 				<div class="weui-cell">
 					<div class="weui-cell__hd"><label class="weui-label">运费</label></div>
 					<div class="weui-cell__bd">
-						<input class="weui-input" type="text" placeholder="请输入运费" />
+						<input class="weui-input"  type="number" placeholder="请输入运费" />
 					</div>
 				</div>
 			</div>
 		</div>
-		
-		
+
 		<div class="weui-btn-area">
 			<a href="javascript:;" class="weui-btn weui-btn_plain-default addBtn">增加一条</a>
-			<a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">都录完了，提交</a>
+			<a class="weui-btn weui-btn_primary" href="hqtbSuc.html" id="showTooltips">提交</a>
 		</div>
-		
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
 	</body>
 
 </html>

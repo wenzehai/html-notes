@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+		<title>行情审核</title>
+		<!-- 引入 WeUI -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.2/style/weui.min.css" />
+		<link rel="stylesheet" href="//cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+		<style>
+			.clearfix:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			
+			body {
+				background: #f8f8f8;
+			}
+			
+			.des {
+				color: #777777;
+			}
+			
+			.rejectBtn {
+				display: block;
+				color: #f43530;
+				float: right;
+			}
+			
+			.rejectTxt {
+				width: 252px;
+				height: 100px;
+				outline: none;
+				border: 1px solid #F5F5F5;
+				font-size: 16px;
+				line-height: 20px;
+				overflow: auto;
+			}
+			
+			.reasons {
+				color: #e64340;
+			}
+			
+			.revocation {
+				display: none;
+				float: right;
+				color: #ffbe00;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<!--基础信息-->
+		<div class="weui-cells__title">基础信息</div>
+		<div class="weui-cells baseInfo">
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">填报人</label></div>
+				<div class="weui-cell__bd"><span class="des">周润发</span></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">填报日期</label></div>
+				<div class="weui-cell__bd"><span class="des">2017-08-26</span></div>
+			</div>
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">填报原料</label></div>
+				<div class="weui-cell__bd"><span class="des">麦麸</span></div>
+			</div>
+		</div>
+		<!--物料信息-->
+		<div class="suplierBox">
+			<div class="weui-cells__title">物料信息(1)<span class="rejectBtn">驳回</span><span class="revocation">撤销</span></div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">需货公司</label>
+					</div>
+					<div class="weui-cell__bd">
+						<span class="des">长沙正阳有限公司</span>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">提货地点</label>
+					</div>
+					<div class="weui-cell__bd">
+						<span class="des">长沙火车站</span>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">原料价格</label></div>
+					<div class="weui-cell__bd">
+						<span class="des">4600</span>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">运费</label></div>
+					<div class="weui-cell__bd">
+						<span class="des">50</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--物料信息-->
+		<div class="suplierBox">
+			<div class="weui-cells__title">物料信息(1)<span class="rejectBtn">驳回</span><span class="revocation">撤销</span></div>
+			<div class="weui-cells">
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">需货公司</label>
+					</div>
+					<div class="weui-cell__bd">
+						<span class="des">长沙正阳有限公司</span>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd">
+						<label for="" class="weui-label">提货地点</label>
+					</div>
+					<div class="weui-cell__bd">
+						<span class="des">长沙火车站</span>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">原料价格</label></div>
+					<div class="weui-cell__bd">
+						<span class="des">4600</span>
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">运费</label></div>
+					<div class="weui-cell__bd">
+						<span class="des">50</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_primary" href="hqshSuc.html">确定</a>
+		</div>
+		
+		
+		<!--整体驳回部分-->
+		<div class="weui-cells__title">整条驳回</div>
+		<div class="weui-cells weui-cells_form">
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<textarea class="weui-textarea" placeholder="请输入驳回理由" rows="3"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="weui-btn-area">
+			<a class="weui-btn weui-btn_warn" href="javascript:;" id="rejectAll">整条驳回</a>
+		</div>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+
+
+		<script src="js/jquery-1.8.2.min.js"></script>
+		<script src="//cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+		<script>
+			$("#rejectAll").click(function() {
+				$.confirm({
+					title: '是否驳回',
+					text: '您确定要驳回整条审核信息？',
+					onOK: function() {
+						//点击确认
+						$(window).attr('location', 'http://192.168.0.130:8020/html-notes/projects/%E4%B9%9D%E9%BC%8EUI/hqshSuc.html?__hbt=1504170083703');
+
+					},
+					onCancel: function() {}
+				});
+			})
+			$(".rejectBtn").click(function() {
+				var thisRejectBtn = $(this);
+				var box = thisRejectBtn.parent().next();
+				var lastList = box.find("div.weui-cell:last");
+				var revocationBtn = thisRejectBtn.nextUntil(".thisRejectBtn");
+				$.confirm({
+					title: '驳回理由',
+					text: '<textarea class="rejectTxt" placeholder="请输入驳回理由..."></textarea>',
+					onOK: function() {
+						//点击确认
+
+						var rejctReason = $(".rejectTxt").val();
+						console.log(rejctReason);
+						var insertStr = '<div class="weui-cell">' +
+							'<div class="weui-cell__hd"><label class="weui-label">驳回理由</label></div>' +
+							'<div class="weui-cell__bd ">' +
+							'<span class="des reasons">' + rejctReason + '</span>' +
+							'</div>' +
+							'</div>';
+						lastList.after($(insertStr));
+						box.css("border-left", "6px solid #e64340");
+						thisRejectBtn.css("display", "none");
+						thisRejectBtn.nextUntil(".revocationBtn").css("display", "block");
+
+					},
+					onCancel: function() {}
+				});
+			});
+
+			var revocationBtn = $(".revocation");
+			revocationBtn.click(function() {
+				var thisRevocationBtn = $(this);
+				var rejectBtn = thisRevocationBtn.prevUntil(thisRevocationBtn);
+				var box = thisRevocationBtn.parent().next();
+				var lastList = box.find("div.weui-cell:last");
+				lastList.remove();
+				thisRevocationBtn.css("display", "none");
+				rejectBtn.css("display", "block");
+				box.css("border-left", "none");
+			});
+		</script>
+	</body>
+
+</html>
