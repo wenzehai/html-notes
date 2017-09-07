@@ -1,0 +1,20 @@
+
+
+/*主体内容开始*/
+.breadcrumb {
+	position: relative;
+}
+.breadcrumb li {
+	float: left;
+	font: 14px/50px "微软雅黑";
+}
+.breadcrumb li span {
+	margin: 0 15px;
+	color: #666666;
+}
+.breadcrumb a {
+	/*display: inline-block;*/
+	color: #1c5996;
+	font: 14px/50px "微软雅黑";
+}
+

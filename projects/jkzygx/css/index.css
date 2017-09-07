@@ -1,0 +1,73 @@
+/*隐藏顶部导航的搜索框*/
+.smallSearch {
+	display: none;
+}
+
+
+/*主体内容开始*/
+.pro {
+	height: 890px;
+	background: url(../img/bg.jpg) no-repeat center top;
+	position: relative;
+}
+.pro .search_bd {
+	font-size: 0;
+}
+.pro .searchBox .search_hd {
+	width: 680px;
+	height: 230px;	
+	background: url(../img/slogan_bg.png) no-repeat center 100px;
+}
+.pro .searchBox {
+	margin: 0 auto;
+	width: 680px;
+	/*padding-top: 230px;*/
+}
+.pro .searchBox select {
+	vertical-align: top;
+	width: 115px;
+	height: 50px;
+	border: none;
+	border-right: 1px solid #999999;
+	padding-left: 15px;
+	font: 18px/50px "微软雅黑";
+	outline: none;
+	color: #333333;
+}
+.pro .searchBox .select option {
+	font: 18px/18px "微软雅黑";
+	outline: none;
+}
+.pro .searchBox input {
+	vertical-align: top;
+	width: 540px;
+	height: 50px;
+	border: none;
+	padding-left: 15px;
+	font: 16px/50px "微软雅黑";
+	outline: none;
+	color: #333333;
+	background: #FFFFFF url(../img/icon_search.png) no-repeat 500px center;
+}
+.pro .searchBox input::-ms-input-placeholder{text-align: center;} 
+.pro .searchBox input::-webkit-input-placeholder{text-align: center;} 
+
+
+
+.pro .search_ft p {
+	font: 14px/14px "微软雅黑";
+	color: #FFFFFF;
+	text-align: center;
+	margin-top: 20px;
+	text-align: left;
+}
+.pro .search_ft p a {
+	display: inline-block;
+	margin-left: 18px;
+	color: #FFFFFF;
+}
+.pro .search_ft p a:hover {
+	color: #1c5996;
+}
+
+

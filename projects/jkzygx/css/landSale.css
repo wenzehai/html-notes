@@ -1,0 +1,236 @@
+body {
+	background: #e6e6e6;
+}
+.main .container {
+	background: #FFFFFF;
+	padding-bottom: 50px;
+}
+.main .container .bread {
+	height: 50px;
+	padding: 0 20px;
+}
+
+.breadcrumb {
+	position: relative;
+}
+.breadcrumb li {
+	float: left;
+	font: 14px/50px "微软雅黑";
+}
+.breadcrumb li span {
+	margin: 0 15px;
+	color: #666666;
+}
+.breadcrumb a {
+	/*display: inline-block;*/
+	color: #1c5996;
+	font: 14px/50px "微软雅黑";
+}
+
+.content {
+	position: relative;;
+	/*background: green;*/
+}
+.content .filter {
+	padding: 16px 0 16px 20px;
+}
+.content .filter .filter_hd input {
+	width: 613px;
+	height: 44px;
+	border: 1px solid #cbcbcb;
+	padding-left: 24px;
+	outline: none;
+	background: #FFFFFF url(../img/icon_search.png) no-repeat 600px center;
+}
+.content .filter .filter_bd {
+	margin-top: 20px;
+	background: #f0f0f0;
+	padding: 5px;
+	width: 1120px;
+}
+.content .filter .filter_bd .line {
+	position: relative;
+	height: 43px;
+}
+.content .filter .filter_bd dl {
+	position: relative;
+}
+.content .filter .filter_bd dl dt {
+	float: left;
+	margin: 0 15px;
+	font: bold 16px/43px "微软雅黑";
+	color: #000000;
+}
+.content .filter .filter_bd dl dd {
+	cursor: pointer;
+	font: 16px/43px "微软雅黑";
+	float: left;
+	margin: 0 15px;
+	color: #666666;
+}
+.content .filter .filter_bd dl dd:nth-child(2) {
+	color: #fabd00;
+}
+.contentLeft {
+	margin-left: 20px;
+	width: 800px;
+}
+.content .filter .filter_bd dl dd select {
+	width: 200px;
+	height: 30px;
+	border: 1px solid #999999;
+	color: #666666;
+	font: 12px/30px "微软雅黑";
+	outline: none;
+	padding-left: 10px;
+}
+.tabBox {
+	margin-top: 20px;
+}
+.tabBox .tab_hd {
+	margin-bottom: 13px;
+}
+.tabBox .tab_hd ul {
+	position: relative;
+	border-bottom: 1px solid #000000;
+}
+.tabBox .tab_hd ul li {
+	float: left;
+	text-align: center;
+}
+.tabBox .tab_hd ul li a {
+	display: inline-block;
+	font: 16px/40px "微软雅黑";
+	padding: 0 30px;
+	border-right: 1px solid #FFFFFF;
+	color: #333333;
+}
+.tabBox .tab_hd ul li a span {
+	padding-left: 10px;
+}
+.tabBox .tab_hd ul li.active a {
+	background: #1c5996;
+	color: #FFFFFF;
+}
+.tabBox .tab_hd .searchResult {
+	color: #333333;
+	margin-top: 20px;
+	font: bold 26px/40px "微软雅黑";
+}
+.tabBox .tab_hd .searchResult span {
+	color: #fabd00;
+}
+.tabBox .tab_bd .tab_conBox li {
+	padding: 15px 0;
+	border-bottom: 1px solid #F5F5F5;
+}
+.tabBox .tab_bd .tab_conBox li img {
+	width: 308px;
+	height: 192px;
+	float: left;
+}
+.tabBox .tab_bd .tab_conBox li .txtBox {
+	float: right;
+	width: 482px;
+	height: 192px;
+	position: relative;
+}
+.tabBox .tab_bd .tab_conBox li .txtBox h3 {
+	font: 18px/20px "微软雅黑";
+	font-weight: bold;
+	margin-bottom: 9px;
+	color: #000000;
+	white-space: nowrap; 
+	text-overflow:ellipsis; 
+	overflow:hidden;
+}
+.tabBox .tab_bd .tab_conBox li .txtBox .subTime {
+	text-align: left;
+	font: 12px/20px "微软雅黑";
+	color: #999999;
+}
+.tabBox .tab_bd .tab_conBox li .txtBox dl {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 70%;
+}
+.tabBox .tab_bd .tab_conBox li .txtBox dt {
+	background: url(../img/icon_info.png) no-repeat left center;
+	color: #cdcdcd;
+	float: left;
+	padding-left: 30px;
+	line-height: 26px;
+}
+.tabBox .tab_bd .tab_conBox li .txtBox dd {
+	color: #333333;
+	float: left;
+	padding-left: 10px;
+	line-height: 26px;
+}
+.tabBox .tab_bd .tab_conBox .price {
+	font: 36px/36px "微软雅黑";
+	color: #cc0a0a;
+	position: absolute;
+	top: 80px;
+	right: 0;
+}
+.tabBox .tab_bd .tab_conBox .price .units{
+	padding-left: 5px;
+	font: 18px/36px "微软雅黑";
+}
+.tabBox .tab_bd .tab_conBox .mark {
+	background: url(../img/icon_mark.png) no-repeat left center;
+	padding-left: 30px;
+	font: 14px/36px "微软雅黑";
+	position: absolute;
+	right: 0;
+	top: 160px;
+	cursor: pointer;
+}
+
+.asideBox {
+	padding: 0 24px;
+}
+.asideBox .msg {
+	background: #e6e6e6;
+	width: 300px;
+	box-sizing: border-box;
+	padding: 10px 22px;
+}
+.asideBox .msg .msg_hd {
+	border-bottom: 1px solid #999999;
+	position: relative;
+}
+.asideBox .msg .msg_hd p {
+	font: 18px/36px "微软雅黑";
+	color: #000000;
+	float: left;
+}
+.asideBox .msg .msg_hd span.more {
+	padding-top: 4px;
+	font: 14px/36px "微软雅黑";
+	color: #999999;
+	float: right;
+}
+.asideBox .msg .msg_bd {
+	margin-top: 20px;
+}
+.asideBox .msg .msg_bd ul li {
+	margin-top: 15px;
+	position: relative;
+	border-bottom: 1px solid #c9c9c9;
+}
+.asideBox .msg .msg_bd h4 a {
+	font: 16px/20px "微软雅黑";
+	color: #000000;
+}
+.asideBox .msg .msg_bd h4 a:hover {
+	color: #1c5996;
+}
+.asideBox .policy .msg_bd ul li {
+	/*height: 50px;*/
+	margin-top: 15px;
+	position: relative;
+	border: none;
+}
