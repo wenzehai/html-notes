@@ -1,20 +1,135 @@
-
-
 /*主体内容开始*/
+
 .breadcrumb {
 	position: relative;
+	background: #e6e6e6;
 }
+
 .breadcrumb li {
 	float: left;
 	font: 14px/50px "微软雅黑";
 }
+
 .breadcrumb li span {
 	margin: 0 15px;
 	color: #666666;
 }
+
 .breadcrumb a {
 	/*display: inline-block;*/
 	color: #1c5996;
 	font: 14px/50px "微软雅黑";
 }
 
+.main {
+	background: #e6e6e6;
+}
+
+.content {
+	position: relative;
+}
+
+.contentLeft {
+	width: 225px;
+	background: #FFFFFF;
+	padding: 25px;
+}
+
+.contentLeft dl {
+	position: relative;
+}
+
+.contentLeft dl dt {
+	padding-top: 10px;
+	font: 16px/34px "微软雅黑";
+	display: block;
+	color: #1c5996;
+	clear: both;
+}
+
+.contentLeft dl dt:nth-child(1) {
+	padding-top: 0;
+}
+
+.contentLeft dl dd {
+	font: 14px/30px "微软雅黑";
+	float: left;
+	margin-right: 25px;
+}
+
+.contentLeft .asideBox img {
+	margin-top: 20px;
+	width: 220px;
+}
+
+.contentRight {
+	width: 820px;
+	background: #FFFFFF;
+	padding: 25px;
+	position: relative;
+}
+
+.contentRight ul li {
+	margin-top: 15px;
+	position: relative;
+	height: 66px;
+	border-bottom: 1px solid #e9e9e9;
+}
+
+.contentRight ul li h3 {
+	font: 18px/24px "微软雅黑";
+}
+
+.contentRight ul li .writer {
+	font: 14px/24px "微软雅黑";
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	color: #b5b5b5;
+}
+
+.contentRight ul li .publishTime {
+	font: 14px/24px "微软雅黑";
+	position: absolute;
+	right: 0;
+	bottom: 2px;
+	color: #b5b5b5;
+}
+.pageBox {
+	padding: 40px 0;
+	width: 870px;
+	background: #ffffff;
+	margin-bottom: 50px;
+}
+.pagenation {
+	margin: 0 auto;
+	width: 550px;
+	height: 36px;
+	font-size: 0;
+	position: relative;
+}
+
+.pagenation a {
+	font: 13px/34px "微软雅黑";
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	border: 1px solid #e1e2e3;
+	text-align: center;
+	text-decoration: none;
+	margin-right: 9px;
+}
+
+.pagenation a:hover,
+.pagenation a.active {
+	background: #f2f8ff;
+	border-color: #3388ff;
+}
+
+.pagenation .page {
+	width: 86px;
+}
+
+.pagenation .next {
+	margin-right: 0;
+}

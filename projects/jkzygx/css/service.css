@@ -1,0 +1,97 @@
+/*主体内容开始*/
+.main {
+	background: #FFFFFF;
+}
+.breadcrumb {
+	position: relative;
+}
+
+.breadcrumb li {
+	float: left;
+	font: 14px/50px "微软雅黑";
+}
+
+.breadcrumb li span {
+	margin: 0 15px;
+	color: #666666;
+}
+.breadcrumb a {
+	color: #1c5996;
+	font: 14px/50px "微软雅黑";
+}
+
+
+.content {
+	position: relative;
+}
+.contentLeft {
+	width: 225px;
+	background: #E6E6E6;
+	padding: 25px;
+}
+.contentLeft .category .category_hd {
+	border-bottom: 1px solid #999999;
+	padding-bottom: 10px;
+}
+.contentLeft .category .category_hd p {
+	font: 18px/30px "微软雅黑";
+	color: #000000;
+}
+.contentLeft .category .category_bd li {
+	text-align: center;
+}
+.contentLeft .category .category_bd li.active a {
+	background: #fabd00;
+	color: #ffffff;
+}
+.contentLeft .category .category_bd a {
+	display: block;
+	width: 228px;
+	height: 72px;
+	margin-top: 11px;
+	background: #c1d1d0;
+	color: #000000;
+	font: lighter 25px/72px "微软雅黑";
+}
+.contentLeft .category .category_bd a:hover {
+	background: #fabd00;
+}
+.contentRight {
+	width: 820px;
+	height: 800px;
+	background: #FFFFFF;
+	padding: 25px;
+	position: relative;
+}
+
+.contentRight .serviceCon .serviceCon_hd {
+	border-bottom: 1px solid #999999;
+	padding-bottom: 10px;
+}
+.contentRight .serviceCon .serviceCon_hd p {
+	font: 24px/30px "微软雅黑";
+	color: #000000;
+}
+.contentRight .serviceCon .serviceCon_bd ul {
+	position: relative;
+}
+
+.contentRight .serviceCon .serviceCon_bd li {
+	float: left;
+	text-align: center;
+}
+.contentRight .serviceCon .serviceCon_bd li a{
+	display: block;
+	width: 166px;
+	height: 52px;
+	margin-top: 11px;
+	margin-right: 11px;
+	background: #FFFFFF;
+	color: #333333;
+	border: 1px solid #1c5996;
+	font: lighter 16px/52px "微软雅黑";
+}
+.contentRight .serviceCon .serviceCon_bd li a:hover {
+	background: #1c5996;
+	color: #FFFFFF;
+}

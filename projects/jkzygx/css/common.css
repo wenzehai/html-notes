@@ -64,7 +64,7 @@
 .sitenav .left a {
 	display: inline-block;
 	line-height: 0;
-	padding: 0 10px;
+	
 }
 .sitenav a:hover {
 	color: #FFFFFF;
@@ -82,6 +82,7 @@
 .menu .txtLogo p {
 	font: bold 30px/36px "微软雅黑";
 	color: #000000;
+	/*letter-spacing: 6px;*/
 }
 .menu .txtLogo span {
 	font: bold 14px/20px "微软雅黑";
@@ -99,12 +100,9 @@
 .menu .mainMenu>li>a {
 	display: inline-block;
 	color: #FFFFFF;
-	font: bold 18px/94px "微软雅黑";
+	font: bold 16px/94px "微软雅黑";
 	padding: 0 20px;
 }
-/*.menu .mainMenu>li:nth-child(2) >a {
-	background: red;
-}*/
 .menu .mainMenu>li.active a {
 	color: #fabd00;
 }
@@ -162,16 +160,16 @@
 /*导航栏结束*/
 
 /*footer开始*/
-footer {
+.footer {
 	background: #363636;
 	text-align: center;
 	color: #f0f0f0;
 	padding: 10px 0;
 }
-footer p {
+.footer p {
 	font: 12px/24px "微软雅黑"
 }
-footer p:nth-child(2) {
+.footer p:nth-child(2) {
 	color: #8f8f8f;
 }
 

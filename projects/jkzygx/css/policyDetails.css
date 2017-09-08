@@ -1,0 +1,123 @@
+/*主体内容开始*/
+
+.breadcrumb {
+	position: relative;
+	background: #e6e6e6;
+}
+
+.breadcrumb li {
+	float: left;
+	font: 14px/50px "微软雅黑";
+}
+
+.breadcrumb li span {
+	margin: 0 15px;
+	color: #666666;
+}
+
+.breadcrumb a {
+	/*display: inline-block;*/
+	color: #1c5996;
+	font: 14px/50px "微软雅黑";
+}
+
+.main {
+	background: #e6e6e6;
+}
+
+.content {
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.contentRight {
+	width: 225px;
+	background: #FFFFFF;
+	padding: 25px;
+}
+
+.asideBox .msg {
+	margin-top: 20px;
+}
+.asideBox .msg:nth-child(1) {
+	margin-top: 0;
+}
+.asideBox .msg .msg_hd {
+	border-bottom: 1px solid #999999;
+	position: relative;
+}
+.asideBox .msg .msg_hd p {
+	font: 18px/36px "微软雅黑";
+	color: #000000;
+	float: left;
+}
+.asideBox .msg .msg_hd span.more {
+	padding-top: 4px;
+	font: 14px/36px "微软雅黑";
+	color: #999999;
+	float: right;
+}
+.asideBox .msg .msg_bd {
+	margin-top: 20px;
+}
+.asideBox .msg .msg_bd ul li {
+	margin-top: 15px;
+	position: relative;
+	border-bottom: 1px solid #c9c9c9;
+}
+.asideBox .msg .msg_bd h4 a {
+	font: 16px/20px "微软雅黑";
+	color: #000000;
+}
+.asideBox .msg .msg_bd h4 a:hover {
+	color: #1c5996;
+}
+.asideBox .policy .msg_bd ul li {
+	/*height: 50px;*/
+	margin-top: 15px;
+	position: relative;
+	border: none;
+}
+
+
+
+
+
+.contentLeft {
+	width: 820px;
+	background: #FFFFFF;
+	padding: 25px;
+	position: relative;
+}
+.contentLeft .article_title {
+	position: relative;
+	height: 60px;
+	border-bottom: 1px solid #e9e9e9;
+}
+.contentLeft .article_title h3 {
+	font: 18px/30px "微软雅黑";
+	color: #000000;
+}
+.contentLeft .article_title .writer {
+	font: 14px/24px "微软雅黑";
+	position: absolute;
+	left: 0;
+	bottom: 2px;
+	color: #b5b5b5;
+}
+.contentLeft .article_title .publishTime {
+	font: 14px/24px "微软雅黑";
+	position: absolute;
+	right: 0;
+	bottom: 2px;
+	color: #b5b5b5;
+}
+.contentLeft .article_body {
+	padding: 20px 0;
+}
+.contentLeft .article_body p {
+	font: 16px/26px "微软雅黑";
+	text-indent: 2em;
+	margin-bottom: 1em;
+	
+}

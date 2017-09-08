@@ -1,0 +1,242 @@
+/*主体内容开始*/
+
+.main {
+	background: #FFFFFF;
+}
+.banner {
+	height: 358px;
+	margin-top: 50px;
+}
+.contentRight ul {
+	position: relative;
+	width: 348px;
+}
+
+.contentRight ul li {
+	text-align: center;
+	display: block;
+	width: 348px;
+	height: 110px;
+	margin-bottom: 14px;
+}
+.contentRight ul li a {
+	display: block;
+	font: lighter 36px/110px "微软雅黑";
+	color: #FFFFFF;
+}
+.contentRight ul li:nth-child(1) a {
+	background: url(../img/people_small01.jpg) no-repeat left top;
+}
+.contentRight ul li:nth-child(2) a {
+	background: url(../img/people_small02.jpg) no-repeat left top;
+}
+.contentRight ul li:nth-child(3) a {
+	background: url(../img/people_small03.jpg) no-repeat left top;
+}
+
+.jobShow {
+	margin-top: 40px;
+}
+.jobShow .job_hd ul {
+	border-bottom: 1px solid #e6e6e6;
+	position: relative;
+}
+
+.jobShow .job_hd ul li{
+	float: left;
+	text-align: center;
+}
+.jobShow .job_hd ul li a {
+	width: 125px;
+	height: 34px;
+	display: block;
+}
+.jobShow .job_hd ul li.active a,
+.jobShow .job_hd ul li a:hover {
+	border-bottom: 3px solid #1c5996;
+}
+.jobShow .job_bd ul{
+	position: relative;
+}
+.jobShow .job_bd ul li{
+	border: 1px solid #e6e6e6;
+	padding: 15px;
+	position: relative;
+	float: left;
+	margin-top: 14px;
+	margin-right: 16px;
+	transition: all 0.5s ease;
+}
+.jobShow .job_bd ul li:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 6px rgba(200,200,200,0.5);
+}
+.jobShow .job_bd ul li.marginNone {
+	margin-right: 0;
+}
+.jobShow .job_bd ul li .info_hd {
+	position: relative;
+	width: 346px;
+	height: 70px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.jobShow .job_bd ul li .info_hd .left h4 {
+	font: 24px/24px "微软雅黑";
+	color: #000000;
+}
+.jobShow .job_bd ul li .info_hd .left .des {
+	font: 14px/18px "微软雅黑";
+	margin-top: 10px;
+	color: #999999;
+}
+.jobShow .job_bd ul li .info_hd .right strong {
+	font: 24px/24px "微软雅黑";
+	color: #e60a0a;
+}
+.jobShow .job_bd ul li .info_hd .right .time {
+	font: 14px/18px "微软雅黑";
+	margin-top: 10px;
+	color: #999999;
+}
+.jobShow .job_bd ul li .info_bd {
+	position: relative;
+	padding-top: 10px;
+}
+.jobShow .job_bd ul li .info_bd img {
+	float: left;
+	width: 58px;
+	margin-right: 20px;
+}
+.jobShow .job_bd ul li .info_bd h4 {
+	font: 16px/30px "微软雅黑";
+	color: #000000;
+}
+.jobShow .job_bd ul li .info_bd span {
+	font: 14px/20px "微软雅黑";
+	color: #999999;
+}
+.jobShow .job_ft a.moreJob{
+	display: block;
+	width: 326px;
+	height: 44px;
+	font: 16px/44px "微软雅黑";
+	color: #1c5996;
+	text-align: center;
+	margin: 40px auto;
+	border: 1px solid #1c5996;
+}
+.jobShow .job_ft a.moreJob:hover {
+	color: #FFFFFF;
+	background: #1c5996;
+}
+
+.companyShow {
+	margin-top: 40px;
+}
+.companyShow .company_hd ul {
+	border-bottom: 1px solid #e6e6e6;
+	position: relative;
+}
+.companyShow .company_hd ul li{
+	float: left;
+	text-align: center;
+}
+.companyShow .company_hd ul li a {
+	width: 125px ;
+	height: 34px;
+	display: block;
+}
+.companyShow .company_hd ul li.active a,
+.companyShow .company_hd ul li a:hover {
+	border-bottom: 3px solid #1c5996;
+}
+.companyShow .company_bd ul{
+	position: relative;
+}
+.companyShow .company_bd ul li{
+	border: 1px solid #e6e6e6;
+	padding: 15px;
+	position: relative;
+	float: left;
+	margin-top: 14px;
+	margin-right: 20px;
+}
+.companyShow .company_bd ul li.marginNone {
+	margin-right: 0;
+}
+.companyShow .company_bd ul li .info_hd {
+	position: relative;
+	text-align: center;
+	width: 245px;
+	border-bottom: 1px solid #e6e6e6;
+}
+.companyShow .company_bd ul li .info_hd h4 {
+	font: 18px/30px "微软雅黑";
+	color: #fabd00;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis
+}
+.companyShow .company_bd ul li .info_hd p {
+	font: 14px/24px "微软雅黑";
+	color: #999999;
+	margin: 5px 0 10px 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.companyShow .company_bd ul li .info_bd {
+	position: relative;
+	text-align: center;
+}
+.companyShow .company_bd ul li .info_bd dl{
+	float: left;
+	margin-left: 35px;
+}
+.companyShow .company_bd ul li .info_bd dl dt {
+	font: 16px/44px "微软雅黑";
+	color: #666666;
+}
+.companyShow .company_bd ul li .info_bd dl dd {
+	font: 16px/20px "微软雅黑";
+	color: #fabd00;
+}
+
+
+.companyShow .company_ft a.moreCompany{
+	display: block;
+	width: 326px;
+	height: 44px;
+	font: 16px/44px "微软雅黑";
+	color: #1c5996;
+	text-align: center;
+	margin: 40px auto;
+	border: 1px solid #1c5996;
+}
+.companyShow .company_ft a.moreCompany:hover {
+	color: #FFFFFF;
+	background: #1c5996;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
