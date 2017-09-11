@@ -5,9 +5,13 @@
 
 
 /*主体内容开始*/
+body {
+	background: url(../img/bg.jpg) no-repeat center center;
+	
+}
 .pro {
-	height: 890px;
-	background: url(../img/bg.jpg) no-repeat center top;
+	min-height: 490px;
+	background-size: cover;
 	position: relative;
 }
 .pro .search_bd {
@@ -60,11 +64,12 @@
 	text-align: center;
 	margin-top: 20px;
 	text-align: left;
+	color: #666666;
 }
 .pro .search_ft p a {
 	display: inline-block;
 	margin-left: 18px;
-	color: #FFFFFF;
+	color: #666666;
 }
 .pro .search_ft p a:hover {
 	color: #1c5996;
