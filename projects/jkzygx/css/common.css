@@ -3,7 +3,7 @@
 /*导航栏开始*/
 .sitenav {
 	height: 41px;
-	background: #fabd00;
+	background: #0169c6;
 }
 .sitenav .loginBox {
 	position: relative;
@@ -17,47 +17,14 @@
 	float: left;
 	margin-right: 10px;
 	line-height: 41px;
+	color: #FFFFFF;
 }
 .sitenav .right a {
 	display: inline-block;
 	line-height: 41px;
 	padding: 0 10px;
+	color: #FFFFFF;
 }
-.smallSearch {
-	width: 286px;
-	font-size: 0;
-}
-.smallSearch .select {
-	vertical-align: middle;
-	padding-left: 10px;
-	width: 70px;
-	height: 25px;
-	border: none;
-	border-right: 1px solid #999999;
-	font: 12px/25px "微软雅黑";
-	outline: none;
-	color: #333333;
-	border-top-left-radius: 12px;
-	border-bottom-left-radius: 12px;
-}
-.smallSearch .select option {
-	outline: none;
-}
-.smallSearch input {
-	padding-left: 10px;
-	border-top-right-radius: 12px;
-	border-bottom-right-radius: 12px;
-	vertical-align: middle;
-	text-align: left;
-	width: 195px;
-	height: 25px;
-	border: none;
-	font: 12px/25px "微软雅黑";
-	outline: none;
-	color: #333333;
-	background: #FFFFFF url(../img/icon_search_small.png) no-repeat 180px center;
-}
-
 .sitenav .left {
 	height: 40px;
 }
@@ -73,90 +40,72 @@
 
 
 .menu {
-	background: #1c5996;
+	background: #E5E5E5;
 	height: 95px;
 }
 .menu .txtLogo {
 	padding: 18px 0 0 10px;
 }
 .menu .txtLogo p {
-	font: bold 30px/36px "微软雅黑";
-	color: #000000;
+	font: bold 28px/36px "微软雅黑";
+	color: #0169c5;
 	/*letter-spacing: 6px;*/
 }
 .menu .txtLogo span {
-	font: bold 14px/20px "微软雅黑";
-	color: #000000;
+	font: bold  12px/20px "微软雅黑";
+	color: #0169c5;
 }
-.menu ul.mainMenu {
+.menu .right {
 	position: relative;
+	padding-top: 25px;
 }
-.menu .mainMenu li {
+.menu .mainSearch {
+	/*width: 390px;*/
+	
+	font-size: 0;
 	float: left;
-	margin: 0;
-	position: relative;
-	text-align: center;
 }
-.menu .mainMenu>li>a {
-	display: inline-block;
+.menu .mainSearch .select {
+	vertical-align: middle;
+	padding-left: 10px;
+	width: 72px;
+	height: 38px;
+	border: none;
+	border: 1px solid #999999;
+	font: 12px/25px "微软雅黑";
+	outline: none;
+	color: #333333;
+}
+.menu .mainSearch .select option {
+	outline: none;
+}
+.menu .mainSearch input {
+	box-sizing: border-box;
+	border: 1px solid #999999;
+	border-left: none;
+	padding-left: 10px;
+	vertical-align: middle;
+	text-align: left;
+	width: 300px;
+	height: 38px;
+	font: 12px/25px "微软雅黑";
+	outline: none;
+	color: #333333;
+	background: #FFFFFF url(../img/icon_search_small.png) no-repeat 270px center;
+}
+.pubBtn {
+	width: 116px;
+	height: 38px;
+	border: 1px solid #999999;
+	background: #FFFFFF;
+	margin-left: 20px;
+}
+.pubBtn:hover {
+	background: #0169c6;
 	color: #FFFFFF;
-	font: bold 16px/94px "微软雅黑";
-	padding: 0 20px;
-}
-.menu .mainMenu>li.active a {
-	color: #fabd00;
-}
-.menu .mainMenu>li>a:hover {
-	color: #fabd00;
-}
-.menu .mainMenu li .subMenu li a {
-	color: #666666;
 }
 
-.menu .mainMenu li .subMenu {
-	position: absolute;
-	top: 95px;
-	left: 0;
-	display: none;
-	width: 100%;
-	background: #ffffff;
-	box-sizing: border-box;
-	border: 1px solid rgba(200,200,200,0.5);
-	border-top: none;
-	/*box-shadow: 0 4px 6px rgba(200,200,200,0.5);*/
-	z-index: 10;
-}
-.menu .mainMenu li .subMenu:before {
-	content: "";
-	display: block;
-	width: 20px;
-	height: 12px;
-	background: url(../img/icon_arrowUp.png) no-repeat center top;
-	position: absolute;
-	top: -12px;
-	left: 50%;
-	margin-left: -10px;
-}
-.menu .mainMenu li .subMenu li {
-	text-align: center;
-	width: 100%;
-}
-.menu .mainMenu li .subMenu li a {
-	display: block;
-	font: 18px/50px "微软雅黑";
-	color: #666666;
-	border-bottom: 1px solid rgba(230,230,230,1);
-}
-.menu .mainMenu li .subMenu li a:hover {
-	color: #fabd00;
-}
-.menu .mainMenu>li:hover .subMenu {
-	display: block;
-	background: #ffffff;
-}
-.menu .mainMenu>li>a:hover .subMenu a {
-	color: #fabd00;
-}
+
 /*导航栏结束*/
 
 /*footer开始*/

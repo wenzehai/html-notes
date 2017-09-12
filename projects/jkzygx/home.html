@@ -11,22 +11,13 @@
 		<link rel="stylesheet" href="css/home.css" />
 
 		<body>
-			<div class="sitenav ">
+			<div class="sitenav clearfix">
 				<div class="container clearfix">
 					<div class="left">
-						<a href="index.html"><img src="img/smallLogo.png" alt="长沙市经济开发区资源共享平台" /></a>
+						<a href="index.html"><img src="img/smallLogo.jpg" alt="长沙市经济开发区资源共享平台" /></a>
 					</div>
 					<div class="right">
 						<ul class="loginBox">
-							<li class="smallSearch">
-							<select class="select" name="">
-								<option value="1">资讯</option>
-								<option value="2">地产</option>
-								<option value="3">产能</option>
-								<option value="4">政策</option>
-							</select>
-							<input class="searchInput" type="text" placeholder="输入您想搜索的内容"/>
-							</li>
 							<li>服务热线 0731-1234567</li>
 							<li>
 								<a href="#">帮助中心</a>
@@ -44,55 +35,21 @@
 			<div class="menu">
 				<div class="container clearfix">
 					<div class="left txtLogo">
-						<a href="index.html">
-							<p>公共资源信息服务平台</p><span>Public resource information service platform</span></a>
+						<a href="home.html">
+							<a href="home.html">
+								<p>长沙经开区公共资源信息服务平台</p><span>Changsha powercity public resource information service platform</span></a>
 					</div>
 					<div class="right">
-						<ul class="mainMenu">
-						<li class="active"><a href="home.html">首页</a></li>
-						<li>
-							<a href="landSale.html">工业地产</a>
-							<ul class="subMenu">
-								<li><a href="landSale.html">厂房</a></li>
-								<li><a href="landSale.html">仓库</a></li>
-								<li><a href="landSale.html">写字楼</a></li>
-								<li><a href="landSale.html">商铺</a></li>
-							</ul>
-						</li>
-						<li><a href="energySale.html">产能交易</a>
-							<ul class="subMenu">
-								<li><a href="energySale.html">技术合作</a></li>
-								<li><a href="energySale.html">机器设备</a></li>
-								<li><a href="energySale.html">原材料</a></li>
-								<li><a href="energySale.html">半成品</a></li>
-								<li><a href="energySale.html">生产能源</a></li>
-								<li><a href="energySale.html">商品推广</a></li>
-							</ul>
-						</li>
-						<li><a href="policy.html">政策服务</a>
-							<ul class="subMenu">
-								<li><a href="policy.html">政策</a></li>
-								<li><a href="policy.html">通知</a></li>
-								<li><a href="policy.html">人才引进</a></li>
-							</ul>
-						</li>
-						<li><a href="people.html">人力资源</a>
-							<ul class="subMenu">
-								<li><a href="people.html">人才招聘</a></li>
-								<li><a href="people.html">培训服务</a></li>
-								<li><a href="people.html">知识分享</a></li>
-							</ul>
-						</li>
-						<li><a href="service.html">商务服务</a>
-							<ul class="subMenu">
-								<li><a href="service.html">物流服务</a></li>
-								<li><a href="service.html">会展服务</a></li>
-								<li><a href="service.html">金融服务</a></li>
-								<li><a href="service.html">法务服务</a></li>
-								<li><a href="service.html">互联网服务</a></li>
-							</ul>
-						</li>
-					</ul>
+						<div class="mainSearch">
+							<select class="select" name="">
+								<option value="1">综合</option>
+								<option value="2">供应</option>
+								<option value="3">需求</option>
+							</select>
+							<input class="searchInput" type="text" placeholder="输入您想搜索的内容" />
+						</div>
+						<input type="button" value="发布产品" class="pubBtn" />
+						<input type="button" value="发布需求" class="pubBtn" />
 					</div>
 				</div>
 			</div>
@@ -100,157 +57,295 @@
 			<!--主体内容开始-->
 			<div class="main">
 				<div class="container ">
-					<div class="bread">
-						<ol class="breadcrumb">
-							<li>
-								<a href="index.html">首页</a><span class="fa fa-angle-right"></span>
-							</li>
-							<li>
-								新闻中心
-							</li>
-						</ol>
-					</div>
-					<div class="content clearfix">
-						<div class="contentLeft left">
-							<div class="sliderBox">
-								<div class="mainSlider">
-									<a href="#"><img src="img/sliderImg_01.jpg" alt="经开区汽车生产线" /></a>
+					<div class="pro_hd clearfix">
+						<div class="mainNav">
+							<div class="toggleBtn">
+								<p>资源信息分类</p>
+								<a href="#" style="display: none;">人力资源服务</a>
+								<a href="#" style="display: none;">政策服务</a>
+							</div>
+							<ul class="navBar">
+								<li class="active">
+									<a href="#">工业地产</a>
+								</li>
+								<li>
+									<a href="#">产能交易</a>
+								</li>
+								<li>
+									<a href="#">商务合作</a>
+								</li>
+								<li>
+									<a href="#">技术合作</a>
+								</li>
+							</ul>
+							<div class="subNav">
+								<div class="subCon">
+									<dl class="left">
+										<dt>供应</dt>
+										<dd>
+											<a href="#">厂房</a>
+										</dd>
+										<dd>
+											<a href="#">仓库</a>
+										</dd>
+										<dd>
+											<a href="#">商铺</a>
+										</dd>
+										<dd>
+											<a href="#">宿舍</a>
+										</dd>
+									</dl>
+									<dl class="right">
+										<dt>需求</dt>
+										<dd>
+											<a href="#">厂房</a>
+										</dd>
+										<dd>
+											<a href="#">仓库</a>
+										</dd>
+										<dd>
+											<a href="#">商铺</a>
+										</dd>
+										<dd>
+											<a href="#">宿舍</a>
+										</dd>
+									</dl>
+										
 								</div>
 							</div>
-							<div class="tabBox">
-								<div class="tab_hd ">
+							<div class="subNav">
+								<div class="subCon">
+									<dl class="left">
+										<dt>供应</dt>
+										<dd>
+											<a href="#">车子</a>
+										</dd>
+										<dd>
+											<a href="#">房子</a>
+										</dd>
+										<dd>
+											<a href="#">商铺</a>
+										</dd>
+										<dd>
+											<a href="#">宿舍</a>
+										</dd>
+									</dl>
+									<dl class="right">
+										<dt>需求</dt>
+										<dd>
+											<a href="#">厂房</a>
+										</dd>
+										<dd>
+											<a href="#">仓库</a>
+										</dd>
+										<dd>
+											<a href="#">商铺</a>
+										</dd>
+										<dd>
+											<a href="#">宿舍</a>
+										</dd>
+									</dl>
+										
+								</div>
+							</div>
+							<div class="subNav">
+								<div class="subCon">
+									<dl class="left">
+										<dt>供应</dt>
+										<dd>
+											<a href="#">劳资</a>
+										</dd>
+										<dd>
+											<a href="#">庄子</a>
+										</dd>
+										<dd>
+											<a href="#">韩非子</a>
+										</dd>
+										<dd>
+											<a href="#">宿舍</a>
+										</dd>
+									</dl>
+									<dl class="right">
+										<dt>需求</dt>
+										<dd>
+											<a href="#">厂房</a>
+										</dd>
+										<dd>
+											<a href="#">仓库</a>
+										</dd>
+										<dd>
+											<a href="#">商铺</a>
+										</dd>
+										<dd>
+											<a href="#">宿舍</a>
+										</dd>
+									</dl>
+										
+								</div>
+							</div>
+						</div>
+						<div class="slider">
+							<div class="bannerPic" id="bannerPic">
+								<div class="carouselImgCon">
+									<a href="#"><img src="img/sliderImg_01.jpg" style="opacity: 1;" /></a>
+									<a href="#"><img src="img/sliderImg_02.png"  /></a>
+									<a href="#"><img src="img/sliderImg_03.png"  /></a>
+								</div>
+								<!--<div class="prev"></div>
+								<div class="next"></div>
+								<div class="circle">
+									<span class="active"></span><span></span><span></span><span></span><span></span>
+								</div>-->
+							</div>
+						</div>
+						<div class="loginCon">
+							<div class="mainLoginBox">
+								<div class="mainLoginBox_hd">
+									<img src="img/portriat.jpg" alt="portrait" />
+									<p>欢迎进入资源信息服务平台</p>
+								</div>
+								<div class="mainLoginBox_bd">
+									<input type="button" value="登录" />
+									<input type="button" value="注册" />
+								</div>
+							</div>
+							<div class="hot">
+								<h4>【热门话题】</h4>
+								<p><a href="#">#人才培训与认证#</a></p>
+								<p><a href="#">#应急事件上报#</a></p>
+								<p><a href="#">#园企活动#</a></p>
+							</div>
+							<div class="ft">
+								<input type="button"  value="在线申报、登记服务" class="shenbaoBtn" />
+							</div>
+						</div>
+					</div>
+					<div class="pro_bd clearfix">
+						<div class="msg left">
+							<ul class="msg_hd clearfix">
+								<li class="active">通知</li>
+								<li>政策</li>
+								<li>招商引资</li>
+							</ul>
+							<ul class="msg_bd">
+								<li><a href="#">关于开展“星沙大讲堂”之《目标与绩效管理》培训</a></li>
+								<li><a href="#">关于开展“星沙大讲堂”之《目标与绩效管理》培训</a></li>
+								<li><a href="#">关于开展“星沙大讲堂”之《目标与绩效管理》培训</a></li>
+							</ul>
+							<ul class="msg_bd">
+								<li><a href="#">“星沙大讲堂”之《目标与绩效管理》培训</a></li>
+								<li><a href="#">“星沙大讲堂”之《目标与绩效管理》培训</a></li>
+								<li><a href="#">“星沙大讲堂”之《目标与绩效管理》培训</a></li>
+							</ul>
+							<ul class="msg_bd">
+								<li><a href="#">《目标与绩效管理》培训</a></li>
+								<li><a href="#">《目标与绩效管理》培训</a></li>
+								<li><a href="#">《目标与绩效管理》培训</a></li>
+							</ul>
+						</div>
+						<div class="slider2 left">
+							<header class="slider2_hd">
+								商品推荐
+							</header>
+							<div class="slider2_bd" id="newProduct">
+								<div class="carouselImgCon">
 									<ul class="clearfix">
-										<li class="active"><a href="#">地产平台</a></li>
-										<li><a href="#">技术合作</a></li>
-										<li><a href="#">机器设备</a></li>
-										<li><a href="#">商务服务</a></li>
-										<li><a href="#">商品推广</a></li>
-									</ul>
-								</div>
-								<div class="tab_bd">
-									<div class="tab_conBox clearfix">
-										<ul>
-											<li class="clearfix">
-												<img src="img/tabImg_01.jpg" alt="地产交易" />
-												<div class="txtBox">
-													<h3><a href="#">我司有先进的印制板专用生产设备和检测仪器，地址位于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于</a></h3>
-													<p class="des">长沙经济技术开发区成立于1992年，2000年升格为国家级经济技术开发区，规划面积105平方公里，下辖星沙、榔梨、黄花三个工业园。2016年，园区完成规模工业总产值2111亿元，同比增长16.3%；完成财政总收入137.8亿元，同比增长14%；完成全社会固定资产投资168亿元，增长10.5%，主要经济指标均保持10%以上的增长。拥有规模以上工业企业165家，年产值过亿元企业85家，过10亿元企业19家，世界500强投资企业31家</p>
-													<span class="writer">经开区公共资源信息服务平台</span><span class="publishTime">2017-08-24 08:20:03</span>
-												</div>
-											</li>
-											<li class="clearfix">
-												<img src="img/tabImg_01.jpg" alt="地产交易" />
-												<div class="txtBox">
-													<h3><a href="#">我司有先进的印制板专用生产设备和检测仪器，地址位于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于</a></h3>
-													<p class="des">长沙经济技术开发区成立于1992年，2000年升格为国家级经济技术开发区，规划面积105平方公里，下辖星沙、榔梨、黄花三个工业园。2016年，园区完成规模工业总产值2111亿元，同比增长16.3%；完成财政总收入137.8亿元，同比增长14%；完成全社会固定资产投资168亿元，增长10.5%，主要经济指标均保持10%以上的增长。拥有规模以上工业企业165家，年产值过亿元企业85家，过10亿元企业19家，世界500强投资企业31家</p>
-													<span class="writer">经开区公共资源信息服务平台</span><span class="publishTime">2017-08-24 08:20:03</span>
-												</div>
-											</li>
-											<li class="clearfix">
-												<img src="img/tabImg_01.jpg" alt="地产交易" />
-												<div class="txtBox">
-													<h3><a href="#">我司有先进的印制板专用生产设备和检测仪器，地址位于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于</a></h3>
-													<p class="des">长沙经济技术开发区成立于1992年，2000年升格为国家级经济技术开发区，规划面积105平方公里，下辖星沙、榔梨、黄花三个工业园。2016年，园区完成规模工业总产值2111亿元，同比增长16.3%；完成财政总收入137.8亿元，同比增长14%；完成全社会固定资产投资168亿元，增长10.5%，主要经济指标均保持10%以上的增长。拥有规模以上工业企业165家，年产值过亿元企业85家，过10亿元企业19家，世界500强投资企业31家</p>
-													<span class="writer">经开区公共资源信息服务平台</span><span class="publishTime">2017-08-24 08:20:03</span>
-												</div>
-											</li>
-											<li class="clearfix">
-												<img src="img/tabImg_01.jpg" alt="地产交易" />
-												<div class="txtBox">
-													<h3><a href="#">我司有先进的印制板专用生产设备和检测仪器，地址位于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于</h3>
-													<p class="des">长沙经济技术开发区成立于1992年，2000年升格为国家级经济技术开发区，规划面积105平方公里，下辖星沙、榔梨、黄花三个工业园。2016年，园区完成规模工业总产值2111亿元，同比增长16.3%；完成财政总收入137.8亿元，同比增长14%；完成全社会固定资产投资168亿元，增长10.5%，主要经济指标均保持10%以上的增长。拥有规模以上工业企业165家，年产值过亿元企业85家，过10亿元企业19家，世界500强投资企业31家</p>
-													<span class="writer">经开区公共资源信息服务平台</span><span class="publishTime">2017-08-24 08:20:03</span>
-												</div>
-											</li>
-										</ul>
-									</div>
-									<div class="tab_conBox clearfix" style="display: none;">
-										<ul>
-											<li class="clearfix">
-												<img src="img/tabImg_01.jpg" alt="地产交易" />
-												<div class="txtBox">
-													<h3>我司有先进的印制板专用生产设备和检测仪器，地址位于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于</h3>
-													<p class="des">长沙经济技术开发区成立于1992年，2000年升格为国家级经济技术开发区，规划面积105平方公里，下辖星沙、榔梨、黄花三个工业园。2016年，园区完成规模工业总产值2111亿元，同比增长16.3%；完成财政总收入137.8亿元，同比增长14%；完成全社会固定资产投资168亿元，增长10.5%，主要经济指标均保持10%以上的增长。拥有规模以上工业企业165家，年产值过亿元企业85家，过10亿元企业19家，世界500强投资企业31家</p>
-													<span class="writer">经开区公共资源信息服务平台</span><span class="publishTime">2017-08-24 08:20:03</span>
-												</div>
-											</li>
-											<li class="clearfix">
-												<img src="img/tabImg_01.jpg" alt="地产交易" />
-												<div class="txtBox">
-													<h3>我司有先进的印制板专用生产设备和检测仪器，地址位于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于</h3>
-													<p class="des">长沙经济技术开发区成立于1992年，2000年升格为国家级经济技术开发区，规划面积105平方公里，下辖星沙、榔梨、黄花三个工业园。2016年，园区完成规模工业总产值2111亿元，同比增长16.3%；完成财政总收入137.8亿元，同比增长14%；完成全社会固定资产投资168亿元，增长10.5%，主要经济指标均保持10%以上的增长。拥有规模以上工业企业165家，年产值过亿元企业85家，过10亿元企业19家，世界500强投资企业31家</p>
-													<span class="writer">经开区公共资源信息服务平台</span><span class="publishTime">2017-08-24 08:20:03</span>
-												</div>
-											</li>
-											<li class="clearfix">
-												<img src="img/tabImg_01.jpg" alt="地产交易" />
-												<div class="txtBox">
-													<h3>我司有先进的印制板专用生产设备和检测仪器，地址位于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于</h3>
-													<p class="des">长沙经济技术开发区成立于1992年，2000年升格为国家级经济技术开发区，规划面积105平方公里，下辖星沙、榔梨、黄花三个工业园。2016年，园区完成规模工业总产值2111亿元，同比增长16.3%；完成财政总收入137.8亿元，同比增长14%；完成全社会固定资产投资168亿元，增长10.5%，主要经济指标均保持10%以上的增长。拥有规模以上工业企业165家，年产值过亿元企业85家，过10亿元企业19家，世界500强投资企业31家</p>
-													<span class="writer">经开区公共资源信息服务平台</span><span class="publishTime">2017-08-24 08:20:03</span>
-												</div>
-											</li>
-											<li class="clearfix">
-												<img src="img/tabImg_01.jpg" alt="地产交易" />
-												<div class="txtBox">
-													<h3>我司有先进的印制板专用生产设备和检测仪器，地址位于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于长沙星沙螺丝塘路15号，可用于</h3>
-													<p class="des">长沙经济技术开发区成立于1992年，2000年升格为国家级经济技术开发区，规划面积105平方公里，下辖星沙、榔梨、黄花三个工业园。2016年，园区完成规模工业总产值2111亿元，同比增长16.3%；完成财政总收入137.8亿元，同比增长14%；完成全社会固定资产投资168亿元，增长10.5%，主要经济指标均保持10%以上的增长。拥有规模以上工业企业165家，年产值过亿元企业85家，过10亿元企业19家，世界500强投资企业31家</p>
-													<span class="writer">经开区公共资源信息服务平台</span><span class="publishTime">2017-08-24 08:20:03</span>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+										<li>
+											<a href="#">
+												<img src="img/slider2_img01.jpg" data-original="img/img_05.jpg" />
+											</a>
+											<div class="title">
+												<a href="#">新型定位销</a>
+												<p>广汽菲亚特</p>
+											</div>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/slider2_img01.jpg" data-original="img/img_05.jpg" />
+											</a>
+											<div class="title">
+												<a href="#">新型定位销</a>
+												<p>广汽菲亚特</p>
+											</div>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/slider2_img01.jpg" data-original="img/img_05.jpg" />
+											</a>
+											<div class="title">
+												<a href="#">新型定位销</a>
+												<p>广汽菲亚特</p>
+											</div>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/slider2_img01.jpg" data-original="img/img_05.jpg" />
+											</a>
+											<div class="title">
+												<a href="#">新型定位销</a>
+												<p>广汽菲亚特</p>
+											</div>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/slider2_img01.jpg" data-original="img/img_05.jpg" />
+											</a>
+											<div class="title">
+												<a href="#">新型定位销</a>
+												<p>广汽菲亚特</p>
+											</div>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/slider2_img01.jpg" data-original="img/img_05.jpg" />
+											</a>
+											<div class="title">
+												<a href="#">新型定位销</a>
+												<p>广汽菲亚特</p>
+											</div>
+										</li>
+										<li>
+											<a href="#">
+												<img src="img/slider2_img01.jpg" data-original="img/img_05.jpg" />
+											</a>
+											<div class="title">
+												<a href="#">新型定位销</a>
+												<p>广汽菲亚特</p>
+											</div>
+										</li>
+										<li>
+											<a href="#">
+																	<img src="img/slider2_img01.jpg" data-original="img/img_05.jpg" />
+														</a>
+														<div class="title">
+															<a href="#">新型定位销</a>
+															<p>广汽菲亚特</p>
+														</div>
+													</li>
+												</ul>
+											</div>
 						</div>
-						<div class="contentRight right">
-							<div class="asideBox">
-								<div class="msg">
-									<div class="msg_hd clearfix">
-										<p>通知</p><span class="more"><a href="#">更多</a></span>
-									</div>
-									<div class="msg_bd">
-										<ul>
-											<li>
-												<h4><a href="#">关于开展“星沙大讲堂”之《目标与绩效管理》培训</a></h4>
-												<span class="writer">人力资源部</span><span class="publishTime">2017-08-09 03:33:33</span>
-											</li>
-											<li>
-												<h4><a href="#">关于开展“星沙大讲堂”之《目标与绩效管理》培训</a></h4>
-												<span class="writer">人力资源部</span><span class="publishTime">2017-08-09 03:33:33</span>
-											</li>
-											<li>
-												<h4><a href="#">关于开展“星沙大讲堂”之《目标与绩效管理》培训</a></h4>
-												<span class="writer">人力资源部</span><span class="publishTime">2017-08-09 03:33:33</span>
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="msg policy">
-									<div class="msg_hd clearfix">
-										<p>政策</p><span class="more"><a href="#">更多</a></span>
-									</div>
-									<div class="msg_bd">
-										<ul>
-											<li>
-												<h4><a href="#">【国家政策】国务院同意《长沙市城市总体规划（2010—2020年）》</a></h4>
-											</li>
-											<li>
-												<h4><a href="#">【国家政策】国务院同意《长沙市城市总体规划（2010—2020年）》</a></h4>
-											</li>
-											<li>
-												<h4><a href="#">【国家政策】国务院同意《长沙市城市总体规划（2010—2020年）》</a></h4>
-											</li>
-										</ul>
-									</div>
-								</div>
+						<div class="people right">
+							<div class="people_hd">
+								人才服务
+							</div>
+							<div class="people_bd">
+							<input type="button" value="人才招聘" class="peopleBtn"/>
+							<input type="button" value="人才培训" class="peopleBtn"/>
+							<input type="button" value="知识分享" class="peopleBtn"/>
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
-
+				<!--<div id="new" class="slider2 left">-->
+							
+											<!--<div class="prev">
+												<</div>
+													<div class="next">></div>
+											</div>-->
+									<!--</div>-->
+					
 			<!--底部内容开始-->
 			<div class="footer">
 				<div class="container">
@@ -259,10 +354,12 @@
 				</div>
 			</div>
 
-			<!--<script src="scripts/jquery-3.2.0.min.js"></script>-->
-			<script src="scripts/wow.js"></script>
+			<script src="scripts/move.js"></script>
+			<script src="scripts/carousel.js"></script>
+			<script src="scripts/common.js"></script>
+			<script src="scripts/index.js"></script>
 			<script>
-				new WOW().init();
+//				new WOW().init();
 			</script>
 		</body>
 

@@ -1,8 +1,10 @@
 /*主体内容开始*/
+.main {
+	background: #FFFFFF;
+}
 
 .breadcrumb {
 	position: relative;
-	background: #e6e6e6;
 }
 
 .breadcrumb li {
@@ -22,7 +24,7 @@
 }
 
 .main {
-	background: #e6e6e6;
+	background: #FFFFFF;
 }
 
 .content {
@@ -32,7 +34,7 @@
 
 .contentRight {
 	width: 225px;
-	background: #FFFFFF;
+	background: #F5F5F5;
 	padding: 25px;
 }
 

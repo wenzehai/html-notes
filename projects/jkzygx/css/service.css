@@ -57,10 +57,10 @@
 	background: #fabd00;
 }
 .contentRight {
-	width: 820px;
+	width: 870px;
 	height: 800px;
 	background: #FFFFFF;
-	padding: 25px;
+	/*padding: 25px;*/
 	position: relative;
 }
 
@@ -72,26 +72,72 @@
 	font: 24px/30px "微软雅黑";
 	color: #000000;
 }
-.contentRight .serviceCon .serviceCon_bd ul {
+.contentRight .serviceCon .serviceCon_bd ul{
+	position: relative;
+}
+.contentRight .serviceCon .serviceCon_bd ul li {
+	position: relative;
+	height: 127px;
+	border-bottom: 1px solid #cecece;
+	padding: 14px 0;
+}
+.contentRight .serviceCon .serviceCon_bd img {
+	float: left;
+	width: 194px;
+	height: 120px;
+}
+.textbox {
+	width: 650px;
+}
+.textbox h3 a{
+	font: 18px/24px "微软雅黑";
+}
+.textbox .des {
+	font: 12px/20px "微软雅黑";
+	margin: 5px auto;
+	color: #B5B5B5;
+	overflow: hidden;
+	height: 80px;
+}
+.textbox .publishTime {
+	font: 12px/20px "微软雅黑";
+	position: absolute;
+	left: 220px;
+	bottom: 17px;
+	color: #999999;
+}
+.pageBox {
+	padding: 40px 0;
+	width: 870px;
+	background: #ffffff;
+	/*margin-bottom: 30px;*/
+}
+.pagenation {
+	margin: 0 auto;
+	width: 550px;
+	height: 36px;
+	font-size: 0;
 	position: relative;
 }
 
-.contentRight .serviceCon .serviceCon_bd li {
-	float: left;
+.pagenation a {
+	font: 13px/34px "微软雅黑";
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	border: 1px solid #e1e2e3;
 	text-align: center;
+	text-decoration: none;
+	margin-right: 9px;
 }
-.contentRight .serviceCon .serviceCon_bd li a{
-	display: block;
-	width: 166px;
-	height: 52px;
-	margin-top: 11px;
-	margin-right: 11px;
-	background: #FFFFFF;
-	color: #333333;
-	border: 1px solid #1c5996;
-	font: lighter 16px/52px "微软雅黑";
+.pagenation a:hover,
+.pagenation a.active {
+	background: #f2f8ff;
+	border-color: #3388ff;
 }
-.contentRight .serviceCon .serviceCon_bd li a:hover {
-	background: #1c5996;
-	color: #FFFFFF;
+.pagenation .page {
+	width: 86px;
+}
+.pagenation .next {
+	margin-right: 0;
 }

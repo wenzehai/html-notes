@@ -1,32 +1,255 @@
 /*隐藏顶部导航的搜索框*/
+
 .smallSearch {
 	display: none;
 }
 
 
-/*主体内容开始*/
-body {
-	background: url(../img/bg.jpg) no-repeat center center;
-	
+/*导航栏开始*/
+
+.sitenav {
+	height: 41px;
+	background: rgba(255, 255, 255, 0.4);
 }
+
+.sitenav .loginBox {
+	position: relative;
+	list-style: none;
+}
+
+.sitenav .right {
+	position: relative;
+}
+
+.sitenav .loginBox li {
+	/*display: block;*/
+	float: left;
+	margin-right: 10px;
+	line-height: 41px;
+	color: #FFFFFF;
+}
+
+.sitenav .right a {
+	display: inline-block;
+	line-height: 41px;
+	padding: 0 10px;
+	color: #FFFFFF;
+}
+
+.smallSearch {
+	width: 286px;
+	font-size: 0;
+}
+
+.smallSearch .select {
+	vertical-align: middle;
+	padding-left: 10px;
+	width: 70px;
+	height: 25px;
+	border: none;
+	border-right: 1px solid #999999;
+	font: 12px/25px "微软雅黑";
+	outline: none;
+	color: #333333;
+	border-top-left-radius: 12px;
+	border-bottom-left-radius: 12px;
+}
+
+.smallSearch .select option {
+	outline: none;
+}
+
+.smallSearch input {
+	padding-left: 10px;
+	border-top-right-radius: 12px;
+	border-bottom-right-radius: 12px;
+	vertical-align: middle;
+	text-align: left;
+	width: 195px;
+	height: 25px;
+	border: none;
+	font: 12px/25px "微软雅黑";
+	outline: none;
+	color: #333333;
+	background: #FFFFFF url(../img/icon_search_small.png) no-repeat 180px center;
+}
+
+.sitenav .left {
+	height: 40px;
+}
+
+.sitenav .left a {
+	display: inline-block;
+	line-height: 0;
+}
+
+.sitenav a:hover {
+	color: #FFFFFF;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.menu {
+	background: rgba(255, 255, 255, 0);
+	height: 95px;
+}
+.menu .right {
+	padding-top: 0;
+}
+.menu .txtLogo {
+	padding: 18px 0 0 10px;
+}
+
+.menu .txtLogo p {
+	font: 28px/36px "微软雅黑";
+	color: #ffffff;
+	/*letter-spacing: 6px;*/
+}
+
+.menu .txtLogo span {
+	font: 12px/20px "微软雅黑";
+	color: #ffffff;
+}
+
+.menu ul.mainMenu {
+	position: relative;
+}
+
+.menu .mainMenu li {
+	float: left;
+	margin: 0;
+	position: relative;
+	text-align: center;
+}
+
+.menu .mainMenu>li>a {
+	display: inline-block;
+	color: #FFFFFF;
+	font: bold 16px/94px "微软雅黑";
+	padding: 0 20px;
+}
+
+.menu .mainMenu>li.active a {
+	color: #fabd00;
+}
+
+.menu .mainMenu>li>a:hover {
+	color: #fabd00;
+}
+
+.menu .mainMenu li .subMenu li a {
+	color: #666666;
+}
+
+.menu .mainMenu li .subMenu {
+	position: absolute;
+	top: 95px;
+	left: 0;
+	display: none;
+	width: 100%;
+	background: #ffffff;
+	box-sizing: border-box;
+	border: 1px solid rgba(200, 200, 200, 0.5);
+	border-top: none;
+	/*box-shadow: 0 4px 6px rgba(200,200,200,0.5);*/
+	z-index: 10;
+}
+
+.menu .mainMenu li .subMenu:before {
+	content: "";
+	display: block;
+	width: 20px;
+	height: 12px;
+	background: url(../img/icon_arrowUp.png) no-repeat center top;
+	position: absolute;
+	top: -12px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.menu .mainMenu li .subMenu li {
+	text-align: center;
+	width: 100%;
+}
+
+.menu .mainMenu li .subMenu li a {
+	display: block;
+	font: 18px/50px "微软雅黑";
+	color: #666666;
+	border-bottom: 1px solid rgba(230, 230, 230, 1);
+}
+
+.menu .mainMenu li .subMenu li a:hover {
+	color: #fabd00;
+}
+
+.menu .mainMenu>li:hover .subMenu {
+	display: block;
+	background: #ffffff;
+}
+
+.menu .mainMenu>li>a:hover .subMenu a {
+	color: #fabd00;
+}
+
+
+/*导航栏结束*/
+
+
+/*footer开始*/
+
+.footer {
+	background: #363636;
+	text-align: center;
+	color: #f0f0f0;
+	padding: 10px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.footer p {
+	font: 12px/24px "微软雅黑"
+}
+
+.footer p:nth-child(2) {
+	color: #8f8f8f;
+}
+
+
+/*footer结束*/
+
+
+/*主体内容开始*/
+
+body {
+	background: url(../img/bg1.jpg) no-repeat center center;
+	background-attachment: fixed
+}
+
 .pro {
-	min-height: 490px;
+	min-height: 900px;
 	background-size: cover;
 	position: relative;
 }
+
 .pro .search_bd {
 	font-size: 0;
 }
+
 .pro .searchBox .search_hd {
 	width: 680px;
-	height: 230px;	
+	height: 230px;
 	background: url(../img/slogan_bg.png) no-repeat center 100px;
 }
+
 .pro .searchBox {
 	margin: 0 auto;
 	width: 680px;
 	/*padding-top: 230px;*/
+	position: relative;
 }
+
 .pro .searchBox select {
 	vertical-align: top;
 	width: 115px;
@@ -38,10 +261,12 @@ body {
 	outline: none;
 	color: #333333;
 }
+
 .pro .searchBox .select option {
 	font: 18px/18px "微软雅黑";
 	outline: none;
 }
+
 .pro .searchBox input {
 	vertical-align: top;
 	width: 540px;
@@ -53,24 +278,34 @@ body {
 	color: #333333;
 	background: #FFFFFF url(../img/icon_search.png) no-repeat 500px center;
 }
-.pro .searchBox input::-ms-input-placeholder{text-align: center;} 
-.pro .searchBox input::-webkit-input-placeholder{text-align: center;} 
 
+.pro .searchBox input::-ms-input-placeholder {
+	text-align: center;
+}
 
-
+.pro .searchBox input::-webkit-input-placeholder {
+	text-align: center;
+}
+.pro .search_ft {
+	margin: 0 auto;
+	
+}
 .pro .search_ft p {
 	font: 14px/14px "微软雅黑";
+	padding-left: 10px;
 	color: #FFFFFF;
 	text-align: center;
 	margin-top: 20px;
 	text-align: left;
-	color: #666666;
+	color: #FFFFFF;
 }
+
 .pro .search_ft p a {
 	display: inline-block;
 	margin-left: 18px;
-	color: #666666;
+	color: #FFFFFF;
 }
+
 .pro .search_ft p a:hover {
 	color: #1c5996;
 }
