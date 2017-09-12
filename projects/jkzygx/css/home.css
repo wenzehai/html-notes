@@ -36,11 +36,16 @@ body {
 	border: 1px solid #0169c6;
 	background: #FFFFFF;
 	width:252px; 
+	display: block;
 }
 .main .pro_hd .mainNav .navBar li {
 	height: 66px;
 	border-bottom: 1px solid #d4d4d4;
 	background: url(../img/icon_arrowRight_default.png) no-repeat 220px center;
+}
+.main .pro_hd .mainNav .navBar li.active {
+	background: #333 url(../img/icon_arrowRight_default.png) no-repeat 220px center;
+	
 }
 .main .pro_hd .mainNav .navBar li a {
 	display: inline-block;
