@@ -18,7 +18,7 @@ body {
 .main .pro_hd .mainNav {
 	position: relative;
 	width: 254px;
-	
+	height: 320px;
 }
 .main .pro_hd .mainNav .toggleBtn {
 	height: 50px;
@@ -34,6 +34,7 @@ body {
 	background: red;
 	position: relative;
 	border: 1px solid #0169c6;
+	border-right: none;
 	background: #FFFFFF;
 	width:252px; 
 	display: block;
@@ -41,12 +42,26 @@ body {
 .main .pro_hd .mainNav .navBar li {
 	height: 66px;
 	border-bottom: 1px solid #d4d4d4;
+	border-right: 1px solid #0169c6;
 	background: url(../img/icon_arrowRight_default.png) no-repeat 220px center;
 }
 .main .pro_hd .mainNav .navBar li.active {
-	background: #333 url(../img/icon_arrowRight_default.png) no-repeat 220px center;
-	
+	background: #cce1f4;
+	border-top: 1px solid #0169c6;
+	border-bottom: 1px solid #0169c6;
+	border-right: none;
+	z-index: 11;
 }
+/*.main .pro_hd .mainNav .navBar li:after {
+	content: "";
+	display: block;
+	width: 12px;
+	height: 20px;
+	position: absolute;
+	top: 25px;
+	right: -2px;
+	background: url(../img/icon_triangle.png) no-repeat center center;
+}*/
 .main .pro_hd .mainNav .navBar li a {
 	display: inline-block;
 	font: 22px/64px "微软雅黑";
@@ -70,6 +85,7 @@ body {
 	top: 49px;
 	left: 253px;
 	border: 1px solid #0169c6;
+	border-left: none;
 	display: none;
 	z-index: 10;
 }
@@ -93,24 +109,26 @@ body {
 	border-left: 1px solid #E5E5E5;
 }
 .main .pro_hd .subNav .subCon dl dd {
-	width: 100px;
-}
-.main .pro_hd .subNav .subCon dl:nth-child(2) dt {
-	color: #e50027;
+	width: 120px;
 }
 .main .pro_hd .subNav .subCon dl dt {
-	display: block;
-	background: #e5e5e5;
-	color: #fabd00;
-	font: 18px/40px "微软雅黑";
-	padding-left: 30px;
+	/*display: block;*/
+	display: inline-block;
+	background: #0169c6;
+	color: #FFFFFF;
+	font: 18px/26px "微软雅黑";
+	padding: 0 15px;
+	margin: 10px 15px;
 }
 .main .pro_hd .subNav .subCon dl dd a {
 	margin-left: 30px;
 	color: #333;
 	font: 16px/36px "微软雅黑";
+	
 }
-
+.main .pro_hd .subNav .subCon dl dd a:hover {
+	text-decoration: underline;
+}
 .loginCon {
 	position: absolute;
 	top: 15px;
@@ -144,6 +162,9 @@ body {
 	background: #0169c6;
 	color: #FFFFFF;
 }
+.loginCon .mainLoginBox .mainLoginBox_bd input:hover {
+	opacity: 0.8;
+}
 .loginCon .hot {
 	text-align: center;
 }
@@ -153,6 +174,7 @@ body {
 	margin-top: 15px;
 }
 .loginCon .hot p {
+	text-indent: 1em;
 	text-align: left;
 	font: 14px/24px "微软雅黑";	
 	color: #999999;
@@ -168,6 +190,9 @@ body {
 	background: #fabd00;
 	outline: none;
 	cursor: pointer;
+}
+.loginCon .ft input:hover {
+	opacity: 0.8;
 }
 .pro_bd {
 	margin-top: 20px;

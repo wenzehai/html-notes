@@ -48,21 +48,17 @@ window.yx = {
 		toggleFn:function(){
 			var toggleBtn = yx.g(".toggleBtn");
 			var navBar = yx.g(".navBar");
-			if(navBar.style.display == "block") {
-				toggleBtn.onclick = function(){
+			toggleBtn.onclick = function(){
+				if(navBar.style.display == "none") {
+					navBar.style.display = "block"
+					return false;
+				} else {
 					navBar.style.display = "none"
-				}
-			} ;
-//			if(navBar.style.display == "none")) {
-//				toggleBtn.onclick = function(){
-//					navBar.style.display = "block"
-//				}
-//			};
-				
+				};
+			}
 		}
-	}
-	
-	
+	}		
+}	
 	/*
 	 * public:{
 		navFn:function(){
@@ -93,7 +89,7 @@ window.yx = {
 		}
 	}
 	 */
-}
+//}
 
 
 

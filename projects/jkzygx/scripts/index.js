@@ -1,8 +1,6 @@
 //公用方法调用
 yx.public.navFn();
-yx.public.toggleFn();
-//yx.public.lazyImgFn();
-//yx.public.backUpFn();
+//yx.public.toggleFn();
 
 
 //banner轮播图

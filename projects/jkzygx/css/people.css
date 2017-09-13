@@ -3,7 +3,7 @@
 .main {
 	background: #FFFFFF;
 }
-.container {
+.main .container {
 	margin-bottom: 30px;
 }
 .breadcrumb {
@@ -93,6 +93,146 @@
 }
 
 
+/*折叠菜单*/
+.foldMenu {
+	margin-top: 15px;
+}
+.foldMenu .container {
+	margin-bottom: none;
+}
+.foldNav {
+	box-sizing: border-box;
+	margin-top: 15px;
+	/*position: absolute;
+	top: 15px;
+	left: 0;*/
+	clear: both;
+	width: 1170px;
+	height: 50px;
+	border-bottom: 1px solid #1c5996;
+	z-index: 9;
+}
+.foldNav > a.menulink {
+	font: 18px/46px "微软雅黑";
+	padding: 0 25px;
+	box-sizing: border-box;
+}
+.foldNav > a.active {
+	border-bottom: 4px solid #1c5996;
+}
+.foldNav > a.menulink:hover {
+	border-bottom: 4px solid #1c5996;
+}
+.foldNav > .sep {
+	font: 18px/50px "微软雅黑";
+	/*padding: 0 25px;*/
+}
+.foldNav  .mainNav {
+	position: relative;
+	width: 254px;
+	height: 320px;
+}
+.foldNav  .mainNav .toggleBtn {
+	height: 50px;
+	background: #0169c6 url(../img/icon_arrowDown.png) no-repeat 220px center;
+	cursor: pointer;
+}
+.foldNav  .mainNav .toggleBtn p {
+	padding-left: 18px;
+	color: #FFFFFF;
+	line-height: 50px;
+	font-size: 18px;
+}
+.foldNav  .mainNav ul.navBar {
+	background: red;
+	position: relative;
+	border: 1px solid #0169c6;
+	border-right: none;
+	background: #FFFFFF;
+	width:252px; 
+	display: none;
+	z-index: 8;
+}
+.foldNav  .mainNav .navBar li {
+	height: 66px;
+	border-bottom: 1px solid #d4d4d4;
+	border-right: 1px solid #0169c6;
+	background: url(../img/icon_arrowRight_default.png) no-repeat 220px center;
+}
+.foldNav  .mainNav .navBar li.active {
+	background: #cce1f4;
+	border-top: 1px solid #0169c6;
+	border-bottom: 1px solid #0169c6;
+	border-right: none;
+	z-index: 11;
+}
+.foldNav  .mainNav .navBar li a {
+	display: inline-block;
+	font: 22px/64px "微软雅黑";
+	color: #333;
+	padding-left: 70px;
+}
+.foldNav  .mainNav .navBar li:nth-child(1) a {
+	background: url(../img/icon_land_default.png) no-repeat 18px center;
+}
+.foldNav  .mainNav .navBar li:nth-child(2) a {
+	background: url(../img/icon_channeng_default.png) no-repeat 18px center;
+}
+.foldNav  .mainNav .navBar li:nth-child(3) a {
+	background: url(../img/icon_service_default.png) no-repeat 20px center;
+}
+.foldNav  .mainNav .navBar li:nth-child(4) a {
+	background: url(../img/icon_tech_default.png) no-repeat 20px center;
+}
+.foldNav  .subNav {
+	position: absolute;
+	top: 49px;
+	left: 253px;
+	border: 1px solid #0169c6;
+	border-left: none;
+	display: none;
+	z-index: 10;
+}
+.foldNav  .subNav .subCon {
+	width: 482px;
+	height: 260px;
+	background: #FFFFFF;
+	position: relative;
+	box-sizing: border-box;
+}
+.foldNav  .subNav .subCon .left {
+	width: 50%;
+	overflow: hidden;
+}
+.foldNav  .subNav .subCon dl {
+	position: relative;
+	width: 240px;
+	height: 260px;
+}
+.foldNav  .subNav .subCon dl:nth-child(2) {
+	border-left: 1px solid #E5E5E5;
+}
+.foldNav  .subNav .subCon dl dd {
+	width: 120px;
+}
+.foldNav  .subNav .subCon dl dt {
+	/*display: block;*/
+	display: inline-block;
+	background: #0169c6;
+	color: #FFFFFF;
+	font: 18px/26px "微软雅黑";
+	padding: 0 15px;
+	margin: 10px 15px;
+}
+.foldNav  .subNav .subCon dl dd a {
+	margin-left: 30px;
+	color: #333;
+	font: 16px/36px "微软雅黑";
+	
+}
+.foldNav  .subNav .subCon dl dd a:hover {
+	text-decoration: underline;
+}
 
 
 
