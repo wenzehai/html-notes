@@ -201,7 +201,7 @@
 	background: #363636;
 	text-align: center;
 	color: #f0f0f0;
-	padding: 10px 0;
+	padding: 0 0 10px 0;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -216,6 +216,29 @@
 	color: #8f8f8f;
 }
 
+.footer .character {
+	background: #4a4a4a;
+	margin-bottom: 10px;
+}
+.footer .character ul {
+	position: relative;
+	padding-left: 130px;
+}
+.footer .character ul li {
+	float: left;
+	margin-left: 70px;
+	width: 136px;
+}
+.footer .character ul li img {
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.footer .character ul li p {
+	line-height: 60px;
+	color: #fabd00;
+	vertical-align: middle;
+	font-size: 18px;
+}
 
 /*footer结束*/
 
@@ -236,11 +259,9 @@ body {
 .pro .search_bd {
 	font-size: 0;
 }
-
-.pro .searchBox .search_hd {
-	width: 680px;
+.pro .slogan {
 	height: 230px;
-	background: url(../img/slogan_bg.png) no-repeat center 100px;
+	background: url(../img/slogan_bg1.png) no-repeat center center;
 }
 
 .pro .searchBox {

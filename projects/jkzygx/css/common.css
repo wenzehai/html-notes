@@ -113,7 +113,7 @@
 	background: #363636;
 	text-align: center;
 	color: #f0f0f0;
-	padding: 10px 0;
+	padding: 0 0 10px 0;
 }
 .footer p {
 	font: 12px/24px "微软雅黑"
@@ -123,3 +123,27 @@
 }
 
 /*footer结束*/
+.footer .character {
+	background: #4a4a4a;
+	margin-bottom: 10px;
+}
+.footer .character ul {
+	position: relative;
+	padding-left: 130px;
+}
+.footer .character ul li {
+	float: left;
+	margin-left: 70px;
+	width: 136px;
+}
+.footer .character ul li img {
+	vertical-align: middle;
+	padding-right: 10px;
+}
+.footer .character ul li p {
+	line-height: 60px;
+	color: #fabd00;
+	vertical-align: middle;
+	font-size: 18px;
+	
+}
