@@ -1,0 +1,164 @@
+body {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+}
+/*头部部分*/
+.btn {
+	display: inline-block;
+	-webkit-tap-highlight-color:transparent;
+}
+.header {
+	height: 102px;
+	width: 100%;
+}
+.header .con {
+	padding-top: 25px;
+	width: 88%;
+	text-align: right;
+	display: block;
+	margin: 0 auto;
+}
+.header .con .btn {
+	/*display: inline-block;*/
+	/*display: none;*/
+	/*-webkit-tap-highlight-color:transparent;*/
+}
+.header .con .help  {
+	width: 126px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 0;
+}
+.header .con .help:active  {
+	background: url(../img/btn_jingling.png) no-repeat 0 -53px;
+}
+.header .con .login  {
+	width: 170px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -106px;
+}
+.header .con .login:active  {
+	background: url(../img/btn_jingling.png) no-repeat 0 -159px;
+}
+
+
+/*主体部分*/
+.content {
+	width: 88%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0 4px 10px rgba(50,50,50,0.15);
+	min-height: 626px;
+	max-height: 800px;
+	border: 1px solid #f5f5f5;
+	background: #FFFFFF;
+	padding: 0 18px;
+	box-sizing: border-box;
+}
+.content .con_hd {
+	border-bottom: 1px solid #e3e3e3;
+	text-align: center;
+}
+.content .con_hd h3 {
+	text-align: left;
+	/*width: 490px;*/
+	margin: 0 auto;
+	line-height: 84px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	display: block;
+	font-size: 30px;
+
+}
+.content .con_hd .space {
+	display: inline-block;
+	width: 50px;
+}
+
+/*操作栏各种按钮*/
+.content .con_hd .change {
+	/*display: none;*/
+	width: 126px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -212px;
+	margin-top: 15px;
+}
+.content .con_hd .change:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -265px;
+}
+
+.content .con_hd .smallCustomer {
+	/*display: none;*/
+	width: 143px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -1064px;
+	margin-top: 15px;
+}
+.content .con_hd .smallCustomer:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -1117px;
+}
+
+
+
+/*内容部分*/
+.content .con_bd {
+	width: 100%;
+	height: 464px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+	text-align: center;
+	position: relative;
+}
+
+/*主界面三个大按钮*/
+.content .con_bd .btn {
+	display: block;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 36px;
+}
+.content .con_bd .xiezhu {
+	margin-top: 30px;
+	text-align: center;
+	width: 35%;
+	margin-left: 5%;
+	height: 430px;
+	line-height: 430px;
+	background:#19bd9b url(../img/xiezhu_bg.png) no-repeat center 76px;
+}
+.content .con_bd .xiezhu:active {
+	background:#15a387 url(../img/xiezhu_bg.png) no-repeat center 76px;
+}
+.content .con_bd .jijian {
+	margin-top: 30px;
+	text-indent: 3em;
+	text-align: center;
+	width: 50%;
+	margin-left: 6%;
+	height: 190px;
+	line-height: 190px;
+	background:#f8af12 url(../img/jijian_bg.png) no-repeat 80px center;
+}
+.content .con_bd .jijian:active {
+	background:#de9d10 url(../img/jijian_bg.png) no-repeat 80px center;
+	
+}
+.content .con_bd .xiagang {
+	margin-top: 50px;
+	text-indent: 3em;
+	text-align: center;
+	width: 50%;
+	margin-left: 6%;
+	height: 190px;
+	line-height: 190px;
+	background:#3399db url(../img/xiagang_bg.png) no-repeat 80px center;
+}
+.content .con_bd .xiagang:active {
+	background:#2d86c2 url(../img/xiagang_bg.png) no-repeat 80px center;
+}	
+

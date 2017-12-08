@@ -1,0 +1,549 @@
+body {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+}
+/*头部部分*/
+.btn {
+	display: inline-block;
+	-webkit-tap-highlight-color:transparent;
+}
+.header {
+	height: 102px;
+	width: 100%;
+}
+.header .con {
+	padding-top: 25px;
+	width: 88%;
+	text-align: right;
+	display: block;
+	margin: 0 auto;
+}
+.header .con .help  {
+	width: 126px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 0;
+}
+.header .con .help:active  {
+	background: url(../img/btn_jingling.png) no-repeat 0 -53px;
+}
+.header .con .login  {
+	width: 170px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -106px;
+}
+.header .con .login:active  {
+	background: url(../img/btn_jingling.png) no-repeat 0 -159px;
+}
+
+
+/*主体部分*/
+.content {
+	width: 88%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0 4px 10px rgba(50,50,50,0.15);
+	min-height: 626px;
+	max-height: 800px;
+	border: 1px solid #f5f5f5;
+	background: #FFFFFF;
+	padding: 0 18px;
+	box-sizing: border-box;
+}
+.content .con_hd {
+	border-bottom: 1px solid #e3e3e3;
+	text-align: center;
+}
+.content .con_hd h3 {
+	width: 490px;
+	margin: 0 auto;
+	line-height: 84px;
+}
+
+/*操作栏各种按钮*/
+.content .con_hd .back {
+	/*display: none;*/
+	width: 160px;
+	height: 55px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -530px;
+	margin-top: 15px;
+}
+.content .con_hd .back:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -585px;
+	
+}
+.content .con_hd .close {
+	/*display: none;*/
+	width: 126px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -424px;
+	margin-top: 15px;
+}
+.content .con_hd .close:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -477px;
+	
+}
+
+/*内容部分*/
+.content .con_bd {
+	width: 100%;
+	height: 464px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+	text-align: center;
+	position: relative;
+}
+
+
+/*数据表格*/
+.content .con_bd {
+	overflow: hidden
+	
+}
+.content .con_bd table {
+	width: 100%;
+}
+.content .con_bd table tr {
+	height: 76px;
+	background: #FFFFFF;
+}
+.content .con_bd table tr th,
+.content .con_bd table tr td {
+	font-size: 24px;
+	text-align: center;
+}
+.content .con_bd table.table_two {
+	margin-top: 76px;
+	overflow: auto;
+}
+.content .con_bd .table_box {
+	position: relative;
+	height: 450px;
+	overflow-y: scroll;
+}
+.content .con_bd table.table_two tr.readonly {
+	color: #aaaaaa;
+}
+.content .con_bd table.table_two tr td input[type="text"] {
+	border: none;
+	background: #e9e9e9;
+	height: 57px;
+	border-radius: 4px;
+	max-width: 100px;
+}
+.content .con_bd table.table_two tr td input[type="text"]:disabled {
+	border: none;
+	background: #FFFFFF;
+	height: 57px;
+	color: #AAAAAA;
+}
+.content .con_bd table.table_two tr td span.type {
+	color: #e60012;
+}
+.content .con_bd table.table_two tr td.number {
+	position: relative;
+}
+.content .con_bd table.table_two tr td.number button {
+	background: #FFFFFF;
+	outline: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	border: 3px solid #e60012;
+	font-weight: bold;
+	font-size: 20px;
+	color: #e60012;
+}
+.content .con_bd table.table_two tr td.number button:active {
+	background: #e60012;
+	color: #FFFFFF;
+}
+.content .con_bd table.table_two tr td.number input {
+	border: none;
+	background: #e9e9e9;
+	height: 57px;
+	border-radius: 4px;
+	text-align: center;
+	width: 64px;
+	outline: none;
+}
+.content .con_bd table.table_two tr td .delete {
+	width: 74px;
+	height: 38px;
+	border: 1px solid #2c35dc;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	background: #4857e6;
+	background: -webkit-linear-gradient(#4857e6, #323cdb); 
+    background: -o-linear-gradient(#4857e6, #323cdb); 
+    background: -moz-linear-gradient(#4857e6, #323cdb); 
+    background: linear-gradient(#4857e6, #323cdb); 
+    color: #FFFFFF;
+    font-size: 18px;
+    outline: none;
+}
+.content .con_bd table.table_two tr td .delete:active {
+	background: -webkit-linear-gradient(#323cdb, #4857e6);
+    background: -o-linear-gradient(#323cdb, #4857e6); 
+    background: -moz-linear-gradient(#323cdb, #4857e6); 
+    background: linear-gradient(#323cdb, #4857e6); 
+}
+.content .con_bd table.table_header {
+	background: #FFFFFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+.content .con_bd table.table_two tr td:nth-child(1) {
+	width: 5%;
+}
+
+.content .con_bd table.table_two tr td:nth-child(2) {
+	width: 12%;
+}
+.content .con_bd table.table_two tr td:nth-child(3) {
+	width: 26%;
+}
+.content .con_bd table.table_two tr td:nth-child(4) {
+	width: 15%;
+}
+.content .con_bd table.table_two tr td:nth-child(5) {
+	width: 15%;
+}
+.content .con_bd table.table_two tr td:nth-child(6) {
+	width: 25%;
+}
+
+.content .con_bd table.table_header tr th:nth-child(1) {
+	width: 5%;
+	font-size: 24px;
+	line-height: 28px;
+}
+.content .con_bd table.table_header tr th:nth-child(2) {
+	width: 12%;
+}
+.content .con_bd table.table_header tr th:nth-child(3) {
+	width: 26%;
+}
+.content .con_bd table.table_header tr th:nth-child(4) {
+	width: 15%;
+}
+.content .con_bd table.table_header tr th:nth-child(5) {
+	width: 15%;
+}
+.content .con_bd table.table_header tr th:nth-child(6) {
+	width: 25%;
+}
+
+
+
+
+
+/*底部确认按钮和提示信息*/
+.content .con_ft {
+	height: 78px;
+	text-align: center;
+	position: relative;
+}
+.content .con_ft .confirmBtn {
+	margin-top: 15px;
+	width: 145px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -640px;
+}
+.content .con_ft .confirmBtn:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -693px;
+}
+.content .con_ft .info {
+	display: none;
+	font-size: 24px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -32px;
+}
+.content .con_ft .info span {
+	color: #e60012;
+}
+
+
+
+/*计件补录按钮*/
+.content .con_ft .addBtn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*display: none;*/
+	width: 170px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -958px;
+	margin-top: 15px;
+}
+.content .con_ft .addBtn:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -1011px;
+}
+
+
+
+
+
+
+
+
+/*数字弹窗部分样式*/
+/*.modal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.numberBox {
+	background: #FFFFFF;
+	width: 420px;
+	height: 550px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -210px;
+	margin-top: -275px;
+	border-radius: 6px;
+}
+.numberBox .number_hd .display {
+	width: 380px;
+	height: 100px;
+	border: 1px solid #b3b3b3;
+	border-radius: 4px;
+	background: #f7f3f2;
+	margin: 20px 0 0 20px;
+	outline: none;
+	font-size: 70px;
+	text-align: right;
+	color: #333333;
+}
+.numberBox .number_bd {
+	position: relative;
+	width: 410px;
+}
+.numberBox .number_bd .left {
+	font-size: 0;
+}
+.numberBox .number_bd .left input {
+	margin: 20px 0 0 20px;
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+	font-size: 40px;
+	outline: none;
+	background: -webkit-linear-gradient(#eaeaea, #d6d6d6); 
+    background: -o-linear-gradient(#eaeaea, #d6d6d6); 
+    background: -moz-linear-gradient(#eaeaea, #d6d6d6); 
+    background: linear-gradient(#eaeaea, #d6d6d6);
+    color: #333333; 
+}
+.numberBox .number_bd .left input:active {
+	background: -webkit-linear-gradient(#d6d6d6,#eaeaea); 
+    background: -o-linear-gradient(#d6d6d6,#eaeaea); 
+    background: -moz-linear-gradient(#d6d6d6,#eaeaea); 
+    background: linear-gradient(#d6d6d6,#eaeaea); 
+}
+.numberBox .number_bd .right input.operator {
+	margin: 20px 0 0 20px;
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+	border: 1px solid #b3b3b3;
+	font-size: 40px;
+	background: -webkit-linear-gradient(#909090, #696969); 
+    background: -o-linear-gradient(#909090, #696969); 
+    background: -moz-linear-gradient(#909090, #696969); 
+    background: linear-gradient(#909090, #696969); 
+    color: #FFFFFF;
+    outline: none;
+}
+.numberBox .number_bd .right input.operator:active {
+	background: -webkit-linear-gradient(#696969,#909090); 
+    background: -o-linear-gradient(#696969,#909090); 
+    background: -moz-linear-gradient(#696969,#909090); 
+    background: linear-gradient(#696969,#909090); 
+}
+.numberBox .number_bd .left input.zero {
+	width: 180px;
+}
+.numberBox .number_bd .right input.confirm {
+	width: 80px;
+	height: 180px;
+	margin: 20px 0 0 20px;
+	border-radius: 4px;
+	border: 1px solid #b3b3b3;
+	font-size: 40px;
+	background: #e74020;
+	background: -webkit-linear-gradient(#e35d40,#d93322); 
+    background: -o-linear-gradient(#e35d40,#d93322); 
+    background: -moz-linear-gradient(#e35d40,#d93322); 
+    background: linear-gradient(#e35d40,#d93322); 
+    color: #FFFFFF;
+    outline: none;
+}
+.numberBox .number_bd .right input.confirm:active {
+	background: -webkit-linear-gradient(#d93322,#e35d40); 
+    background: -o-linear-gradient(#d93322,#e35d40); 
+    background: -moz-linear-gradient(#d93322,#e35d40); 
+    background: linear-gradient(#d93322,#e35d40); 
+}
+.modalClose {
+	position: absolute;
+	top: -50px;
+	right: -50px;
+}*/
+
+
+
+
+/*时间弹窗部分样式*/
+.modal {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+}
+.timeBox {
+	background: #FFFFFF;
+	width: 840px;
+	height: 564px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -420px;
+	margin-top: -282px;
+	border-radius: 6px;
+}
+.timeBox .modalClose {
+	position: absolute;
+	top: -50px;
+	right: -50px;
+}
+.timeBox .timeBox_hd {
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background: #f5f5f5;
+	height: 174px;
+}
+.timeBox .timeBox_hd .timeShowBox {
+	position: absolute;
+	left: 50%;
+	top: 34px;
+	margin-left: -170px;
+	width: 400px;
+	height: 130px;
+	
+} 
+.timeBox .timeBox_hd .timeShowBox li span.label {
+	position: absolute;
+	top: 0;
+	left: -100px;
+	width: 100px;
+}
+.timeBox .timeBox_hd .timeShowBox li {
+	float: left;
+	position: relative;
+}
+.timeBox .timeBox_hd .timeShowBox li span {
+	line-height: 104px;
+	font-size: 30px;
+}
+.timeBox .timeBox_hd .timeShowBox .operatorBtn {
+	display: block;
+	background: #FFFFFF;
+	outline: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	border: 3px solid #e60012;
+	font-weight: bold;
+	font-size: 20px;
+	color: #e60012;
+}
+.timeBox .timeBox_hd .timeShowBox .operatorBtn:nth-child(2) {
+	margin-top: 24px;
+}
+.timeBox .timeBox_hd .timeShowBox .operatorBtn:active {
+	background: #e60012;
+	color: #FFFFFF;
+}
+.timeBox .timeBox_hd .timeShowBox li input[type="text"] {
+	margin: 0 24px;
+	width: 34px;
+	height: 104px;
+	border-radius: 4px;
+	border: 1px solid #b3b3b3;
+	background: #FFFFFF;
+	outline: none;
+	text-align: center;
+	padding: 0 23px;
+	font-size: 30px;
+}
+.timeBox .timeBox_bd .left {
+	width: 500px;
+}
+.timeBox .timeBox_bd  .top {
+	text-align: center;
+	font-size: 18px;
+	line-height: 50px;
+	color: rgba(0,0,0,0.2);
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.timeBox .timeBox_bd .right {
+	width: 339px;
+}
+.timeBox .timeBox_bd .right .bottom {
+	border-left: 1px solid rgba(0,0,0,0.2);
+}
+.timeBox .timeBox_bd .bottom {
+	position: relative;
+	font-size: 0;
+}
+.timeBox .timeBox_bd .bottom input[type="button"] {
+	margin: 20px 0 0 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 4px;
+	font-size: 36px;
+	outline: none;
+	background: -webkit-linear-gradient(#eaeaea, #d6d6d6); 
+    background: -o-linear-gradient(#eaeaea, #d6d6d6); 
+    background: -moz-linear-gradient(#eaeaea, #d6d6d6); 
+    background: linear-gradient(#eaeaea, #d6d6d6);
+    color: #333333; 
+    box-sizing: border-box;
+}
+.timeBox .timeBox_bd .bottom input[type="button"] {
+	background: -webkit-linear-gradient(#d6d6d6,#eaeaea); 
+    background: -o-linear-gradient(#d6d6d6,#eaeaea); 
+    background: -moz-linear-gradient(#d6d6d6,#eaeaea); 
+    background: linear-gradient(#d6d6d6,#eaeaea); 
+}
+.timeBox .timeBox_bd .bottom input.clearBtn {
+	width: 140px;
+	text-align: center;
+	font-size: 30px;
+}
+.timeBox .timeBox_bd .bottom input[type="button"].confirm {
+	color: #FFFFFF;
+	background: #e74020;
+	background: -webkit-linear-gradient(#f56866,#f24846); 
+    background: -o-linear-gradient(#f56866,#f24846); 
+    background: -moz-linear-gradient(#f56866,#f24846); 
+    background: linear-gradient(#f56866,#f24846); 
+}
+
+

@@ -1,0 +1,106 @@
+body {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+}
+/*头部部分*/
+.btn {
+	display: inline-block;
+	-webkit-tap-highlight-color:transparent;
+}
+.header {
+	height: 102px;
+	width: 100%;
+}
+.header .con {
+	padding-top: 25px;
+	width: 88%;
+	text-align: right;
+	display: block;
+	margin: 0 auto;
+}
+
+
+/*主体部分*/
+.content {
+	width: 88%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0 4px 10px rgba(50,50,50,0.15);
+	min-height: 626px;
+	max-height: 800px;
+	border: 1px solid #f5f5f5;
+	background: #FFFFFF;
+	padding: 0 18px;
+	box-sizing: border-box;
+}
+.content .con_hd {
+	text-align: center;
+}
+.content .con_hd h3 {
+	width: 490px;
+	margin: 0 auto;
+	line-height: 84px;
+}
+
+/*操作栏各种按钮*/
+.content .con_hd .close {
+	/*display: none;*/
+	width: 126px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -424px;
+	margin-top: 15px;
+}
+.content .con_hd .close:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -477px;
+}
+
+/*内容部分*/
+.content .con_bd {
+	width: 100%;
+	height: 464px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+	text-align: left;
+	position: relative;
+	text-align: center;
+}
+.content .con_bd h2 {
+	
+	margin-top: 64px;
+	margin-bottom: 13px;
+}
+.content .con_bd dl {
+	position: relative;
+	width: 450px;
+	margin: 0 auto;
+}
+.content .con_bd dl dt {
+	float: left;
+}
+.content .con_bd dl dd {
+	float: left;
+}
+
+/*底部*/
+.content .con_ft {
+	height: 78px;
+	text-align: center;
+	position: relative;
+}
+.content .con_ft .info {
+	/*display: none;*/
+	font-size: 24px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -32px;
+}
+.content .con_ft .info span {
+	color: #e60012;
+}
+
+

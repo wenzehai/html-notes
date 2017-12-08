@@ -1,0 +1,182 @@
+body {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+}
+/*头部部分*/
+.btn {
+	display: inline-block;
+	-webkit-tap-highlight-color:transparent;
+}
+.header {
+	height: 102px;
+	width: 100%;
+}
+.header .con {
+	padding-top: 25px;
+	width: 88%;
+	text-align: right;
+	display: block;
+	margin: 0 auto;
+}
+.header .con .btn {
+	/*display: inline-block;*/
+	/*display: none;*/
+	/*-webkit-tap-highlight-color:transparent;*/
+}
+.header .con .help  {
+	width: 126px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 0;
+}
+.header .con .help:active  {
+	background: url(../img/btn_jingling.png) no-repeat 0 -53px;
+}
+.header .con .login  {
+	width: 170px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -106px;
+}
+.header .con .login:active  {
+	background: url(../img/btn_jingling.png) no-repeat 0 -159px;
+}
+
+
+/*主体部分*/
+.content {
+	width: 88%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 6px;
+	box-shadow: 0 4px 10px rgba(50,50,50,0.15);
+	min-height: 626px;
+	max-height: 800px;
+	border: 1px solid #f5f5f5;
+	background: #FFFFFF;
+	padding: 0 18px;
+	box-sizing: border-box;
+}
+.content .con_hd {
+	border-bottom: 1px solid #e3e3e3;
+	text-align: center;
+}
+.content .con_hd h3 {
+	width: 490px;
+	margin: 0 auto;
+	line-height: 84px;
+}
+
+/*操作栏各种按钮*/
+.content .con_hd .back {
+	/*display: none;*/
+	width: 160px;
+	height: 55px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -530px;
+	margin-top: 15px;
+}
+.content .con_hd .back:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -585px;
+	
+}
+.content .con_hd .close {
+	/*display: none;*/
+	width: 126px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -424px;
+	margin-top: 15px;
+}
+.content .con_hd .close:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -477px;
+	
+}
+
+/*内容部分*/
+.content .con_bd {
+	width: 100%;
+	height: 464px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	position: relative;
+	text-align: center;
+	position: relative;
+}
+
+
+/*主界面选择列表*/
+.content .con_bd ul {
+	position: relative;
+	width: 100%;
+}
+.content .con_bd ul li {
+	width: 30%;
+	text-align: left;
+	margin-top: 40px;
+	margin-right: 3%;
+}
+.content .con_bd ul li input[type = "checkbox"] {
+	position: absolute;
+	clip: rect(0,0,0,0);
+}
+.content .con_bd ul li input[type = "checkbox"] + label {
+	border-radius: 4px;
+	background: #a8c5a7;
+	line-height: 28px;
+	color: #FFFFFF;
+	border: 2px solid #a8c5a7;
+	padding: 4px 16px;
+}
+.content .con_bd ul li input[type = "checkbox"]:checked + label {
+	background: #FFFFFF;
+	border: 2px solid #e60012;
+	color: #e60012;
+}
+.content .con_bd ul li input[type = "checkbox"]:disabled + label {
+	background: #f5f5f5;
+	border: 2px solid #f5f5f5;
+	color: #dcdcdc;
+}
+
+
+/*.content .con_bd ul li input[type = "radio"] {
+	position: absolute;
+	clip: rect(0,0,0,0);
+}
+.content .con_bd ul li input[type = "radio"] + label {
+	border-radius: 4px;
+	background: #a8c5a7;
+	line-height: 28px;
+	color: #FFFFFF;
+	border: 2px solid #a8c5a7;
+	padding: 4px 16px;
+}
+.content .con_bd ul li input[type = "radio"]:checked + label {
+	background: #FFFFFF;
+	border: 2px solid #e60012;
+	color: #e60012;
+}
+.content .con_bd ul li input[type = "radio"]:disabled + label {
+	background: #f5f5f5;
+	border: 2px solid #f5f5f5;
+	color: #dcdcdc;
+}*/
+
+
+
+
+/*底部确认按钮和提示信息*/
+.content .con_ft {
+	height: 78px;
+	text-align: center;
+	position: relative;
+}
+.content .con_ft .confirmBtn {
+	margin-top: 15px;
+	width: 145px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -640px;
+}
+.content .con_ft .confirmBtn:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -693px;
+}
+

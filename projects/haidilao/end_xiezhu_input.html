@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>海底捞员工自助上岗系统</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/end_xiezhu_input.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="header">
+			<div class="con">
+			</div>
+		</div>
+		<div class="content">
+			<div class="con_hd clearfix">
+				<a class="left btn back" href="main.html"></a>
+				<a class="right btn close" href="main.html"></a>
+				<h3>输入完成数量</h3>
+			</div>
+			<div class="con_bd">
+				<table class="table_header">
+					<tr>
+							<th>序号</th>
+							<th>项目</th>
+							<th>开始时间</th>
+							<th>结束时间</th>
+							<th>数量/时长</th>
+						</tr>
+				</table>
+				<div class="table_box">
+				<table class="table_two" >
+						<tr class="readonly">
+							<td>1</td>
+							<td>收台</td>
+							<td><input type="text" value="09:00" disabled="disabled"/></td>
+							<td><input type="text" value="12:00" disabled="disabled"/></td>
+							<td>3小时0分</td>
+						</tr>
+						<tr class="readonly">
+							<td>2</td>
+							<td>洗杯</td>
+							<td><input type="text" value="09:00" disabled="disabled"/></td>
+							<td><input type="text" value="09:00" disabled="disabled"/></td>
+							<td class="number">
+								<button>-</button>
+								<input value="0"/>
+								<button>+</button>
+							</td>
+						</tr>
+				</table >
+				</div>
+			</div>
+			<div class="con_ft">
+				<p class="info"><span>2S</span>&nbsp;&nbsp;后自动返回主界面</p>
+				<a href="end_xiezhu_suc.html" class="btn confirmBtn"></a>
+			</div>
+		</div>
+	</body>
+</html>

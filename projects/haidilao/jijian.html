@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>海底捞员工自助上岗系统</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/modal.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		
+		<div class="header">
+			<div class="con">
+			</div>
+		</div>
+		<div class="content">
+			<div class="con_hd clearfix">
+				<a class="left btn back" href="main.html"></a>
+				<a class="right btn close" href="main.html"></a>
+				<h3>计件工资</h3>
+			</div>
+			<div class="con_bd">
+				<table class="table_header">
+					<tr>
+							<th>序号</th>
+							<th>操作</th>
+							<th>项目</th>
+							<th>开始时间</th>
+							<th>结束时间</th>
+							<th>数量/时长</th>
+						</tr>
+				</table>
+				<div class="table_box">
+				<table class="table_two" >
+						<tr class="readonly">
+							<td>1</td>
+							<td>--</td>
+							<td>[主]收台</td>
+							<td><input type="text" value="09:00" disabled="disabled"/></td>
+							<td><input type="text" value="12:00" disabled="disabled"/></td>
+							<td>3小时0分</td>
+						</tr>
+						<tr class="readonly">
+							<td>2</td>
+							<td>--</td>
+							<td>[主]洗杯</td>
+							<td><input type="text" value="09:00" disabled="disabled"/></td>
+							<td><input type="text" value="09:00" disabled="disabled"/></td>
+							<td class="number">
+								<button>-</button>
+								<input value="0"/>
+								<button>+</button>
+							</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td><button class="delete">删除</button></td>
+							<td><span class="type">[补]</span>刷碗</td>
+							<td><input type="text" /></td>
+							<td><input type="text" /></td>
+							<td class="number">
+								<button>-</button>
+								<input value="0"/>
+								<button>+</button>
+							</td>
+						</tr>
+						<tr class="readonly">
+							<td>4</td>
+							<td>--</td>
+							<td>刷碗</td>
+							<td><input type="text" value="09:00" disabled="disabled" /></td>
+							<td><input type="text" value="09:00" disabled="disabled" /></td>
+							<td>
+								3小时0分
+							</td>
+						</tr>
+						<tr class="readonly">
+							<td>5</td>
+							<td>--</td>
+							<td>刷碗</td>
+							<td><input type="text" value="09:00" disabled="disabled" /></td>
+							<td><input type="text" value="09:00" disabled="disabled" /></td>
+							<td>
+								3小时0分
+							</td>
+						</tr>
+						<tr class="readonly">
+							<td>6</td>
+							<td>--</td>
+							<td>刷碗</td>
+							<td><input type="text" value="09:00" disabled="disabled" /></td>
+							<td><input type="text" value="09:00" disabled="disabled" /></td>
+							<td>
+								3小时0分
+							</td>
+						</tr>
+				</table >
+				</div>
+			</div>
+			<div class="con_ft">
+				<p class="info"><span>2S</span>&nbsp;&nbsp;后自动返回主界面</p>
+				<a href="select_jijianItem.html" class="btn addBtn"></a>
+				<a href="alert_jijian_suc.html" class="btn confirmBtn"></a>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--数字输入弹窗-->
+		<!--<div class="modal">
+			<div class="numberBox">
+				<a href="#" class="modalClose"><img src="img/close_icon.png" /></a>
+				<div class="number_hd">
+					<input type="text" class="display" value="415" disabled="disabled">
+				</div>
+				<div class="number_bd">
+					<div class="left">
+						<input type="button" class="btn number" value="7">
+						<input type="button" class="btn number" value="8">
+						<input type="button" class="btn number" value="9">
+							<br>
+						<input type="button" class="btn number" value="4">
+						<input type="button" class="btn number" value="5">
+						<input type="button" class="btn number" value="6">
+							<br>
+						<input type="button" class="btn number" value="1">
+						<input type="button" class="btn number" value="2">
+						<input type="button" class="btn number" value="3">
+							<br>
+						<input type="button" class="btn number zero" value="0">
+						<input type="button" class="btn operator" value=".">
+					</div>
+					<div class="right">
+						<input type="button" class="btn operator" value="&larr;">
+						<br>
+						<input type="button" class="btn operator" value="C">
+						<br>
+						<input type="button" class="btn confirm" value="=">
+					</div>
+				</div>
+			</div>
+		</div>-->
+		
+		
+		
+		<!--时间弹窗-->
+		<div class="modal">
+			<div class="timeBox">
+				<a href="#" class="modalClose"><img src="img/close_icon.png" /></a>
+				<div class="timeBox_hd">
+					
+					<ul class="clearfix timeShowBox">
+						<li><span class="label">时间</span></li>
+						<li>
+							<button class="operatorBtn">+</button>
+							<!--<br />-->
+							<button class="operatorBtn">-</button>
+						</li>
+						<li><input class="showBox" type="text" value="11" disabled="disabled"/></li>
+						<li><span>:</span></li>
+						<li><input class="showBox" type="text" value="05" disabled="disabled"/></li>
+						<li><button class="operatorBtn">+</button>
+							<button class="operatorBtn">-</button>
+						</li>
+					</ul>
+				</div>
+				<div class="timeBox_bd">
+					<div class="left">
+						<div class="top">选择小时</div>
+						<div class="bottom">
+							<input type="button" class="btn numberBtn" value="00"/>
+							<input type="button" class="btn numberBtn" value="01"/>
+							<input type="button" class="btn numberBtn" value="02"/>
+							<input type="button" class="btn numberBtn" value="03"/>
+							<input type="button" class="btn numberBtn" value="04"/>
+							<input type="button" class="btn numberBtn" value="05"/>
+							<input type="button" class="btn numberBtn" value="06"/>
+							<input type="button" class="btn numberBtn" value="07"/>
+							<input type="button" class="btn numberBtn" value="08"/>
+							<input type="button" class="btn numberBtn" value="09"/>
+							<input type="button" class="btn numberBtn" value="10"/>
+							<input type="button" class="btn numberBtn" value="11"/>
+							<input type="button" class="btn numberBtn" value="12"/>
+							<input type="button" class="btn numberBtn" value="13"/>
+							<input type="button" class="btn numberBtn" value="14"/>
+							<input type="button" class="btn numberBtn" value="15"/>
+							<input type="button" class="btn numberBtn" value="16"/>
+							<input type="button" class="btn numberBtn" value="17"/>
+							<input type="button" class="btn numberBtn" value="18"/>
+							<input type="button" class="btn numberBtn" value="19"/>
+							<input type="button" class="btn numberBtn" value="20"/>
+							<input type="button" class="btn numberBtn" value="21"/>
+							<input type="button" class="btn numberBtn" value="22"/>
+							<input type="button" class="btn numberBtn" value="23"/>
+						</div>
+					</div>
+					<div class="right">
+						<div class="top">选择分钟</div>
+						<div class="bottom">
+							<input type="button" class="btn numberBtn" value="00"/>
+							<input type="button" class="btn numberBtn" value="05"/>
+							<input type="button" class="btn numberBtn" value="10"/>
+							<input type="button" class="btn numberBtn" value="15"/>
+							<input type="button" class="btn numberBtn" value="20"/>
+							<input type="button" class="btn numberBtn" value="25"/>
+							<input type="button" class="btn numberBtn" value="30"/>
+							<input type="button" class="btn numberBtn" value="35"/>
+							<input type="button" class="btn numberBtn" value="40"/>
+							<input type="button" class="btn numberBtn" value="45"/>
+							<input type="button" class="btn numberBtn" value="50"/>
+							<input type="button" class="btn numberBtn" value="55"/>
+							<input type="button" class="btn clearBtn" value="清除"/>
+							<input type="button" class="btn clearBtn confirm" value="确认"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

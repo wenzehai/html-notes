@@ -1,0 +1,72 @@
+body {
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	padding-bottom: 40px;
+}
+/*头部部分*/
+.btn {
+	display: inline-block;
+	-webkit-tap-highlight-color:transparent;
+}
+.header {
+	height: 102px;
+	width: 100%;
+}
+.header .con {
+	padding-top: 25px;
+	width: 88%;
+	text-align: right;
+	display: block;
+	margin: 0 auto;
+}
+.header .con .btn {
+	/*display: inline-block;*/
+	/*display: none;*/
+	/*-webkit-tap-highlight-color:transparent;*/
+}
+.header .con .help  {
+	width: 126px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 0;
+}
+.header .con .help:active  {
+	background: url(../img/btn_jingling.png) no-repeat 0 -53px;
+}
+.header .con .login  {
+	width: 170px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -106px;
+}
+.header .con .login:active  {
+	background: url(../img/btn_jingling.png) no-repeat 0 -159px;
+}
+
+
+/*主体部分*/
+.content {
+	width: 88%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	min-height: 626px;
+	max-height: 800px;
+	padding: 0 18px;
+	box-sizing: border-box;
+	text-align: center;
+}
+.content h1 {
+	margin: 108px 0 32px 0;
+}
+.content p {
+	margin: 25px 0 20px 0;
+	font-size: 24px;
+}
+.content .confirmBtn {
+	width: 145px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat scroll 0 -640px;
+}
+
+.content .confirmBtn:active {
+	background: url(../img/btn_jingling.png) no-repeat scroll 0 -693px;
+}
