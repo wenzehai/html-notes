@@ -58,6 +58,35 @@ body {
 	background: url(../img/btn_jingling.png) no-repeat 0 -905px;
 }
 
+/*内容按钮*/
+.con_bd .btnBox .yes {
+	/*display: none;*/
+	width: 144px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -1170px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+.con_bd .btnBox .yes:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -1223px;
+}
+
+.con_bd .btnBox .edit {
+	/*display: none;*/
+	width: 144px;
+	height: 53px;
+	background: url(../img/btn_jingling.png) no-repeat 0 -1276px;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.con_bd .btnBox .edit:active {
+	background: url(../img/btn_jingling.png) no-repeat 0 -1329px;
+}
+
+
+
+
 /*内容部分*/
 .content .con_bd {
 	width: 100%;
