@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #pop {
+            width: 100px;
+            height:100px;
+            background: #333;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<button id="btn">按钮</button>
+<div id="pop"></div>
+<script>
+        var btn = document.getElementById('btn');
+        var pop = document.getElementById('pop');
+        console.log( pop);
+// 点击 btn 显示或隐藏弹窗
+        btn.onclick = function()  {
+            if(pop.style.display === "none")  {
+                pop.style.display = "block";
+            } else  {
+                pop.style.display = "none";
+            }
+        }
+
+// 点击整个界面关闭弹窗
+        document.onclick = function()  {
+            pop.style.display = "none";
+        }
+
+// 防止点击弹窗也关闭弹窗，需要防止其关闭
+        pop.onclick = function()  {
+            return false;
+        }
+</script>
+</body>
+</html>

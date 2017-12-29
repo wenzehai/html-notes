@@ -1,43 +1,201 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title>海底捞员工自助上岗系统</title>
-		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/select_mainJob.css" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<head>
+    <meta charset="utf-8"/>
+    <title>海底捞员工自助上岗系统</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/select_mainJob.css"/>
+    <!--<link rel="stylesheet" href="css/modal.css">-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>
-		<div class="header">
-			<div class="con">
-			</div>
-		</div>
-		<div class="content">
-			<div class="con_hd clearfix">
-				<a class="left btn back" href="main.html"></a>
-				<a class="right btn close" href="main.html"></a>
-				<h3>主岗选择</h3>
-			</div>
-			<div class="con_bd">
-				<ul>
-					<li class="left"><input type="checkbox" id="job1" disabled="disabled"/><label for="job1">传菜员</label></li>
-					<li class="left"><input type="checkbox" id="job2"/><label for="job2">收台</label></li>
-					<li class="left"><input type="checkbox" id="job3"/><label for="job3">备菜员</label></li>
-					<li class="left"><input type="checkbox" id="job4"/><label for="job4">汤豆浆</label></li>
-					<li class="left"><input type="checkbox" id="job5"/><label for="job5">洗杯、洗毛巾</label></li>
-					<li class="left"><input type="checkbox" id="job6"/><label for="job6">羊肉师</label></li>
-					<li class="left"><input type="checkbox" id="job7"/><label for="job7">洗碗间、送餐具</label></li>
-					<li class="left"><input type="checkbox" id="job8"/><label for="job8">杀鱼间</label></li>
-					<li class="left"><input type="checkbox" id="job9"/><label for="job9">初加工</label></li>
-					<li class="left"><input type="checkbox" id="job10"/><label for="job10">切配员</label></li>
-					<li class="left"><input type="checkbox" id="job11"/><label for="job11">凉菜</label></li>
-					<li class="left"><input type="checkbox" id="job12"/><label for="job12">水果、油碟</label></li>
-				</ul>
-			</div>
-			<div class="con_ft">
-				<a href="alert_changeMainJob_suc.html" class="btn confirmBtn"></a>
-			</div>
-		</div>
-	</body>
+    <!--弹窗部分样式-->
+    <style>
+        /*搜索输入框部分*/
+        .searchInput {
+            width: 140px;
+            height: 40px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+            border: 2px solid #898989;
+            padding: 0 10px;
+            font-size: 16px;
+            line-height: 44px;
+            margin: 20px 10px 0 0;
+            outline: none;
+        }
+
+        input.searchInput::-webkit-input-placeholder {
+            color: #999;
+        }
+
+        input.searchInput:-moz-placeholder {
+            color: #999;
+        }
+
+        /*软键盘弹窗部分样式*/
+
+        .softmodal {
+            position: absolute;
+            left: 0;
+            bottom: -260px;
+            background: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 260px;
+            z-index: 11;
+            transition: all 1s;
+            -moz-transition: all 1s; /* Firefox 4 */
+            -webkit-transition: all 1s; /* Safari 和 Chrome */
+            -o-transition: all 1s; /* Opera */
+            display: none;
+        }
+
+        .keyboardBox {
+            width: 840px;
+            position: absolute;
+            left: 50%;
+            margin-left: -420px;
+            padding: 18px;
+            box-sizing: border-box;
+        }
+
+        .keyboardBox input[type="button"] {
+            margin: 10px 0 0 10px;
+            width: 60px;
+            height: 60px;
+            border-radius: 6px;
+            font-size: 30px;
+            outline: none;
+            background: -webkit-linear-gradient(#eaeaea, #d6d6d6);
+            background: -o-linear-gradient(#eaeaea, #d6d6d6);
+            background: -moz-linear-gradient(#eaeaea, #d6d6d6);
+            background: linear-gradient(#eaeaea, #d6d6d6);
+            color: #333333;
+            box-sizing: border-box;
+        }
+
+        .keyboardBox input[type="button"]:active {
+            background: -webkit-linear-gradient(#d6d6d6, #eaeaea);
+            background: -o-linear-gradient(#d6d6d6, #eaeaea);
+            background: -moz-linear-gradient(#d6d6d6, #eaeaea);
+            background: linear-gradient(#d6d6d6, #eaeaea);
+        }
+
+        .keyboardBox input.backspaceBtn {
+            width: 140px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .keyboardBox input[type="button"].confirm {
+            color: #FFFFFF;
+            background: #e74020;
+            background: -webkit-linear-gradient(#f56866, #f24846);
+            background: -o-linear-gradient(#f56866, #f24846);
+            background: -moz-linear-gradient(#f56866, #f24846);
+            background: linear-gradient(#f56866, #f24846);
+        }
+    </style>
+
+</head>
+<body>
+<div class="header">
+    <div class="con">
+    </div>
+</div>
+<div class="content">
+    <div class="con_hd clearfix">
+        <a class="left btn back" href="main.html"></a>
+        <a class="right btn close" href="main.html"></a>
+
+        <!--input输入框-->
+        <input placeholder="输入岗位首字母" class="searchInput right"
+               >
+        <!--onfocus="document.getElementsByClassName('softmodal')[0].style.bottom = 0;"-->
+
+        <h3>主岗选择</h3>
+    </div>
+    <div class="con_bd">
+        <ul>
+            <li class="left"><input type="checkbox" id="job1" disabled="disabled"/><label for="job1">传菜员</label></li>
+            <li class="left"><input type="checkbox" id="job2"/><label for="job2">收台</label></li>
+            <li class="left"><input type="checkbox" id="job3"/><label for="job3">备菜员</label></li>
+            <li class="left"><input type="checkbox" id="job4"/><label for="job4">汤豆浆</label></li>
+            <li class="left"><input type="checkbox" id="job5"/><label for="job5">洗杯、洗毛巾</label></li>
+            <li class="left"><input type="checkbox" id="job6"/><label for="job6">羊肉师</label></li>
+            <li class="left"><input type="checkbox" id="job7"/><label for="job7">洗碗间、送餐具</label></li>
+            <li class="left"><input type="checkbox" id="job8"/><label for="job8">杀鱼间</label></li>
+            <li class="left"><input type="checkbox" id="job9"/><label for="job9">初加工</label></li>
+            <li class="left"><input type="checkbox" id="job10"/><label for="job10">切配员</label></li>
+            <li class="left"><input type="checkbox" id="job11"/><label for="job11">凉菜</label></li>
+            <li class="left"><input type="checkbox" id="job12"/><label for="job12">水果、油碟</label></li>
+        </ul>
+    </div>
+    <div class="con_ft">
+        <a href="alert_changeMainJob_suc.html" class="btn confirmBtn"></a>
+    </div>
+</div>
+
+<!--字母软键盘部分-->
+<div class="softmodal" id="keyBox">
+    <div class="keyboardBox">
+        <input type="button" class="btn numberBtn" value="A"/>
+        <input type="button" class="btn numberBtn" value="B"/>
+        <input type="button" class="btn numberBtn" value="C"/>
+        <input type="button" class="btn numberBtn" value="D"/>
+        <input type="button" class="btn numberBtn" value="E"/>
+        <input type="button" class="btn numberBtn" value="F"/>
+        <input type="button" class="btn numberBtn" value="G"/>
+        <input type="button" class="btn numberBtn" value="H"/>
+        <input type="button" class="btn numberBtn" value="I"/>
+        <input type="button" class="btn numberBtn" value="J"/>
+        <input type="button" class="btn numberBtn" value="K"/>
+        <input type="button" class="btn numberBtn" value="L"/>
+        <input type="button" class="btn numberBtn" value="M"/>
+        <input type="button" class="btn numberBtn" value="N"/>
+        <input type="button" class="btn numberBtn" value="O"/>
+        <input type="button" class="btn numberBtn" value="P"/>
+        <input type="button" class="btn numberBtn" value="Q"/>
+        <input type="button" class="btn numberBtn" value="R"/>
+        <input type="button" class="btn numberBtn" value="S"/>
+        <input type="button" class="btn numberBtn" value="T"/>
+        <input type="button" class="btn numberBtn" value="U"/>
+        <input type="button" class="btn numberBtn" value="V"/>
+        <input type="button" class="btn numberBtn" value="W"/>
+        <input type="button" class="btn numberBtn" value="X"/>
+        <input type="button" class="btn numberBtn" value="Y"/>
+        <input type="button" class="btn numberBtn" value="Z"/>
+        <input type="button" class="btn backspaceBtn" value="删除"/>
+        <input type="button" class="btn backspaceBtn confirm" value="确认"/>
+    </div>
+</div>
+<script>
+    window.onload = function () {
+//            var btn = document.getElementsByClassName('btn');
+        var keyboard = document.getElementById('keyBox');
+        var input = document.getElementsByClassName('searchInput')[0];
+        console.log(keyboard.style);
+        // 点击 btn 显示或隐藏弹窗
+        input.onfocus = function () {
+            if (keyboard.style.display === "none") {
+                alert(1);
+                keyboard.style.display = "block";
+                keyboard.style.bottom = "0";
+            }
+        }
+        /*else {
+                pop.style.display = "none";
+            }*/
+        // 点击整个界面关闭弹窗
+        /*document.onclick = function () {
+            keyboard.style.bottom = "-260px";
+        }*/
+
+        // 防止点击弹窗也关闭弹窗，需要防止其关闭
+        keyboard.onclick = function () {
+            return false;
+        }
+    }
+</script>
+</body>
 </html>
