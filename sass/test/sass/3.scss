@@ -1,0 +1,150 @@
+// Roboto font by default
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+// Element-UI icons from /theme folder
+@font-face {
+    font-family: 'element-icons';
+    src: url('../../theme/fonts/element-icons.woff') format('woff'), /* chrome, firefox */
+      url('../../theme/fonts/element-icons.ttf') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Add Material icons styles
+// cause Element-UI icon set is too small
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v17/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+
+.material-icons, .md-icon, md-icon {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+$xs: 0; // Small screen / phone
+$sm: 480px; // Medium screen / tablet
+$md: 768px; // Large screen / desktop
+$lg: 1024px; // // Extra large screen / wide desktop
+// $xl: 1200px;
+
+@mixin respond-to($media...) {
+     @for $i from 1 through length($media){
+        @include privat-respond-to(nth($media, $i)) {
+             @content;
+        };
+    }
+}
+@mixin privat-respond-to($current-media) {
+    @if $current-media == 'xs' {
+        @media only screen and (max-width: $sm) {
+             @content;
+        }
+    }
+
+    @else if $current-media == 'sm' {
+        @media only screen and (min-width: $sm + 1) {
+             @content;
+        }
+    }
+
+    @else if $current-media == 'md' {
+        @media only screen and (min-width: $md + 1) {
+             @content;
+        }
+    }
+
+    @else if $current-media == 'lg' {
+        @media only screen and (min-width: $lg + 1) {
+             @content;
+        }
+    }
+
+    @else if $current-media == 'xl' {
+        @media only screen and (min-width: $xl) {
+             @content;
+        }
+    }
+}
+
+
+$sidebar-size: 260px;
+$grey: #dbe2e8;
+$white: #fff;
+$header-height: 60px;
+
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#app {
+    color: #333;
+    width: 100%;
+    height: 100%;
+    .page-layout {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        main {
+            z-index: 1;
+            overflow-x: auto;
+            height: calc(100% - 80px);
+            padding-top: 80px;
+            position: absolute;
+            transform-style: preserve-3d;
+            will-change: transform;
+            transition-property: transform;
+            width: 100%;
+            transform: translate3d(0, 0, 0)!important;
+            @include respond-to('lg') {
+                width: calc(100% - #{$sidebar-size}); //
+                transform: translate3d($sidebar-size, 0, 0)!important; //
+            }
+            .main-content {
+                width: 100%;
+                margin: 0;
+                @include respond-to('sm', 'xs') {
+                    margin: 0 auto;
+                }
+                .container {
+                    margin-top: 0;
+                    max-width: 1140px;
+                    padding: 0 20px;
+                    > div:first-child {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
