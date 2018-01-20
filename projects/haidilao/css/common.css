@@ -64,6 +64,10 @@ input,textarea,select {
 legend {
     color:#000
 }
+html,body {
+    height:100%;
+    width: 100%;
+}
 .clearfix:after {
 	content: '';
 	display: block;
@@ -93,7 +97,7 @@ legend {
 .topRight {
     width: 716px;
     height:270px;
-    background: url("../img/topRight.png") no-repeat center center;
+    background: url("../img/topRight.jpg") no-repeat center center;
     position: absolute;
     right: 0;
     top: 0;
@@ -102,7 +106,7 @@ legend {
 .bottomLeft {
     width: 717px;
     height:132px;
-    background: url("../img/bottomLeft.png") no-repeat center center;
+    background: url("../img/bottomLeft.jpg") no-repeat center center;
     position: absolute;
     left: 0;
     bottom: 0;

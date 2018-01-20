@@ -295,7 +295,7 @@ body {
 
 
 /*数字弹窗部分样式*/
-/*.modal {
+.modal {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -341,17 +341,17 @@ body {
 	border-radius: 4px;
 	font-size: 40px;
 	outline: none;
-	background: -webkit-linear-gradient(#eaeaea, #d6d6d6); 
-    background: -o-linear-gradient(#eaeaea, #d6d6d6); 
-    background: -moz-linear-gradient(#eaeaea, #d6d6d6); 
+	background: -webkit-linear-gradient(#eaeaea, #d6d6d6);
+    background: -o-linear-gradient(#eaeaea, #d6d6d6);
+    background: -moz-linear-gradient(#eaeaea, #d6d6d6);
     background: linear-gradient(#eaeaea, #d6d6d6);
-    color: #333333; 
+    color: #333333;
 }
 .numberBox .number_bd .left input:active {
-	background: -webkit-linear-gradient(#d6d6d6,#eaeaea); 
-    background: -o-linear-gradient(#d6d6d6,#eaeaea); 
-    background: -moz-linear-gradient(#d6d6d6,#eaeaea); 
-    background: linear-gradient(#d6d6d6,#eaeaea); 
+	background: -webkit-linear-gradient(#d6d6d6,#eaeaea);
+    background: -o-linear-gradient(#d6d6d6,#eaeaea);
+    background: -moz-linear-gradient(#d6d6d6,#eaeaea);
+    background: linear-gradient(#d6d6d6,#eaeaea);
 }
 .numberBox .number_bd .right input.operator {
 	margin: 20px 0 0 20px;
@@ -360,18 +360,18 @@ body {
 	border-radius: 4px;
 	border: 1px solid #b3b3b3;
 	font-size: 40px;
-	background: -webkit-linear-gradient(#909090, #696969); 
-    background: -o-linear-gradient(#909090, #696969); 
-    background: -moz-linear-gradient(#909090, #696969); 
-    background: linear-gradient(#909090, #696969); 
+	background: -webkit-linear-gradient(#909090, #696969);
+    background: -o-linear-gradient(#909090, #696969);
+    background: -moz-linear-gradient(#909090, #696969);
+    background: linear-gradient(#909090, #696969);
     color: #FFFFFF;
     outline: none;
 }
 .numberBox .number_bd .right input.operator:active {
-	background: -webkit-linear-gradient(#696969,#909090); 
-    background: -o-linear-gradient(#696969,#909090); 
-    background: -moz-linear-gradient(#696969,#909090); 
-    background: linear-gradient(#696969,#909090); 
+	background: -webkit-linear-gradient(#696969,#909090);
+    background: -o-linear-gradient(#696969,#909090);
+    background: -moz-linear-gradient(#696969,#909090);
+    background: linear-gradient(#696969,#909090);
 }
 .numberBox .number_bd .left input.zero {
 	width: 180px;
@@ -384,24 +384,24 @@ body {
 	border: 1px solid #b3b3b3;
 	font-size: 40px;
 	background: #e74020;
-	background: -webkit-linear-gradient(#e35d40,#d93322); 
-    background: -o-linear-gradient(#e35d40,#d93322); 
-    background: -moz-linear-gradient(#e35d40,#d93322); 
-    background: linear-gradient(#e35d40,#d93322); 
+	background: -webkit-linear-gradient(#e35d40,#d93322);
+    background: -o-linear-gradient(#e35d40,#d93322);
+    background: -moz-linear-gradient(#e35d40,#d93322);
+    background: linear-gradient(#e35d40,#d93322);
     color: #FFFFFF;
     outline: none;
 }
 .numberBox .number_bd .right input.confirm:active {
-	background: -webkit-linear-gradient(#d93322,#e35d40); 
-    background: -o-linear-gradient(#d93322,#e35d40); 
-    background: -moz-linear-gradient(#d93322,#e35d40); 
-    background: linear-gradient(#d93322,#e35d40); 
+	background: -webkit-linear-gradient(#d93322,#e35d40);
+    background: -o-linear-gradient(#d93322,#e35d40);
+    background: -moz-linear-gradient(#d93322,#e35d40);
+    background: linear-gradient(#d93322,#e35d40);
 }
 .modalClose {
 	position: absolute;
 	top: -50px;
 	right: -50px;
-}*/
+}
 
 
 
