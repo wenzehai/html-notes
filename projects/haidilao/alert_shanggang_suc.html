@@ -5,12 +5,18 @@
 		<title>海底捞员工自助上岗系统</title>
 		<link rel="stylesheet" href="css/common.css" />
 		<link rel="stylesheet" href="css/alert_shanggang_suc.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body>
-		
-		<!--登录界面开始-->
+	<body onload="screenOrientationEvent()">
+	<!--插入背景-->
+	<div class="logoBg"></div>
+	<div class="topRight"></div>
+	<div class="bottomLeft"></div>
+
+
+	<!--登录界面开始-->
 		<div class="header">
 			<div class="con">
 			</div>
@@ -42,9 +48,6 @@
 			</div>
 		</div>
 		<!--登录界面结束-->
-		
-		
-		
-		
+	<script src="js/screenOrientationListen.js"></script>
 	</body>
 </html>

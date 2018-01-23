@@ -1,0 +1,183 @@
+/*需要覆盖的代码*/
+
+/*解决背景自适应问题，将背景图切成了3片*/
+html,body {
+    height:100%;
+    width: 100%;
+}
+
+body {
+    background: none;
+    background-size: cover;
+    padding-bottom: 0;
+}
+
+.logoBg {
+    width: 287px;
+    height:87px;
+    background: url("../img/logoBg.png") no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.topRight {
+    width: 716px;
+    height:270px;
+    background: url("../img/topRight.jpg") no-repeat center center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -2;
+}
+.bottomLeft {
+    width: 717px;
+    height:132px;
+    background: url("../img/bottomLeft.jpg") no-repeat center center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -3;
+}
+
+/*解决主体部分高度自适应，内容部分高度不能自适应*/
+.content {
+    width: 92%;
+    margin: 0 auto 30px auto;
+    position: absolute;
+    top: 102px;
+    left: 4%;
+    bottom: 0;
+    min-height: 600px;
+    max-height: 2000px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(50, 50, 50, 0.15);
+    border: 1px solid #f5f5f5;
+    background: #FFFFFF;
+    padding: 0 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/*解决主岗名字太长显示不了*/
+.content .con_hd .space {
+    width: 20px;
+}
+
+
+.content .con_bd .btn {
+    font-size: 30px;
+}
+
+.content .con_bd .xiezhu {
+    line-height: 380px;
+}
+/*注意这行代码需要变更html*/
+.content .con_bd .btnTitle {
+    display: inline-block;
+    margin-top: 180px;
+}
+
+.content .con_bd .xiezhu {
+    line-height: 24px;
+}
+/*解决岗位排序字母键盘自适应问题*/
+.keyboardBox {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+    padding: 0 0 18px 0;
+    box-sizing: border-box;
+}
+
+.keyboardBox input[type="button"] {
+    width: 7%;
+    height: 54px;
+    margin: 20px 0 0 2.0%;
+}
+
+.keyboardBox input.backspaceBtn {
+    width: 16%;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/*解决计件补录数字输入自适应问题*/
+/*代码无变动*/
+
+/*解决寄件补录时间输入键盘问题*/
+.timeBox {
+    background: #FFFFFF;
+    width: 840px;
+    height: 564px;
+    position: absolute;
+    left: 50%;
+    margin-left: -420px;
+    border-radius: 6px;
+}
+.timeBox {
+    width: 90%;
+    margin: 0 5%;
+    left: 0;
+    top: 50%;
+    margin-top: -282px;
+    box-sizing: border-box;
+}
+.timeBox .timeBox_bd {
+    width: 100%;
+}
+.timeBox .timeBox_bd .left {
+    width: 59%;
+}
+.timeBox .timeBox_bd .right {
+    width: 41%;
+}
+.timeBox .timeBox_bd .left .bottom input[type="button"] {
+    margin: 20px 0 0 4%;
+    width: 12%;
+}
+
+.timeBox .timeBox_bd .right .bottom input[type="button"] {
+    margin: 20px 0 0 5%;
+    width: 18.75%;
+}
+.timeBox .timeBox_bd .right .bottom input.clearBtn {
+    margin-left: 6%;
+    width: 40%;
+}
+
+/*解决表格太窄，放不下加减号*/
+.content .con_bd table.table_two tr td.number input {
+    width: 44px;
+}
+.content .con_bd table.table_two tr td.number button {
+    width: 36px;
+    height: 36px;
+}
+
+
+/*解决岗位名称长短不一，选择项不美观*/
+.content .con_bd ul li input[type = "checkbox"] + label {
+    display: block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: 22px;
+}
+
+/*解决小客户往左偏移问题*/
+.content .con_bd ul li {
+    width: 22%;
+}
+
+/*解决标题栏文字太大，容易隐藏问题*/
+.content .con_bd .btn {
+    font-size: 30px;
+}
+
+/*需要给setting页面ul设置类名*/
+.content .con_bd .settingList li {
+    width: 100%;
+}

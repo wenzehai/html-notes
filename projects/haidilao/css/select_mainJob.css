@@ -1,8 +1,3 @@
-body {
-	background: url(../img/bg.jpg) no-repeat;
-	background-size: cover;
-	padding-bottom: 40px;
-}
 /*头部部分*/
 .btn {
 	display: inline-block;
@@ -18,11 +13,6 @@ body {
 	text-align: right;
 	display: block;
 	margin: 0 auto;
-}
-.header .con .btn {
-	/*display: inline-block;*/
-	/*display: none;*/
-	/*-webkit-tap-highlight-color:transparent;*/
 }
 .header .con .help  {
 	width: 126px;

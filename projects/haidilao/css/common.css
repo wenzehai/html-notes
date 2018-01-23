@@ -64,10 +64,7 @@ input,textarea,select {
 legend {
     color:#000
 }
-html,body {
-    height:100%;
-    width: 100%;
-}
+
 .clearfix:after {
 	content: '';
 	display: block;
@@ -82,41 +79,6 @@ html,body {
 .right {
 	float: right;
 }
-
-
-/*背景样式*/
-.logoBg {
-    width: 287px;
-    height:87px;
-    background: url("../img/logoBg.png") no-repeat center center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-}
-.topRight {
-    width: 716px;
-    height:270px;
-    background: url("../img/topRight.jpg") no-repeat center center;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: -2;
-}
-.bottomLeft {
-    width: 717px;
-    height:132px;
-    background: url("../img/bottomLeft.jpg") no-repeat center center;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -3;
-}
-
-
-
-
-
 
 
 
