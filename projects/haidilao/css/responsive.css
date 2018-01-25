@@ -6,10 +6,12 @@ html,body {
     width: 100%;
 }
 
+
 body {
     background: none;
-    background-size: cover;
+    background-size: 0 0;
     padding-bottom: 0;
+    position: relative;
 }
 
 .logoBg {
@@ -22,7 +24,7 @@ body {
     z-index: -1;
 }
 .topRight {
-    width: 716px;
+    width: 600px;				
     height:270px;
     background: url("../img/topRight.jpg") no-repeat center center;
     position: absolute;
@@ -31,7 +33,7 @@ body {
     z-index: -2;
 }
 .bottomLeft {
-    width: 717px;
+    width: 590px;					
     height:132px;
     background: url("../img/bottomLeft.jpg") no-repeat center center;
     position: absolute;
@@ -39,22 +41,25 @@ body {
     bottom: 0;
     z-index: -3;
 }
-
+/*解决logo遮盖*/
+.header .con {
+	width: 96%;
+}
 /*解决主体部分高度自适应，内容部分高度不能自适应*/
 .content {
-    width: 92%;
-    margin: 0 auto 30px auto;
+    width: 96%;
+    margin: 0 auto 15px auto;
     position: absolute;
-    top: 102px;
-    left: 4%;
+    top: 90px;
+    left: 2%;
     bottom: 0;
-    min-height: 600px;
+    min-height: 100px;
     max-height: 2000px;
     border-radius: 6px;
     box-shadow: 0 4px 10px rgba(50, 50, 50, 0.15);
     border: 1px solid #f5f5f5;
     background: #FFFFFF;
-    padding: 0 18px;
+    padding: 0 10px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -63,7 +68,9 @@ body {
 .content .con_hd .space {
     width: 20px;
 }
-
+.content .con_hd h3 {
+    font-size: 24px;
+}
 
 .content .con_bd .btn {
     font-size: 30px;
@@ -72,6 +79,113 @@ body {
 .content .con_bd .xiezhu {
     line-height: 380px;
 }
+/*主要按钮背景图往左移*/
+.content .con_bd .jijian {
+    background: #f8af12 url(../img/jijian_bg.png) no-repeat 50px center;
+}
+.content .con_bd .jijian:active {
+    background: #de9d10 url(../img/jijian_bg.png) no-repeat 50px center;
+
+}
+.content .con_bd .xiagang {
+    background: #3399db url(../img/xiagang_bg.png) no-repeat 50px center;
+}
+.content .con_bd .xiagang:active {
+    background: #2d86c2 url(../img/xiagang_bg.png) no-repeat 50px center;
+}
+
+
+
+.content .con_ft {
+	width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #FFFFff;
+}
+/*解决由于底部绝对定位引起的文字靠边*/
+.content .con_ft .tips {
+    left: 10px;
+}
+
+/*解决计件工资显示不完整*/
+/*表头高度降低*/
+.content .con_bd table tr {
+    height: 60px;
+}
+.content .con_bd table.table_two {
+    margin-top: 60px;
+}
+/*表头文字缩小*/
+.content .con_bd table.table_header tr th:nth-child(1) {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+}
+
+.content .con_bd table.table_header tr th {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid #f5f5f5;
+}
+.content .con_bd table.table_header tr th:nth-child(1) {
+    width: 5%;
+}
+.content .con_bd table.table_header tr th:nth-child(2) {
+    width: 6%;
+}
+.content .con_bd table.table_header tr th:nth-child(3) {
+    width: 37%;
+}
+.content .con_bd table.table_header tr th:nth-child(4),
+.content .con_bd table.table_header tr th:nth-child(5) {
+    width: 11%;
+}
+.content .con_bd table.table_header tr th:nth-child(6) {
+    width: 30%;
+}
+/*内容部分宽度调整*/
+.content .con_bd table.table_two tr td:nth-child(1) {
+	width: 5%;
+}
+
+.content .con_bd table.table_two tr td:nth-child(2) {
+	width: 6%;
+}
+.content .con_bd table.table_two tr td:nth-child(3) {
+	width: 37%;
+}
+.content .con_bd table.table_two tr td:nth-child(4) {
+	width: 1%;
+}
+.content .con_bd table.table_two tr td:nth-child(5) {
+	width: 1%;
+}
+.content .con_bd table.table_two tr td:nth-child(6) {
+	width: 30%;
+}
+/*时间输入框变窄*/
+.content .con_bd table.table_two tr td input[type="text"] {
+    max-width: 70px;
+}
+/*整体文字缩小*/
+.content .con_bd table tr td {
+    font-size: 20px;
+    font-weight: normal;
+}
+/*操作按钮*/
+.content .con_bd table.table_two tr td:nth-child(2) {
+    width: 6%;
+}
+
+.content .con_bd table.table_two tr td .delete {
+    width: 60px;
+    height: 32px;
+    font-size: 16px;
+}
+
+
 /*注意这行代码需要变更html*/
 .content .con_bd .btnTitle {
     display: inline-block;
@@ -81,16 +195,24 @@ body {
 .content .con_bd .xiezhu {
     line-height: 24px;
 }
+/*解决宽度不够引起的标题换行*/
+.searchInput {
+    width: 114px;
+}
+
 /*解决岗位排序字母键盘自适应问题*/
+.softmodal {
+    height: 300px;
+    /*position: relative;*/
+} 
 .keyboardBox {
     width: 100%;
     position: absolute;
     left: 0;
     margin-left: 0;
-    padding: 0 0 18px 0;
+    padding: 0 0 0 0;
     box-sizing: border-box;
 }
-
 .keyboardBox input[type="button"] {
     width: 7%;
     height: 54px;
@@ -98,14 +220,11 @@ body {
 }
 
 .keyboardBox input.backspaceBtn {
-    width: 16%;
+    width: 12%;
     text-align: center;
     font-size: 30px;
 }
-
-
 /*解决计件补录数字输入自适应问题*/
-/*代码无变动*/
 
 /*解决寄件补录时间输入键盘问题*/
 .timeBox {
@@ -118,8 +237,8 @@ body {
     border-radius: 6px;
 }
 .timeBox {
-    width: 90%;
-    margin: 0 5%;
+    width: 96%;
+    margin: 0 2%;
     left: 0;
     top: 50%;
     margin-top: -282px;
@@ -147,6 +266,9 @@ body {
     margin-left: 6%;
     width: 40%;
 }
+.timeBox .timeBox_bd .bottom input[type="button"] {
+    font-size: 30px;
+}
 
 /*解决表格太窄，放不下加减号*/
 .content .con_bd table.table_two tr td.number input {
@@ -158,19 +280,53 @@ body {
 }
 
 
-/*解决岗位名称长短不一，选择项不美观*/
+/*解决岗位名称长短不一，选择项不美观问题*/
+/*必须给li添加class属性*/
+.content .con_bd ul li {
+    width: 30%;
+    margin: 20px 0;
+    margin-right: 3%;
+    text-align: center;
+}
+
 .content .con_bd ul li input[type = "checkbox"] + label {
     display: block;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    font-size: 22px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 4px 4px;
+    overflow: hidden;
+    white-space:pre-wrap;
+    -webkit-touch-callout:none;  
+    -webkit-user-select:none;  
+    -khtml-user-select:none;  
+    -moz-user-select:none;  
+    -ms-user-select:none;  
+    user-select:none;
 }
 
 /*解决小客户往左偏移问题*/
-.content .con_bd ul li {
-    width: 22%;
+.content .con_bd ul.xiaokehu li {
+	width: 22%;
+	text-align: left;
+	margin-top: 40px;
+	margin-right: 3%;
+	position: relative;
 }
+
+.content .con_bd ul.xiaokehu li input[type = "checkbox"] + label {
+	border-radius: 4px;
+	background: #a8c5a7;
+	line-height: 28px;
+	color: #FFFFFF;
+	display: block;
+	width: 100%;
+	height: 170px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 40px 0 0 0;
+}
+
 
 /*解决标题栏文字太大，容易隐藏问题*/
 .content .con_bd .btn {

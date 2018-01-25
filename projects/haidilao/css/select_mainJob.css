@@ -128,29 +128,6 @@
 }
 
 
-/*.content .con_bd ul li input[type = "radio"] {
-	position: absolute;
-	clip: rect(0,0,0,0);
-}
-.content .con_bd ul li input[type = "radio"] + label {
-	border-radius: 4px;
-	background: #a8c5a7;
-	line-height: 28px;
-	color: #FFFFFF;
-	border: 2px solid #a8c5a7;
-	padding: 4px 16px;
-}
-.content .con_bd ul li input[type = "radio"]:checked + label {
-	background: #FFFFFF;
-	border: 2px solid #e60012;
-	color: #e60012;
-}
-.content .con_bd ul li input[type = "radio"]:disabled + label {
-	background: #f5f5f5;
-	border: 2px solid #f5f5f5;
-	color: #dcdcdc;
-}*/
-
 
 
 

@@ -1,0 +1,10 @@
+$red:'red';
+
+$border:5;
+
+.red {
+	color:$red;
+}
+.border {
+	border: solid #{$border}px $red;
+}

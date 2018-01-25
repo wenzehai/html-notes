@@ -69,6 +69,13 @@ input.searchInput:-moz-placeholder {
     background: linear-gradient(#d6d6d6, #eaeaea);
 }
 
+.keyboardBox input[type="button"]:active {
+    background: -webkit-linear-gradient(#9f9f9f, #9f9f9f);
+    background: -o-linear-gradient(#9f9f9f, #9f9f9f);
+    background: -moz-linear-gradient(#9f9f9f, #9f9f9f);
+    background: linear-gradient(#9f9f9f, #9f9f9f);
+}
+
 .keyboardBox input.backspaceBtn {
     width: 140px;
     text-align: center;
