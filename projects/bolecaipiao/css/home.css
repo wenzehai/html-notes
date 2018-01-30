@@ -1,0 +1,498 @@
+body.home {
+    background: url("../images/bg_repeate.png") repeat;
+}
+
+body.home .bgCon {
+    background: url("../images/site_bg.png") no-repeat center top;
+}
+
+/*第一屏*/
+/*左侧导航*/
+.firstPage .container {
+    background: #fff;
+    padding-top: 10px;
+}
+
+.firstPage .container .sideMenu {
+    width: 240px;
+    background: #fff7d3;
+    border: 1px solid #e43a3d;
+}
+
+.firstPage .container .sideMenu .sideMenuBox {
+    position: relative;
+    padding: 5px 0;
+    height: 684px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li {
+    height: 66px;
+    padding-left: 70px;
+    position: relative;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0 0 8px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li p {
+    font-size: 12px;
+    color: #a77d19;
+    margin: 0 0 0 8px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li .imgCon {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 0px;
+    left: 14px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li .arrow {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(1) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -113px -181px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(2) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -113px -181px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(3) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -113px -60px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(4) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat 0 0;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(5) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat 0 -181px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(6) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -171px 0;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(7) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -171px -120px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(8) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -283px 0;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(9) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -54px -241px;
+}
+
+/*轮播部分*/
+.firstPage .container .middle {
+    width: 660px;
+}
+
+.firstPage .container .middle .swiper-container {
+    width: 660px;
+    height: 268px;
+}
+
+/*累计中奖部分*/
+.firstPage .container .middle .leiji {
+    width: 660px;
+    height: 46px;
+    background: url("../images/leiji_bg.png") no-repeat center center;
+    line-height: 46px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.firstPage .container .middle .leiji .leijiNum {
+    font-size: 32px;
+    padding: 0 10px;
+}
+
+/*投一注部分*/
+/*双色球*/
+.firstPage .container .middle .betOne .shuangseqiuBox {
+    border: 1px solid #e3e3e3;
+    border-bottom: none;
+    height: 120px;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd {
+    position: relative;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd > .left {
+    position: relative;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .imgBox {
+    margin: 9px 0 0 18px;
+    width: 60px;
+    height: 60px;
+    background: url("../images/czlogo_56x56.png") no-repeat 0 0;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .titleBox {
+    padding: 18px 0 0 10px;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .titleBox p:first-child {
+    font-size: 14px;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .titleBox p:last-child {
+    font-size: 12px;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .titleBox .betTitle {
+    font-weight: bold;
+    color: #333;
+    margin-right: 8px;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .titleBox .bounus {
+    color: #e43a3d;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .titleBox .countdown {
+    color: #666;
+    margin: 0 8px 0 8px;
+    font-size: 10px;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .right button {
+    width: 124px;
+    height: 40px;
+    background: #e43a3d;
+    color: #fff;
+    position: absolute;
+    top: 16px;
+    right: 26px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_bd .right button:hover {
+    background: #ce3437;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_ft {
+    padding: 0 0 0 14px;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_ft .ballBox {
+    position: relative;
+    padding: 8px 0 0 0;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_ft .ballBox li {
+    margin-left: 8px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url("../images/ball_bg.png") no-repeat center center;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_ft .change {
+    width: 68px;
+    height: 23px;
+    float: right;
+    margin: 16px 65px 0 0;
+    background: #e3e3e3;
+    outline: none;
+    border: none;
+}
+
+.firstPage .container .middle .betOne .shuangseqiuBox .shuangseqiu_ft .change:hover {
+    background: #d4d4d4;
+}
+
+.rightCon {
+    width: 280px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+/*右侧公告栏*/
+.firstPage .container .right .rightCon .notice_hd,
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_hd {
+    margin-top: 10px;
+    position: relative;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.firstPage .container .right .rightCon .notice_hd li,
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_hd li {
+    float: left;
+    padding: 0 6px;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_hd li {
+    line-height: 24px;
+}
+
+.firstPage .container .right .rightCon .notice_hd li.active {
+    background: #e43a3d;
+    color: #fff;
+}
+
+.firstPage .container .right .rightCon .notice_bd {
+    padding: 10px;
+}
+
+.firstPage .container .right .rightCon .notice_bd li {
+    font-size: 14px;
+    line-height: 1.8;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_hd li {
+    position: relative;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd {
+    padding: 8px 0;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li {
+    border-bottom: 1px dotted #e8e8e8;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li img {
+    width: 56px;
+    height: 56px;
+    margin: 4px 0 0 4px;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox {
+    padding: 10px 0 0 0;
+    float: right;
+    width: 75%;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .gameType {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .username {
+    font-weight: normal;
+    font-size: 12px;
+    color: #666;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .right {
+    padding: 0 10px;
+    text-align: right;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .money {
+    font-weight: bold;
+    font-size: 14px;
+    color: #e43a3d;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .methods {
+    font-weight: normal;
+    font-size: 12px;
+    color: #666;
+}
+
+.secondPage .container {
+    background: #fff;
+}
+
+.secondPage .container .threePicBox {
+    position: relative;
+    margin-top: 10px;
+}
+
+.secondPage .container .threePicBox li {
+    float: left;
+    margin: 0 10px;
+    width: 380px;
+    height: 216px;
+    position: relative;
+}
+
+.secondPage .container .threePicBox li:last-child {
+    margin-right: 0;
+}
+
+.secondPage .container .threePicBox li .roomTitleBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+}
+
+.secondPage .container .threePicBox li .roomTitleBox .roomTitle {
+    line-height: 43px;
+    font-size: 24px;
+    color: #fff;
+    font-style: italic;
+}
+
+/*彩票走势*/
+.secondPage .container .cpInfoBox {
+    position: relative;
+    margin-top: 10px;
+}
+.secondPage .container .cpInfoBox li{
+    float: left;
+}
+
+.secondPage .container .cpInfoBox .zoushi {
+    width: 290px;
+    margin: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_hd {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_hd h2 {
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 18px;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .zoushiGraph {
+    padding: 10px 0 0 12px;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai {
+    margin-top: 20px;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai .shuzicai_hd,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai .gaopingcai_hd {
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 18px;
+    color: #999;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai .shuzicai_bd,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai .gaopingcai_bd {
+    position: relative;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai .shuzicai_bd li,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai .gaopingcai_bd li {
+    display: inline-block;
+    padding: 0 18px;
+    font-size: 16px;
+    color: #333;
+}
+
+/*今日发单人排行榜*/
+.secondPage .container .cpInfoBox .fadan {
+    width: 290px;
+    margin: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+}
+
+.secondPage .container .cpInfoBox .fadan .fadan_hd {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.secondPage .container .cpInfoBox .fadan .fadan_hd h2 {
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 18px;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_bd {
+    padding: 10px;
+}
+
+.secondPage .container .cpInfoBox .fadan .fadan_bd tbody tr td:nth-child(2) img {
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_bd tbody tr td:nth-child(1) {
+    width: 10%;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_bd tbody tr td:nth-child(2) {
+    width: 10%;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_bd tbody tr td:nth-child(3) {
+    width: 55%;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_bd tbody tr td:nth-child(4) {
+    width: 35%;
+    text-align: right;
+}
+
+/*开奖查询*/
+.secondPage .container .cpInfoBox .chaxun {
+    width: 290px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+}
+
+.secondPage .container .cpInfoBox .chaxuni .chaxun_hd {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_hd h2 {
+    line-height: 38px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 18px;
+}
+.secondPage .container .cpInfoBox .chaxun .chaxun_hd .more {
+    position: absolute;
+    top: 10px;
+    right: 24px;
+}
+
+
+
+
+
