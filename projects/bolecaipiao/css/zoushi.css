@@ -85,21 +85,164 @@
 /*
 所有数据均为渲染出来，样式根据表格里的数据来，通过id来识别
 */
-.zoushi .container .zoushi_bd table {
+.zoushi .container .zoushi_bd {
     width: 100%;
-}
-.zoushi .container .zoushi_bd thead tr td {
     text-align: center;
-    border: 1px solid #fff;
-    background: #f0e5c6;
-    border: 1px;
 }
-.zoushi .container .zoushi_bd thead tr td.col-40 {
-    /*border-right: 1px solid #656766;*/
+.cl-31,.cl-32,.cl-33,.cl-34,.cl-35,.cl-36,.cl-51 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cl-31,.cl-32 {
+    width: 100px;
+    height: 65px;
+}
+.zoushi .container .zoushi_bd  .cl-31,
+.zoushi .container .zoushi_bd  .cl-32 {
+    line-height: 65px;
+    border-right: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+}
+.bg-1 {
+    background: #f4fbff !important;
 }
 
-/*表体部分*/
-.zoushi .container .zoushi_bd tbody tr td {
-    text-align: center;
+.bg-2 {
+    background: #fff5ee!important;
 }
+
+.bg-3 {
+    background: #f8f8f8 !important;
+}
+
+.bg-4 {
+    background: #fff !important;
+}
+.zoushi .container .zoushi_bd .cl-34 {
+    width: 200px;
+    border: 1px solid #e8e8e8;
+    border-left: none;
+    height: 45px;
+    line-height: 45px;
+}
+.zoushi .container .zoushi_bd  span {
+    width: 20px;
+    height:20px;
+    border-right: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.zoushi .container .zoushi_bd  span i {
+    font-style: normal;
+    line-height: 20px;
+}
+.zoushi .container .zoushi_bd .cl-36 span {
+    display: inline-block;
+}
+
+/*桶bg-1*/
+.zoushi .container .zoushi_bd .bg-gray .cl-35,
+.zoushi .container .zoushi_bd .bg-white .cl-35 {
+    font-size: 0;
+}
+.zoushi .container .zoushi_bd .bg-gray .cl-35 span,
+.zoushi .container .zoushi_bd .bg-white .cl-35 span {
+    display: inline-block;
+    width: 20px;
+    height:20px;
+    border-right: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    font-size: 0;
+}
+.zoushi .container .zoushi_bd .bg-gray .cl-35 span i,
+.zoushi .container .zoushi_bd .bg-white .cl-35 span i {
+    font-style: normal;
+    line-height: 20px;
+    font-size: 12px;
+ }
+ .zoushi .container .zoushi_bd .cl-31.cl-51 {
+    height: 20px;
+    border: 1px solid #e8e8e8;
+    border-left: none;
+    border-top: none;
+    line-height: 20px;
+}
+.zoushi .container .zoushi_bd .bg-gray .cl-51 {
+    background: #f8f8f8 !important;
+    width: 200px;
+}
+.zoushi .container .zoushi_bd .bg-white .cl-51 {
+    background: #fff !important;
+    width: 200px;
+}
+
+
+/*主体数据*/
+.zoushi .container .zoushi_bd  .mainData .line {
+    font-size: 0;
+}
+.zoushi .container .zoushi_bd  .mainData .line .cl-52 {
+    height: 20px;
+    width: 100px;
+    font-size: 12px;
+    background: #f4f3f3;
+    border-top: 1px solid #e8e8e8;
+    border-right: 1px solid #e8e8e8;
+}
+.zoushi .container .zoushi_bd  .mainData .line span i {
+    font-size: 12px;
+}
+.zoushi .container .zoushi_bd  .mainData .line span i.not-transparent {
+    color: #999;
+}
+.zoushi .container .zoushi_bd  .mainData .line span {
+    display: inline-block;
+    border-top: 1px solid #e8e8e8;
+}
+.zoushi .container .zoushi_bd  .mainData .line span.bg-1.active i {
+    background: #622e2e!important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: #fff;
+    font-weight: bold;
+}
+.zoushi .container .zoushi_bd  .mainData .line span.bg-2.active i {
+    background: #c00 !important;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

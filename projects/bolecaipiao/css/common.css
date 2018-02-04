@@ -46,6 +46,10 @@ img {
 
 }
 
+.clean {
+    clear: both
+}
+
 /*导航栏部分*/
 .siteNav {
     width: 100%;
