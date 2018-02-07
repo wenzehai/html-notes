@@ -1,0 +1,1067 @@
+body.home {
+    /*background: url("../images/bg_repeate.png") repeat;*/
+}
+
+body.home .bgCon {
+    background: url("../images/site_bg.png") no-repeat center top;
+}
+
+/*第一屏*/
+/*左侧导航*/
+.firstPage .container {
+    background: #fff;
+    padding-top: 10px;
+}
+
+.firstPage .container .sideMenu {
+    width: 240px;
+    background: #fff7d3;
+    border: 1px solid #e43a3d;
+}
+/*#a77d19*/
+.firstPage .container .sideMenu .sideMenuBox {
+    position: relative;
+    padding: 0 0 10px 0;
+    height: 684px;
+
+}
+
+.firstPage .container .sideMenu .sideMenuBox>li {
+    height: 50px;
+    position: relative;
+    padding: 13px 0 13px 70px;
+}
+.firstPage .container .sideMenu .sideMenuBox>li.active {
+    background: #f8ebc0;
+}
+.firstPage .container .sideMenu .sideMenuBox>li.active .arrow {
+    /*display: none;*/
+}
+.firstPage .container .sideMenu .sideMenuBox>li:hover {
+    background: #fff;
+    /*background: #f8ebc0;*/
+    /*border-top: 1px solid #e43a3d;
+    border-bottom: 1px solid #e43a3d;*/
+}
+
+.firstPage .container .sideMenu .sideMenuBox>li h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 0 8px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox>li p {
+    font-size: 12px;
+    color: #a77d19;
+    margin: 0 0 0 8px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox>li .imgCon {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+}
+.firstPage .container .sideMenu .sideMenuBox>li .arrow {
+    width: 20px;
+    height: 34px;
+    position: absolute;
+    top: 23px;
+    right: 14px;
+    background: url("../images/icon_goldArrowRight.png") no-repeat center center;
+    z-index: 100;
+    display: block;
+
+}
+.firstPage .container .sideMenu .sideMenuBox>li .imgCon {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    top: 13px;
+    left: 14px;
+}
+
+
+.firstPage .container .sideMenu .sideMenuBox>li .cpSubmenu {
+    position: absolute;
+    /*top: -95px;*/
+    top: -95px;
+    right: -548px;
+    display: block;
+    width: 517px;
+    background: #fff;
+    border: 1px solid #e43a3d;
+    border-left: none;
+    z-index: 200;
+    padding: 0 0 0 30px;
+    display: none;
+    height: 180px;
+}
+.firstPage .container .sideMenu .sideMenuBox>li .cpSubmenu li {
+    float: left;
+    text-align: left;
+    line-height: 57px;
+    width: 170px;
+}
+.firstPage .container .sideMenu .sideMenuBox>li .cpSubmenu li span.cpListIcon {
+    display: inline-block;
+    width: 35px;
+    height:35px;
+    line-height: 57px;
+    vertical-align: middle;
+    margin-right: 8px;
+    background: url("../images/icon_circle.png") no-repeat center center;
+}
+.firstPage .container .sideMenu .sideMenuBox>li .cpSubmenu li a {
+    color: #a77d19;
+    font-size: 14px;
+}
+.firstPage .container .sideMenu .sideMenuBox>li .cpSubmenu li a:hover {
+    text-decoration: underline;
+}
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(1) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -113px -181px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(2) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -113px -181px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(3) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -113px -60px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(4) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat 0 0;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(5) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat 0 -181px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(6) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -171px 0;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(7) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -171px -120px;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(8) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -283px 0;
+}
+
+.firstPage .container .sideMenu .sideMenuBox li:nth-child(9) .imgCon {
+    background: url("../images/czlogo_56x56.png") no-repeat -54px -241px;
+}
+
+/*轮播部分*/
+.firstPage .container .middle {
+    width: 540px;
+}
+
+.firstPage .container .middle .swiper-container {
+    width: 540px;
+    height: 268px;
+}
+.swiper-button-prev {
+    background: url("../images/arrow_left.png") no-repeat center center;
+}
+.swiper-button-next {
+    background: url("../images/arrow_right.png") no-repeat center center;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #fff;
+}
+/*累计中奖部分*/
+.firstPage .container .middle .leiji {
+    width: 540px;
+    height: 46px;
+    background: url("../images/leiji_bg.png") no-repeat center center;
+
+    margin-bottom: 10px;
+
+}
+.firstPage .container .middle .leiji p {
+    line-height: 46px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    text-align: left;
+    padding-left: 50px;
+}
+
+.firstPage .container .middle .leiji p .leijiNum {
+    font-size: 32px;
+    padding: 0 10px;
+}
+
+/*投一注部分*/
+/*双色球*/
+.firstPage .container .middle .betOne {
+    border-bottom: 1px solid #e3e3e3;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd {
+    position: relative;
+    padding: 15px 0 0 0;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox p {
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox .betTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox .periodsNum {
+    margin-left: 10px;
+}
+
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox .bounus {
+    color: #e43a3d;
+}
+
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox .countdown {
+    margin-left: 10px;
+}
+
+
+.firstPage .container .middle .betOne .betModal .betModal_ft {
+    position: relative;
+}
+.firstPage .container .middle .betOne .betModal .betModal_ft .ballBox {
+    position: absolute;
+    top: 0;
+    left: 24px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_ft .ballBox > li {
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: #e43a3d;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0 4px  0 0;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+.firstPage .container .middle .betOne .betModal .betModal_ft .imgBox {
+    position: absolute;
+    top: 9px;
+    left: 24px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_ft .titleBox {
+    position: absolute;
+    top: 9px;
+    /*left: 24px;*/
+}
+.firstPage .container .middle .betOne .betModal .betModal_ft .change {
+    position: absolute;
+    top: 9px;
+    right: 43px;
+    width: 68px;
+    height:23px;
+    line-height: 23px;
+    color: #333;
+    text-align: center;
+    margin-right: 7px;
+    background: #e3e3e3;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.firstPage .container .middle .betOne .betModal .betModal_ft .change:hover {
+    background: #dcdcdc;
+}
+
+    /*公共*/
+.firstPage .container .middle .betOne .betModal {
+    border: 1px solid #e3e3e3;
+    border-bottom: none;
+    height: 122px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_hd {
+    position: relative;
+    width:  540px;
+    height: 40px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_hd .title {
+    position: absolute;
+    left: 24px;
+    top: 7px;
+    line-height: 23px;
+    font-weight: bold;
+}
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar {
+    position: absolute;
+    top: 7px;
+    left: 78px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar .gaopingcaiTabbarItem,
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar .jingjicaiTabbarItem {
+    float: left;
+    width: 68px;
+    height:23px;
+    line-height: 23px;
+    color: #333;
+    text-align: center;
+    margin-right: 7px;
+    background: #e3e3e3;
+    cursor: pointer;
+}
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar .gaopingcaiTabbarItem.active,
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar .gaopingcaiTabbarItem.active:hover,
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar .jingjicaiTabbarItem.active,
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar .jingjicaiTabbarItem.active:hover {
+    color: #fff;
+    background: #e43a3d;
+}
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar .gaopingcaiTabbarItem:hover,
+.firstPage .container .middle .betOne .betModal .betModal_hd .betTabbar .jingjicaiTabbarItem:hover {
+    /*color: #fff;*/
+    background: #dcdcdc;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd {
+     position: relative;
+     width: 540px;
+     height:64px;
+ }
+.firstPage .container .middle .betOne .betModal .lower {
+    position: relative;
+    width: 540px;
+    height:64px;
+    margin: -8px 0 0 0;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .gpcBetConItem {
+    display: none;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .imgBox {
+    margin: 0 0 0 17px;
+    width: 60px;
+    height: 60px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox {
+    margin: 4px 0 0 13px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox .cptitle {
+    line-height: 24px;
+    font-weight: bold;
+    font-size:14px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox .cpdes {
+    line-height: 24px;
+    font-size:14px;
+    color:#666;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .titleBox .cpdes .red {
+    color:#e43a3d;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .right {
+    position: relative;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .right button {
+    width: 124px;
+    height: 40px;
+    background: #e43a3d;
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 26px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .right button:hover {
+    background: #fa353e;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .right button:active {
+    background: #a32f32;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .jjcBetConItem .titleBox .cptitle {
+    line-height: 24px;
+    font-weight: bold;
+    font-size:14px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .jjcBetConItem .titleBox .cptitle .changci {
+    line-height: 24px;
+    font-weight:normal;
+    color: #999;
+    font-size:14px;
+    margin-left: 10px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .jjcBetConItem .titleBox .cpdes {
+    line-height: 20px;
+    font-weight:normal;
+    color: #666;
+    font-size:12px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .jjcBetConItem .titleBox .cpdes .area {
+    margin-right: 10px;
+    line-height: 20px;
+    font-weight:normal;
+    color: #999;
+    font-size:12px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .jjcBetConItem .titleBox .cpdes .vs {
+    color: #ce3437;
+    margin: 0 7px;
+}
+.firstPage .container .middle .betOne .betModal .betModal_bd .jjcBetConItem {
+    display: none;
+}
+
+
+
+
+.rightCon {
+    width: 250px;
+    height: 100px;
+    margin-left: 10px;
+}
+
+/*右侧公告栏*/
+.firstPage .container .right .rightCon .notice  {
+    position: relative;
+    padding: 0 10px 0 0;
+}
+.firstPage .container .right .rightCon .notice .notice_tabbar {
+    position: relative;
+    border-bottom: 1px solid #e3e3e3;
+}
+.firstPage .container .right .rightCon .notice .notice_tabbar .noticeTabbarItem {
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    color: #333;
+    font-size:14px;
+    padding: 0 6px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.firstPage .container .right .rightCon .notice .notice_tabbar .noticeTabbarItem:hover {
+    border-bottom: 3px solid #e43a3d;
+    color: #e43a3d;
+}
+.firstPage .container .right .rightCon .notice .notice_tabbar .noticeTabbarItem.active {
+    border-bottom: 3px solid #e43a3d;
+    font-weight: bold;
+    color: #e43a3d;
+}
+.firstPage .container .right .rightCon .notice .notice_tabCon {
+    position: relative;
+    height: 200px;
+}
+.firstPage .container .right .rightCon .notice .notice_tabCon .noticeTabConItem {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 240px;
+    background: #fff;
+    display: none;
+    padding: 5px;
+}
+.firstPage .container .right .rightCon .notice .notice_tabCon .noticeTabConItem>ul>li {
+    display: block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-size: 14px;
+    line-height: 28px;
+}
+.firstPage .container .right .rightCon .notice .notice_tabCon .noticeTabConItem>ul>li a:hover {
+    text-decoration: underline;
+}
+
+.firstPage .container .right .rightCon .notice #notice_tabcontent .noticeBox li a {
+    font-size: 14px;
+    line-height: 2.0em;
+}
+
+.firstPage .container .right .rightCon .notice #notice_tabcontent .noticeBox li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/*最近中奖名单*/
+.firstPage .container .right .rightCon .nearbyOwner {
+    padding: 0 10px 0 0;
+}
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_hd {
+    position: relative;
+    border-bottom: 1px solid #e3e3e3;
+    color: #e43a3d;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 34px;
+}
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd {
+    padding: 8px 0;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li {
+    border-bottom: 1px dotted #e8e8e8;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li img {
+    width: 56px;
+    height: 56px;
+    margin: 4px 0 0 4px;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox {
+    padding: 10px 0 0 0;
+    float: right;
+    width: 75%;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .gameType {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .username {
+    font-weight: normal;
+    font-size: 12px;
+    color: #666;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .right {
+    padding: 0 10px;
+    text-align: right;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .money {
+    font-weight: bold;
+    font-size: 14px;
+    color: #e43a3d;
+}
+
+.firstPage .container .right .rightCon .nearbyOwner .nearbyOwner_bd li .infoBox .methods {
+    font-weight: normal;
+    font-size: 12px;
+    color: #666;
+}
+
+
+
+
+
+
+.secondPage .container {
+    /*background: #fff;*/
+}
+
+.secondPage .container .threePicBox {
+    position: relative;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+.secondPage .container .threePicBox li {
+    float: left;
+    margin-right: 10px;
+    width: 340px;
+    height: 216px;
+    position: relative;
+    overflow:hidden;
+}
+.secondPage .container .threePicBox li:last-child {
+    margin-right: 0;
+}
+
+.secondPage .container .threePicBox li .roomTitleBox {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    text-align: center;
+}
+
+.secondPage .container .threePicBox li .roomTitleBox .roomTitle {
+    line-height: 43px;
+    font-size: 24px;
+    color: #fff;
+    /*font-style: italic;*/
+}
+
+
+
+
+/*彩票走势*/
+.secondPage .container .cpInfoBox {
+    position: relative;
+    margin-top: 10px;
+}
+
+.secondPage .container .cpInfoBox li {
+    float: left;
+}
+
+.secondPage .container .cpInfoBox .zoushi {
+    width: 255px;
+    margin: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    height: 450px;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_hd {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_hd h2 {
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 12px;
+    color: #e43a3d;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .zoushiGraph {
+    padding: 22px 0 0 10px;
+}
+.secondPage .container .cpInfoBox .zoushi .modal_bd .zoushiGraph table {
+    border-collapse: collapse;
+    border: 1px solid #fff;
+    background: #f7f7f7;
+    width: 234px;
+    height: 105px;
+}
+.secondPage .container .cpInfoBox .zoushi .modal_bd .zoushiGraph table td {
+    border: 1px solid #fff;
+    text-align: center;
+    width: 7.5%;
+    color: #eba7af;
+}
+.secondPage .container .cpInfoBox .zoushi .modal_bd .zoushiGraph table td.active {
+    color: #fff;
+    font-weight: bold;
+    background: url("../images/smallball_bg_red.png")no-repeat center center;
+}
+
+
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai {
+    margin-top: 20px;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai .shuzicai_hd,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai .gaopingcai_hd {
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: normal;
+    padding-left: 9px;
+    color: #999;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai .shuzicai_bd,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai .gaopingcai_bd {
+    position: relative;
+}
+
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai .shuzicai_bd li,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai .gaopingcai_bd li {
+    display: inline-block;
+    padding: 0 7px 0 10px;
+    font-size: 14px;
+    color: #333;
+}
+.secondPage .container .cpInfoBox .zoushi .modal_bd .shuzicai .shuzicai_bd li a:hover,
+.secondPage .container .cpInfoBox .zoushi .modal_bd .gaopingcai .gaopingcai_bd li a:hover {
+    text-decoration: underline;
+}
+
+/*今日发单人排行榜*/
+.secondPage .container .cpInfoBox .fadan {
+    width: 255px;
+    margin: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    /*overflow: hidden;*/
+    height: 450px;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabbar {
+    position: relative;
+    border-bottom: 1px solid #e3e3e3;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabbar .fadanTabbarItem {
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    color: #333;
+    font-size:16px;
+    padding: 0 6px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    width: 60px;
+    display: block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border-right: 1px solid #e3e3e3;
+    color: #999;
+
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabbar .fadanTabbarItem:last-child {
+    border-right:none;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabbar .fadanTabbarItem:hover {
+    /*border-bottom: 3px solid #e43a3d;*/
+    color: #e43a3d;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabbar .fadanTabbarItem.active {
+    border-bottom: 3px solid #e43a3d;
+    font-weight: bold;
+    color: #e43a3d;
+    width: 133px;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon {
+    position: relative;
+
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon .fadanTabConItem {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 253px;
+    background: #fff;
+    display: none;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon  .fadanTabConItem table {
+    margin: 5px;
+    width: 100%;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon  .fadanTabConItem tbody tr {
+    height: 32px;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon  .fadanTabConItem tbody tr td:nth-child(2) img {
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon  .fadanTabConItem tbody tr td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+}
+
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon  .fadanTabConItem tbody tr td:nth-child(2) {
+    width: 15%;
+    text-align: center;
+}
+
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon  .fadanTabConItem tbody tr td:nth-child(3) {
+    width: 50%;
+}
+.secondPage .container .cpInfoBox .fadan .fadan_tabCon  .fadanTabConItem tbody tr td:nth-child(4) {
+    width: 40%;
+    color: #e43a3d;
+}
+/*今日个人排行榜*/
+.secondPage .container .cpInfoBox .geren {
+    width: 255px;
+    margin: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    /*overflow: hidden;*/
+    height: 450px;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabbar {
+    position: relative;
+    border-bottom: 1px solid #e3e3e3;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabbar .gerenTabbarItem {
+    float: left;
+    text-align: center;
+    line-height: 34px;
+    color: #333;
+    font-size:16px;
+    padding: 0 6px;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    width: 60px;
+    display: block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border-right: 1px solid #e3e3e3;
+    color: #999;
+
+}
+.secondPage .container .cpInfoBox .geren .geren_tabbar .gerenTabbarItem:last-child {
+    border-right:none;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabbar .gerenTabbarItem:hover {
+    /*border-bottom: 3px solid #e43a3d;*/
+    color: #e43a3d;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabbar .gerenTabbarItem.active {
+    border-bottom: 3px solid #e43a3d;
+    font-weight: bold;
+    color: #e43a3d;
+    width: 133px;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabCon {
+    position: relative;
+
+}
+.secondPage .container .cpInfoBox .geren .geren_tabCon .gerenTabConItem {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 253px;
+    background: #fff;
+    display: none;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabCon  .gerenTabConItem table {
+    margin: 5px;
+    width: 100%;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabCon  .gerenTabConItem tbody tr {
+    height: 32px;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabCon  .gerenTabConItem tbody tr td:nth-child(2) img {
+    width: 22px;
+    height: 22px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.secondPage .container .cpInfoBox .geren .geren_tabCon  .gerenTabConItem tbody tr td:nth-child(1) {
+    width: 5%;
+    text-align: center;
+}
+
+.secondPage .container .cpInfoBox .geren .geren_tabCon  .gerenTabConItem tbody tr td:nth-child(2) {
+    width: 15%;
+    text-align: center;
+}
+
+.secondPage .container .cpInfoBox .geren .geren_tabCon  .gerenTabConItem tbody tr td:nth-child(3) {
+    width: 50%;
+}
+.secondPage .container .cpInfoBox .geren .geren_tabCon  .gerenTabConItem tbody tr td:nth-child(4) {
+    width: 40%;
+    color: #e43a3d;
+}
+
+/*开奖查询*/
+.secondPage .container .cpInfoBox .chaxun {
+    width: 255px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #e8e8e8;
+    height: 450px;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_hd {
+    border-bottom: 1px solid #e8e8e8;
+    position: relative;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_hd h2 {
+    line-height: 38px;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 18px;
+    color: #e43a3d;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_hd .more {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox {
+    padding: 0 10px;
+    background: #fff;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox > li {
+    border-bottom: 1px dotted #e3e3e3;
+    width: 100%;
+    position: relative;
+    padding-top: 18px;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox > li:last-child {
+    border-bottom: none;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .line {
+    position: relative;
+    width: 100%;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .kaijiangTitle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .qihao {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .shuangseqiu,
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .daletou,
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .fucai,
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .shengfucai {
+    position: relative;
+    width: 90%;
+    margin: 14px 0 16px 0;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .shuangseqiu li {
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: #e43a3d;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 4px;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .shuangseqiu li:last-child {
+    background: #3273db;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .detailLink {
+    position: absolute;
+    top: 55px;
+    right: 0;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .detailLink a {
+    text-decoration: underline;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .daletou li {
+    width: 24px;
+    height: 24px;
+    color: #e43a3d;
+    font-size: 14px;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .daletou li:nth-child(6),
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .daletou li:nth-child(7) {
+    color: #3273db;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .fucai li {
+    width: 15px;
+    height: 30px;
+    color: #e43a3d;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .fucai li:nth-child(4) {
+    width: 90px;
+    color: #333;
+    text-align: left;
+}
+
+.secondPage .container .cpInfoBox .chaxun .chaxun_bd .chaxunBox .shengfucai li {
+    width: 10px;
+    color: #e43a3d;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 4px;
+    font-weight: bold;
+}
+
+/*四张banner*/
+.secondPage .container .fourBanner {
+    margin-top: 10px;
+    position: relative;
+}
+
+.secondPage .container .fourBanner li {
+    float: left;
+    margin-right:10px;
+    font-size: 0;
+}
+.secondPage .container .fourBanner li:last-child {
+    margin-right: 0;
+}
+.secondPage .container .fourBanner li img {
+    width: 255px;
+    height: 190px;
+}
+.secondPage .container .fourBanner li p {
+    text-align: center;
+    line-height: 42px;
+    background: #fff6d3 url("../images/bg_line.png") no-repeat center center;
+    font-size: 20px;
+    font-style: italic;
+    color: #e43a3d;
+}
+.secondPage .container .fourBanner li p span {
+    background: #fff6d3;
+    padding: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
