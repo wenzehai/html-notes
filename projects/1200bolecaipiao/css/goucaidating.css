@@ -1,0 +1,197 @@
+.bgCon .msg .container {
+    border-bottom: 1px solid #e8e8e8;
+    background: #fffee8;
+}
+.bgCon .msg .container p {
+    line-height: 38px;
+    font-size: 14px;
+}
+.bgCon .msg .container p strong {
+    color: #333;
+    font-size: 16px;
+}
+
+.bgCon .msg .container p span.zhushu {
+    font-weight: bold;
+    color: #e43a3d;
+    font-size: 22px;
+    margin-right: 4px;
+}
+.bgCon .msg .container p span.space {
+    display: inline-block;
+    width: 20px;
+}
+
+.bgCon .goucaiBanner .container {
+    padding: 10px 0;
+}
+
+
+/*福彩、体彩*/
+.bgCon .fucai .container .fucai_hd {
+    border-bottom: 1px solid #e43a3d;
+    margin-top: 15px;
+}
+.bgCon .fucai .container .fucai_hd .left .h3Icon {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url(../images/icon_fucai_title.png) no-repeat center center;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-top: -4px;
+}
+.bgCon .gaopingcai .container .fucai_hd .left .h3Icon {
+    background: url(../images/icon_gaopingcai_title.png) no-repeat center center;
+}
+.bgCon .fucai .container .fucai_hd .left h3 {
+    line-height: 36px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #e43a3d;
+    color: #333;
+}
+.bgCon .fucai .container .fucai_hd .right a {
+    line-height: 38px;
+    color:#e43a3d;
+    font-size: 16px;
+}
+.bgCon .fucai .container .fucai_hd .right a .linkIcon {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background: url(../images/icon_hot.png) no-repeat center center;
+    vertical-align: middle;
+    margin-right: 2px;
+    margin-top: -5px;
+}
+.bgCon .fucai .container .fucai_hd .right a .arrowIcon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon_doubleArrow.png) no-repeat center center;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 3px;
+}
+.bgCon .fucai .container .fucai_bd {
+    padding: 10px 0;
+}
+
+.bgCon .fucai .container .fucai_bd ul li {
+    width: 232px;
+    height:184px;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    margin-right: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 10px;
+}
+.bgCon .fucai .container .fucai_bd ul li:nth-child(5n) {
+    margin-right: 0;
+}
+    /*正常显示*/
+.bgCon .fucai .container .fucai_bd ul li .normal:hover .hoverModal {
+    display: block;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 182px;
+    background: #fff;
+    display: block;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .iconBox {
+    text-align: center;
+    padding-top: 17px;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .iconBox img {
+    width: 80px;
+    height: 80px;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 10px;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .subTitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    line-height: 32px;
+}
+
+.bgCon .fucai .container .fucai_bd ul li .normal .subTitle .stressed {
+    font-size: 14px;
+    color: #e43a3d;
+    text-align: center;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 182px;
+    background: #f8f8f8;
+    display: none;
+    text-align: center;
+    z-index: 10;
+}
+
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e43a3d;
+    text-align: center;
+    line-height: 28px;
+    margin: 8px 0 5px 0;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal .subTitle {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    line-height: 24px;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal .subTitle .stressed {
+    font-size: 12px;
+    color: #e43a3d;
+    text-align: center;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal .kaijiangTime {
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 18px;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal button {
+    width: 120px;
+    height: 42px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: #e43a3d;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal .link {
+    margin-top: 8px;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal .link a{
+    font-size: 14px;
+    color: #3273db;
+    margin:  0 8px;
+}
+.bgCon .fucai .container .fucai_bd ul li .normal .hoverModal .link a:hover {
+    text-decoration: underline;
+}
+
+

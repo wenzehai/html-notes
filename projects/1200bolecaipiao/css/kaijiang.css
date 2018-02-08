@@ -1,0 +1,107 @@
+.red {
+    color: #e43a3d;
+}
+
+.blue {
+    color: #3273db;
+}
+.bgCon .kaijiang {
+    margin-top: 10px;
+}
+
+.bgCon .kaijiang  .dataTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+.bgCon .kaijiang  .dataTable thead {
+    height: 36px;
+    border: 1px solid #e8e8e8;
+    background: url("../images/kaijiang_bg.png") repeat-x 0 -48px ;
+}
+.bgCon .kaijiang  .dataTable thead tr td {
+    text-align: center;
+    font-size: 14px;
+    /*padding-left: 75px;*/
+    height: 38px;
+}
+.bgCon .kaijiang  .dataTable thead tr td:nth-child(1) {
+    width: 30px;
+}
+
+.bgCon .kaijiang  .dataTable tbody tr {
+    height: 69px;
+    border-bottom: 1px solid #e8e8e8;
+    background: #fff;
+}
+.bgCon .kaijiang  .dataTable tbody tr:hover {
+    background: #fffbed !important;
+}
+.bgCon .kaijiang  .dataTable tbody tr:nth-child(odd) {
+    background: #fbfbfb;
+}
+.bgCon .kaijiang  .dataTable tbody tr td.today {
+    width: 28px;
+    
+}
+.bgCon .kaijiang  .dataTable tbody tr td.today span {
+    background: #fa5e00;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    font-size: 14px;
+    letter-spacing: 4px;
+}
+
+.bgCon .kaijiang  .dataTable tbody tr .caizhong .caizhong_hd {
+    height: 34px;
+    text-align: left;
+}
+.bgCon .kaijiang  .dataTable tbody tr .caizhong .caizhong_hd h3 {
+     font-size: 16px;
+     font-weight: bold;
+    display: inline-block;
+ }
+.bgCon .kaijiang  .dataTable tbody tr .caizhong .caizhong_hd .qishu {
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.bgCon .kaijiang  .dataTable tbody tr .caizhong .caizhong_bd p {
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+}
+
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd {
+    position: relative;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .ball,
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .otherInfo,
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .detailsLink {
+    display: inline-block;
+    position: relative;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .ball li {
+    float: left;
+    display: inline-block;
+    width: 29px;
+    height: 28px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 3px;
+    background: #e43a3d;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .otherInfo {
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
