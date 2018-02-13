@@ -1,0 +1,140 @@
+/*图标部分*/
+.bgCon .iconGallery {
+    margin-top: 30px;
+}
+.bgCon .iconGallery .container {
+    position: relative;
+    margin: 0 auto;
+}
+.bgCon .iconGallery  {
+    position: relative;
+    width: 100%;
+}
+.bgCon .iconGallery .title {
+    font-size: 16px;
+    line-height: 28px;
+    border-bottom: 1px solid #e8e8e8;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+.bgCon .iconGallery  .iconBox {
+    width: 200px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*图标背景图*/
+.icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.chongqingSSC  {
+    background: url("../images/caipiao/chongqingSSC.png") no-repeat center center;
+    background-size: cover;
+}
+.yinniSSC  {
+    background: url("../images/caipiao/yingniSSC.png") no-repeat center center;
+    background-size: cover;
+}
+.yuenanSSC  {
+    background: url("../images/caipiao/yuenanSSC.png") no-repeat center center;
+    background-size: cover;
+}
+.aijiSSC  {
+    background: url("../images/caipiao/aijiFFC.png") no-repeat center center;
+    background-size: cover;
+}
+.aijiWFC  {
+    background: url("../images/caipiao/aijiWFC.png") no-repeat center center;
+    background-size: cover;
+}
+.newSSC  {
+    background: url("../images/caipiao/newSSC.png") no-repeat center center;
+    background-size: cover;
+}
+
+
+
+.shanghaiKS  {
+    background: url("../images/caipiao/shanghaiKS.png") no-repeat center center;
+    background-size: cover;
+}
+.jiangsuKS  {
+    background: url("../images/caipiao/jiangsuKS.png") no-repeat center center;
+    background-size: cover;
+}
+.hubeiKS  {
+    background: url("../images/caipiao/hubeiKS.png") no-repeat center center;
+    background-size: cover;
+}
+.hebeiKS  {
+    background: url("../images/caipiao/hebeiKS.png") no-repeat center center;
+    background-size: cover;
+}
+.guangxiKS  {
+    background: url("../images/caipiao/guangxiKS.png") no-repeat center center;
+    background-size: cover;
+}
+.gansuKS  {
+    background: url("../images/caipiao/gansuKS.png") no-repeat center center;
+    background-size: cover;
+}
+.anhuiKS  {
+    background: url("../images/caipiao/anhuiKS.png") no-repeat center center;
+    background-size: cover;
+}
+.newKS  {
+    background: url("../images/caipiao/newKS.png") no-repeat center center;
+    background-size: cover;
+}
+
+.beijingKL8  {
+    background: url("../images/caipiao/beijingKL8.png") no-repeat center center;
+    background-size: cover;
+}
+
+.tianjin115  {
+    background: url("../images/caipiao/tianjin115.png") no-repeat center center;
+    background-size: cover;
+}
+.shanghai115  {
+    background: url("../images/caipiao/shanghai115.png") no-repeat center center;
+    background-size: cover;
+}
+.jiangxi115  {
+    background: url("../images/caipiao/jiangxi115.png") no-repeat center center;
+    background-size: cover;
+}
+.jiangsu115  {
+    background: url("../images/caipiao/jiangsu115.png") no-repeat center center;
+    background-size: cover;
+}
+.guangdong115  {
+    background: url("../images/caipiao/guangdong115.png") no-repeat center center;
+    background-size: cover;
+}
+.fujian115  {
+    background: url("../images/caipiao/fujian115.png") no-repeat center center;
+    background-size: cover;
+}
+.anhui115  {
+    background: url("../images/caipiao/anhui115.png") no-repeat center center;
+    background-size: cover;
+}
+.new115  {
+    background: url("../images/caipiao/new115.png") no-repeat center center;
+    background-size: cover;
+}
+
+.XY28  {
+    background: url("../images/caipiao/XY28.png") no-repeat center center;
+    background-size: cover;
+}
+
+.beijingPK10  {
+    background: url("../images/caipiao/beijingPK10.png") no-repeat center center;
+    background-size: cover;
+}
+
+
