@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/swiper.min.css">           <!--轮播插件样式-->
+    <link rel="stylesheet" href="css/common.css">               <!--公共样式-->
+    <link rel="stylesheet" href="css/zoushi.css">                 <!--首页样式-->
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/response.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery-3.2.0.js"></script>
+    <script src="js/swiper.min.js"></script>                <!--轮播插件-->
+
+
+</head>
+<body class="home">
+<div class="bgCon">
+    <!--整站导航-->
+    <section class="siteNav">
+        <div class="container">
+            <div class="left">
+                <ul class="leftMenuBox">
+                    <li class="slogan">Hi,欢迎来到博乐彩票云平台！</li>
+                    <li class="sep">|</li>
+                    <li class="all">全部彩种</li>
+                </ul>
+            </div>
+            <div class="right">
+                <ul class="rightMenuBox">
+                    <li class="portraitBox">
+                        <img src="./images/portrait.jpg">
+                        <span>鹤舞白沙</span>
+                    </li>
+                    <li>
+                        <span class="yellow">0</span>
+                    </li>
+                    <li>
+                        <span>我的账户</span><span class="siteIcon"><img src="images/dropdown.png"></span>
+                        <ul class="subMenu" style="display: none;">
+                            <li><a href="#">子菜单一</a></li>
+                            <li><a href="#">子菜单二</a></li>
+                            <li><a href="#">子菜单三</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>余额</span>
+                        <span>65060.62</span>
+                        <span class="siteIcon"><img src="images/refresh.png"></span>
+                    </li>
+                    <li>
+                        <a href="#">充值</a>
+                    </li>
+                    <li>
+                        <a href="#">提现</a>
+                    </li>
+                    <li>
+                        <a href="#">退出</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--主导航-->
+    <section class="mainMenu">
+        <div class="container">
+            <div class="left">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="right">
+                <ul class="mainMenuBox">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li class="sep"></li>
+                    <li><a href="#">购彩大厅</a></li>
+                    <li class="sep"></li>
+                    <li><a href="#">合买大厅</a></li>
+                    <li class="sep"></li>
+                    <li><a href="#">走势图表</a></li>
+                    <li class="sep"></li>
+                    <li><a href="#">手机购彩</a></li>
+                    <li class="sep"></li>
+                    <li><a href="#">优惠活动</a></li>
+                    <li class="sep"></li>
+                    <li><a href="#">开奖公告</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--第一屏-->
+    <section class="zoushi">
+        <div class="container">
+            <div class="zoushi_hd">
+                <h3>重庆时时彩</h3>
+                <div class="qiehuan">切换彩种<span></span></div>
+                <ul>
+                    <li>基本走势</li>
+                    <li>K线图</li>
+                    <li>直方图</li>
+                    <li>历史开奖数据</li>
+                    <li>立即投注</li>
+                </ul>
+            </div>
+
+            <div class="zoushi_bd">
+                <ul class="contentBox">
+                    <li class="content">
+                        <!--表头-->
+                        <div class="biaotou">
+                            <div class="left cl-31">期号</div>
+                            <div class="left cl-32">奖号</div>
+                            <div class="left cl-33">
+                                <div class="cl-35 clearfix">
+                                    <div class="left cl-34">万位</div>
+                                    <div class="left cl-34">千位</div>
+                                    <div class="left cl-34">百位</div>
+                                    <div class="left cl-34">十位</div>
+                                    <div class="left cl-34">个位</div>
+                                </div>
+                                <div class="cl-35 cl-36 clean">
+                                    <script>
+                                        for (var i = 0; i < 5; ++i) {
+                                            for (var j = 0; j < 10; ++j) {
+                                                var s = '';
+                                                if (i % 2 == 0) {
+                                                    s = 'bg-1';
+                                                } else {
+                                                    s = 'bg-2'
+                                                }
+                                                document.write('<span class="' + s + '"><i>' + j + '</i></span>');
+                                            }
+                                        }
+                                    </script>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--主体数据-->
+                        <div class="mainData">
+                            <div class="line">
+                                <span class="cl-52">201802040204</span>
+                                <span class="cl-52">8,9,0,0,1</span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                            </div>
+                            <div class="line">
+                                <span class="cl-52">201802040204</span>
+                                <span class="cl-52">8,9,0,0,1</span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-2"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1 active"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                                <span class="bg-1"><i class="not-transparent">1</i></span>
+                            </div>
+                        </div>
+
+
+                                <!--遗漏数据-->
+                                <div id="yiLouData">
+                                    <div class="left cl-31">期号</div>
+                                    <div class="left cl-32">奖号</div>
+                                    <div class="left cl-33">
+                                        <div class="cl-35">
+                                            <div class="left cl-34">万位</div>
+                                            <div class="left cl-34">千位</div>
+                                            <div class="left cl-34">百位</div>
+                                            <div class="left cl-34">十位</div>
+                                            <div class="left cl-34">个位</div>
+                                        </div>
+                                        <div class="cl-35 cl-36 clean">
+                                            <script>
+                                                for (var i = 0; i < 5; ++i) {
+                                                    for (var j = 0; j < 10; ++j) {
+                                                        var s = '';
+
+                                                        document.write('<span class="bg-0"><i>' + j + '</i></span>');
+                                                    }
+                                                }
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <div class="clean bg-gray">
+                                        <div class="left cl-31 cl-51">出现总次数</div>
+                                        <div id="cxzcs" class="cl-35">
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="clean bg-white">
+                                        <div class="left cl-31 cl-51">平均遗漏值</div>
+                                        <div id="pjylz" class="cl-35">
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="clean bg-gray">
+                                        <div class="left cl-31 cl-51">最大遗漏值</div>
+                                        <div class="cl-35" id="zdylz">
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                            <span class="bg-3"><i>1</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="clean bg-white">
+                                        <div class="left cl-31 cl-51">最大连出值</div>
+                                        <div class="cl-35" id="zdlcz">
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                            <span class="bg-4"><i>1</i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            <div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="zoushi_ft clearfix">
+                <div class="left shuoming">
+                    <div class="shuoming_hd">
+                        <h3>参数说明</h3>
+                    </div>
+                    <div class="shuoming_bd">
+                        <p><strong>遗漏数据:</strong>自上期开出到本期间隔的期数</p>
+                        <p><strong>遗漏数据:</strong>自上期开出到本期间隔的期数</p>
+                        <p><strong>遗漏数据:</strong>自上期开出到本期间隔的期数</p>
+                        <p><strong>遗漏数据:</strong>自上期开出到本期间隔的期数</p>
+                        <p><strong>遗漏数据:</strong>自上期开出到本期间隔的期数</p>
+                        <p><strong>遗漏数据:</strong>自上期开出到本期间隔的期数</p>
+                        <p><strong>遗漏数据:</strong>自上期开出到本期间隔的期数</p>
+                    </div>
+                </div>
+                <div class="right touzhu">
+                    <div class="left">
+                        <div class="touzhu_hd">
+                            <p>第<span class="qihaoNum">20180205066</span>期，02月05日开奖</p>
+                        </div>
+                        <div class="touzhu_bd">
+                            <div class="daojishi">20180205066期已开盘，距离下一期还有：6分24秒</div>
+                            <p class="tips">每天销售120期 每5分钟-10分钟一期</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="zhongjiangBox">
+                            <a href="#"><img src="images/jiang.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footerMenu">
+        <div class="container">
+            <ul class="ftMenuBox clearfix">
+                <li>
+                    <div class="ftMenuItem_hd">
+                        <span>新手上路</span>
+                    </div>
+                    <div class="ftMenuItem_bd">
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">人才招聘</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">对方答复</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="ftMenuItem_hd">
+                        <span>帮助中心</span>
+                    </div>
+                    <div class="ftMenuItem_bd">
+                        <ul>
+                            <li><a href="#">新手购彩</a></li>
+                            <li><a href="#">常见问题</a></li>
+                            <li><a href="#">功能指引</a></li>
+                            <li><a href="#">玩法介绍</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="ftMenuItem_hd">
+                        <span>联系我们</span>
+                    </div>
+                    <div class="ftMenuItem_bd">
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">人才招聘</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">对方答复</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ftMenuItem_hd">
+                        <span>帮助中心</span>
+                    </div>
+                    <div class="ftMenuItem_bd">
+                        <ul>
+                            <li><a href="#">关于我们</a></li>
+                            <li><a href="#">人才招聘</a></li>
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">对方答复</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </section>
+    <section class="copyright">
+        <div class="container">
+            <p>博乐网络科技有限公司 &nbsp;&nbsp;&nbsp; ICP备案：京ICP备13039488号-2
+                &nbsp;&nbsp;&nbsp;本站提示：彩票有风险，投注须谨慎，不向未满18周岁的青少年出售彩票</p>
+        </div>
+    </section>
+
+
+</div>
+<script src="js/zoushi.js"></script>
+<script>
+
+</script>
+</body>
+</html>

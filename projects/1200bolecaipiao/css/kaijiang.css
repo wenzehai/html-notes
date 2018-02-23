@@ -1,0 +1,197 @@
+.red {
+    color: #e43a3d;
+}
+
+.blue {
+    color: #3273db;
+}
+.bgCon .kaijiang {
+    margin-top: 10px;
+}
+
+.bgCon .kaijiang  .dataTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+.bgCon .kaijiang  .dataTable thead {
+    height: 36px;
+    border: 1px solid #e8e8e8;
+    background: url("../images/kaijiang_bg.png") repeat-x 0 -48px ;
+}
+.bgCon .kaijiang  .dataTable thead tr td {
+    text-align: center;
+    font-size: 14px;
+    /*padding-left: 75px;*/
+    height: 38px;
+}
+.bgCon .kaijiang  .dataTable thead tr td:nth-child(1) {
+    width: 20px;
+    padding-left: 0;
+}
+
+.bgCon .kaijiang  .dataTable tbody tr {
+    height: 69px;
+    border: 1px solid #e8e8e8;
+    border-top: none;
+    background: #fff;
+}
+.bgCon .kaijiang  .dataTable tbody tr:hover {
+    background: #fffbed !important;
+}
+.bgCon .kaijiang  .dataTable tbody tr:nth-child(odd) {
+    background: #fbfbfb;
+}
+.bgCon .kaijiang  .dataTable tbody tr td.today {
+    width: 28px;
+    
+}
+.bgCon .kaijiang  .dataTable tbody tr td.today span {
+    background: #fa5e00;
+    color: #fff;
+    text-align: center;
+    line-height: 14px;
+    font-size: 14px;
+    display: block;
+    width: 20px;
+    padding: 5px 0;
+    display: none;
+}
+.bgCon .kaijiang  .dataTable tbody tr td.today.active span {
+    display: block;
+}
+.bgCon .kaijiang  .dataTable tbody tr .caizhong .caizhong_hd {
+    text-align: left;
+}
+.bgCon .kaijiang  .dataTable tbody tr .caizhong .caizhong_hd h3 {
+     font-size: 18px;
+     font-weight: bold;
+    display: inline-block;
+ }
+.bgCon .kaijiang  .dataTable tbody tr .caizhong .caizhong_hd .qishu {
+    font-size: 14px;
+    font-weight: normal;
+    color: #999;
+    margin-left: 15px;
+    display: inline-block;
+    line-height: 28px;
+    vertical-align: top;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.bgCon .kaijiang  .dataTable tbody tr .caizhong .caizhong_bd p {
+    font-size: 13px;
+    font-weight: normal;
+    color: #999;
+}
+
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd {
+    position: relative;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .ball,
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .otherInfo,
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .detailsLink {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    font-size: 13px;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .otherInfo {
+    display: none;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .otherInfo.active {
+    display: inline-block;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .detailsLink {
+    margin-left: 5px;
+    line-height: 27px;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .ball li {
+    float: left;
+    display: inline-block;
+    width: 29px;
+    height: 28px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 28px;
+    font-size: 15px;
+    color: #fff;
+    margin-right: 3px;
+    background: #e43a3d;
+    font-weight: bold;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd.green .ball li {
+    width: 10px;
+    height: 17px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    background: url("../images/kaijiang_bg.png") repeat-x 0 -91px ;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: normal;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd.green .otherInfo,
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd.green .detailsLink {
+    line-height: 17px;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .ball li.blue {
+    background: #3273db;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_hd .otherInfo {
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.bgCon .kaijiang  .dataTable tbody tr .kaijiangDetail .kaijiangDetail_bd .kaijiangInfo li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #999;
+    line-height: 24px;
+}
+.bgCon .kaijiang  .dataTable tbody tr td a {
+    color: #3273db;
+}
+.bgCon .kaijiang  .dataTable tbody tr .tools a {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.bgCon .kaijiang  .dataTable tbody tr .operate {
+    text-align: center;
+}
+.bgCon .kaijiang  .dataTable tbody tr .operate .buy {
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 8px;
+    border: 1px solid #d29619;
+    border-radius: 2px;
+    background: url("../images/kaijiang_bg.png") repeat-x 0 0 ;
+    color: #5e0003;
+    cursor: pointer;
+}
+.bgCon .kaijiang  .dataTable tbody tr .operate .groupBuy {
+    display: inline-block;
+    height: 21px;
+    line-height: 21px;
+    padding: 0 8px;
+    border-radius: 2px;
+    background: url("../images/kaijiang_bg.png") repeat-x 0 -24px ;
+    border: 1px solid #b6b6b6;
+    color: #444;
+    cursor: pointer;
+}
+.bgCon .kaijiang .tips {
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+    text-align: left;
+    line-height: 20px;
+}

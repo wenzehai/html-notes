@@ -1,0 +1,122 @@
+.bgCon .kefucenter .container {
+    position: relative;
+    padding: 10px 0;
+    background: #fff;
+}
+
+.bgCon .kefucenter .container .questionBox {
+    width: 877px;
+    border: 1px solid #e8e8e8;
+    border-right: none;
+    border-bottom: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.bgCon .kefucenter .container .questionBox>li {
+    width: 219px;
+    border-right: 1px solid #e8e8e8;
+    border-bottom: 1px solid #e8e8e8;
+    height: 316px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bgCon .kefucenter .container .questionBox li .questionCon_hd {
+    text-align: center;
+    padding: 20px 0 14px 0;
+}
+
+.bgCon .kefucenter .container .questionBox li .questionCon_hd h3 {
+    font-size: 22px;
+}
+
+.bgCon .kefucenter .container .questionBox li .questionCon_bd .questionList {
+    text-align: center;
+}
+.bgCon .kefucenter .container .questionBox li .questionCon_bd .questionList li {
+    text-align: left;
+    display: block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.bgCon .kefucenter .container .questionBox li .questionCon_bd .questionList li a {
+    font-size: 14px;
+    line-height: 32px;
+    color: #666;
+}
+.bgCon .kefucenter .container .questionBox li .questionCon_bd .questionList li.active a {
+    color: #e43a3d;
+}
+
+.bgCon .kefucenter .container .questionBox li .questionCon_bd .questionList li a:hover {
+    text-decoration: underline;
+    color: #e43a3d;
+}
+
+.bgCon .kefucenter .container .questionBox li .questionCon_bd .questionList .dot {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    background: url(../images/dotted.png) no-repeat center 4px;
+}
+
+/*客服头像*/
+.bgCon .kefucenter .container .right {
+    background: #f6f6f6;
+    height: 631px;
+    width: 321px;
+    border: 1px solid #e6e6e6;
+}
+.bgCon .kefucenter .container .touxiangCon {
+    background: #f6f6f6;
+    width: 320px;
+}
+.bgCon .kefucenter .container .touxiangCon li {
+    width: 160px;
+    height: 208px;
+    text-align: center;
+    position: relative;
+}
+.bgCon .kefucenter .container .touxiangCon li img {
+    margin: 19px 0 13px 0;
+}
+.bgCon .kefucenter .container .touxiangCon li .kefu_btn {
+    display: block;
+    width: 108px;
+    height: 36px;
+    background: url(../images/kefu_btn.png) no-repeat center center;
+    font-size: 16px;
+    text-align: center;
+    color: #666;
+    margin: 0 auto;
+    line-height: 38px;
+}
+.bgCon .kefucenter .container .touxiangCon li .hoverModal {
+    display: none;
+    width: 160px;
+    height: 208px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+.bgCon .kefucenter .container .touxiangCon li .hoverModal img{
+    margin: 20px 0;
+}
+.bgCon .kefucenter .container .touxiangCon li .hoverModal p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    padding: 0 20px;
+}
+.bgCon .kefucenter .container .touxiangCon li:hover .hoverModal {
+    display: block;
+}
+
+
