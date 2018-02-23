@@ -20,7 +20,7 @@ let serveIndex = require('serve-index');
 
 function servePathAtPort(path, port) {
   let app = express();
-  // serveIndex must precede static to allow index.html to work
+  // serveIndex must precede static to allow 更改滚动条样式.html to work
   app.use(serveIndex(path));
   app.use(express.static(path));
   // Expand the test list based on the file system.

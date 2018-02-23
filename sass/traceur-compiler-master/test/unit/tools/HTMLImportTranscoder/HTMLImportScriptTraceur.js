@@ -34,7 +34,7 @@ suite('HTMLImportScriptTraceur.js', function() {
       assert.equal('Traceur is the best!', world.textContent);
       done();
     });
-    iframe.src = 'test/unit/tools/HTMLImportTranscoder/basic/index.html'
+    iframe.src = 'test/unit/tools/HTMLImportTranscoder/basic/更改滚动条样式.html'
   });
 
   // based on http://w3c.github.io/webcomponents/spec/imports/#dfn-import-link-list
@@ -50,7 +50,7 @@ suite('HTMLImportScriptTraceur.js', function() {
 
       done();
     });
-    iframe.src = 'test/unit/tools/HTMLImportTranscoder/import-order/index.html'
+    iframe.src = 'test/unit/tools/HTMLImportTranscoder/import-order/更改滚动条样式.html'
   });
 
 
