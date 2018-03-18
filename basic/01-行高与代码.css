@@ -3,78 +3,75 @@
 /*推荐使用em作为单位，这样可以根据父级的字体大小来调整子元素的各项尺寸，但是也要注意哪些地方不需要修改
 ，比方说边框1px*/
 .a {
-    font-size: 20px;
-    line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
-
-/*让颜色也可以维护，也是优化代码的一项技巧*/
+/*让颜色也可以维护，也是优化代码的一项技巧，一个只需要改变背景的按钮*/
 button {
-    padding: .3em .8em;
-    border: 1px solid rgba(0, 0, 0, .1);
-    background: #58a linear-gradient(hsla(0, 0%, 100%, .2), transparent);
-    border-radius: .2em;
-    box-shadow: 0 .05em .25em rgba(0, 0, 0, .5);
-    color: white;
-    text-shadow: 0 -.05em .05em rgba(0,0,0,.5);
-    font-size:125%;
-    line-height: 1.5;
+  padding: 0.3em 0.8em;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #58a linear-gradient(hsla(0, 0%, 100%, 0.2), transparent);
+  border-radius: 0.2em;
+  box-shadow: 0 0.05em 0.25em rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 0 -0.05em 0.05em rgba(0, 0, 0, 0.5);
+  font-size: 125%;
+  line-height: 1.5;
 }
 button.cancle {
-    background-color: #c00;
+  background-color: #c00;
 }
 button.ok {
-    background-color: #6b0;
+  background-color: #6b0;
 }
-
 
 /*边框可维护性，主要针对将来要改边框的宽度*/
 /*不好的写法*/
 .a {
-    border-width: 10px 10px 10px 0;
+  border-width: 10px 10px 10px 0;
 }
 /*好的写法*/
 .a {
-    border-width: 10px;
-    border-left-width: 0;
+  border-width: 10px;
+  border-left-width: 0;
 }
-
-
 
 /*颜色*/
 /*自动引用文字颜色*/
 hr {
-    height: .5em;
-    background: currentColor;
+  height: 0.5em;
+  background: currentColor;
 }
 
 /*把表单元素的字体设定为与页面的其他部分相同，不需要重复设置字体属性*/
-input,select,button {
-    font: inherit;
+input,
+select,
+button {
+  font: inherit;
 }
 
 /*把超链接的颜色设定为与页面中其他文本相同*/
 a {
-    color: inherit;
+  color: inherit;
 }
 
 /*提示框小箭头背景色*/
 .callout {
-    position: relative;
+  position: relative;
 }
 .callout::before {
-    content: "";
-    position: absolute;
-    top: -.4em;
-    left: 1em;
-    padding: .35em;
-    background: inherit;
-    border: inherit;
-    border-right: 0;
-    border-bottom: 0;
-    transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  top: -0.4em;
+  left: 1em;
+  padding: 0.35em;
+  background: inherit;
+  border: inherit;
+  border-right: 0;
+  border-bottom: 0;
+  transform: rotate(45deg);
 }
-
 
 /*
 使用百分比长度来取代固定宽度。
@@ -84,83 +81,181 @@ a {
 
 */
 
-
-
 /*
 合理使用简写是一种良好的防卫性编码方式，可以抵御未来的风险。
 如果只为某个属性提供一个值，那它就会扩散并应用到列表中的每一项。
 */
 .a {
-    background: url(tr.png) no-repeat top right / 2em 2em,
-                url(tr.png) no-repeat top right / 2em 2em,
-                url(tr.png) no-repeat top right / 2em 2em;
+  background: url(tr.png) no-repeat top right / 2em 2em,
+    url(tr.png) no-repeat bottom right / 2em 2em,
+    url(tr.png) no-repeat bottom left / 2em 2em;
 }
 .a {
-    background: url(tr.png) top right,
-                url(tr.png) bottom right,
-                url(tr.png) bottom left;
-    background-size: 2em 2em;
-    background-repeat: no-repeat;
+  background: url(tr.png) top right, url(tr.png) bottom right,
+    url(tr.png) bottom left;
+  background-size: 2em 2em;
+  background-repeat: no-repeat;
 }
-
 
 /*在每个项目开始时使用纯css，只有当代码开始变得无法保持简洁时，才切换到预处理器*/
 
 /*半透明边框*/
 .a {
-    border: 10px solid hsla(0,0%,100%,.5);
-    background: white;
-    background-clip: padding-box;
+  border: 10px solid hsla(0, 0%, 100%, 0.5);
+  background: white;
+  background-clip: padding-box;
 }
-
-
 
 /*投影形成的边框，好处是可以用逗号分隔符，制造任意数量的投影*/
 /*注意：投影边框不影响排版，不会影响鼠标事件*/
 .a {
-    background: yellowgreen;
-    box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink;
+  background: yellowgreen;
+  box-shadow: 0 0 0 10px #655, 0 0 0 15px deeppink;
 }
 
 /*outline描边来绘制边框*/
 
 .a {
-    background: yellowgreen;
-    border: 10px solid #555;
-    outline: 5px solid deeppink;
+  background: yellowgreen;
+  border: 10px solid #555;
+  outline: 5px solid deeppink;
 }
-
-
 
 /*背景图片*/
 .a {
-    background: url("code-pirate.svg") no-repeat bottom right #58a;       /*添加bottom 和 right 是为了保证效果回退，有些浏览器可能不支持background-position*/
-    background-position: right 20px bottom 10px;
+  background: url("code-pirate.svg") no-repeat bottom right #58a; /*添加bottom 和 right 是为了保证效果回退，有些浏览器可能不支持background-position*/
+  background-position: right 20px bottom 10px;
 }
 
 /*通过background-origin修改背景容器原点*/
 .a {
-    padding: 10px;
-    background: url("code-pirate.svg") no-repeat #58a bottom right;
-    background-origin: content-box;
+  padding: 10px;
+  background: url("code-pirate.svg") no-repeat #58a bottom right;
+  background-origin: content-box;
 }
 
 /*calc()计算解决方案*/
 .a {
-    background: url("code-pirate.svg") no-repeat #58a bottom right;
-    background-position: calc(100% - 20px) calc(100% - 10x);
+  background: url("code-pirate.svg") no-repeat #58a bottom right;
+  background-position: calc(100% - 20px) calc(100% - 10x);
 }
 
-/*书本看到了page25（未读完）*/
+/*边框与内圆角*/
+
+<div
+  class="something-meaningful"
+  > <div
+  > lots
+  of
+  text
+  </div
+  > </div
+  > .something-meaningful {
+  background: #655;
+  padding: 0.8em;
+}
+.something-meaningful > div {
+  background: tan;
+  border-radius: 0.8em;
+  padding: 1em;
+}
+
+background: tan;
+border-radius: 0.8em;
+padding: 1em;
+box-shadow: 0 0 0 0.6em #655;
+outline: 0.6em solid #655;
+
+/*css渐变背景*/
+
+/*一条垂直渐变，默认从上到下*/
+.a {
+  background: linear-gradient(#fb3, #58a);
+}
+/*色标拉近一点*/
+.a {
+  background: linear-gradient(#fb3 20%, #58a 80%);
+}
+/*两个色标重叠*/
+.a {
+  background: linear-gradient(#fb3 50%, #58a 50%);
+}
+/*调整渐变尺寸，形成等宽渐变条纹*/
+.a {
+  background: linear-gradient(#fb3 50%, #58a 50%);
+  background-size: 100% 30px;
+}
+/*通过调整色标的不同位置，形成不同宽度的色标*/
+.a {
+  background: linear-gradient(#fb3 30%, #58a 30%);
+  background-size: 100% 30px;
+}
+/*当后一个色标的值小于前面一个色标的位置的值时，会被自动调整为前一个坐标的位置，比方说后一个是0，那他对应的颜色的位置肯定和前面那是一样的*/
+.a {
+  background: linear-gradient(#fb3 30%, #58a 0);
+  background-size: 100% 30px;
+}
+
+
+
+/* 创建网格30px*30px的网格 */
+.a {
+  background: white;
+  background-image: linear-gradient(
+      90deg,
+      rgba(200, 0, 0, 0.5) 50%,
+      transparent 0
+    ),
+    linear-gradient(rgba(200, 0, 0, 0.5) 50%, transparent 0);
+  background-size: 30px 30px;
+}
+
+/* 大小可以调节的网格,使用长度而不是百分比作为色标，制作蓝色方格背景 */
+.a {
+  background: #58a;
+  background-image: linear-gradient(white 1px, transparent 0),
+    linear-gradient(90deg, white 1px, transparent);
+  background-size: 30px 30px;
+}
+
+/* 制作大小网格嵌套蓝图 */
+.a {
+  background: #58a;
+  background-image: linear-gradient(white 2px, transparent 0),
+    linear-gradient(90deg, white 2px, transparent 0),
+    linear-gradient(hsla(0, 0%, 100%, 0.3) 1px, transparent 0),
+    linear-gradient(90deg, hsla0, (0, 0%, 100%, 0.3) 1px, transparent 0);
+  background-size: 75px 75px, 75px 75px, 15px 15px, 15px 15px;
+}
+
+/* 波点图案 */
+.a {
+  background: #655;
+  background-image: radial-gradient(tan 30%, transparent 0);
+  background-size: 30px 30px;
+}
+
+/* 两层波点图案错开 */
+.a {
+  background: #655;
+  background-image: radial-gradient(tan 30%, transparent 0),
+    radial-gradient(tan 30%, transparent 0);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+}
+
+/* 预编译写法 */
+@mixin polka($size, $dot, $base, $accent) {
+  background: $base;
+  background-image: radial-fradient($accent $dot, transparent 0),
+    radial-fradient($accent $dot, transparent 0);
+  background-size: $size $size;
+  background-position: 0 0, $size/2 $size/2;
+}
+/* 引入 */
+@include polka(30px, 30%, #655, tan);
 
 
 
 
-
-
-
-
-
-
-
-
+/*书本看到了page37（未读完）*/
