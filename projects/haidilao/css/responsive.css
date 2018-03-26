@@ -17,7 +17,7 @@ body {
 .logoBg {
     width: 287px;
     height:87px;
-    background: url("../img/logoBg.png") no-repeat center center;
+    background: url("../images/logoBg.png") no-repeat center center;
     position: absolute;
     left: 0;
     top: 0;
@@ -26,7 +26,7 @@ body {
 .topRight {
     width: 600px;				
     height:270px;
-    background: url("../img/topRight.jpg") no-repeat center center;
+    background: url("../images/topRight.jpg") no-repeat center center;
     position: absolute;
     right: 0;
     top: 0;
@@ -35,7 +35,7 @@ body {
 .bottomLeft {
     width: 590px;					
     height:132px;
-    background: url("../img/bottomLeft.jpg") no-repeat center center;
+    background: url("../images/bottomLeft.jpg") no-repeat center center;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -81,19 +81,39 @@ body {
 }
 /*主要按钮背景图往左移*/
 .content .con_bd .jijian {
-    background: #f8af12 url(../img/jijian_bg.png) no-repeat 50px center;
+    background: #f8af12 url(../images/jijian_bg.png) no-repeat 50px center;
 }
 .content .con_bd .jijian:active {
-    background: #de9d10 url(../img/jijian_bg.png) no-repeat 50px center;
+    background: #de9d10 url(../images/jijian_bg.png) no-repeat 50px center;
 
 }
 .content .con_bd .xiagang {
-    background: #3399db url(../img/xiagang_bg.png) no-repeat 50px center;
+    background: #3399db url(../images/xiagang_bg.png) no-repeat 50px center;
 }
 .content .con_bd .xiagang:active {
-    background: #2d86c2 url(../img/xiagang_bg.png) no-repeat 50px center;
+    background: #2d86c2 url(../images/xiagang_bg.png) no-repeat 50px center;
 }
+/*设置界面背景图片去除*/
+.content .con_bd .changeCode {
+    background-image: none;
+}
+.content .con_bd .changeCode:active {
+    background-image: none;
 
+}
+.content .con_bd .jijian {
+    background-image: none;
+}
+.content .con_bd .jijian:active {
+    background-image: none;
+
+}
+.content .con_bd .xiagang {
+    background-image: none;
+}
+.content .con_bd .xiagang:active {
+    background-image: none;
+}
 
 
 .content .con_ft {
@@ -133,10 +153,10 @@ body {
     width: 5%;
 }
 .content .con_bd table.table_header tr th:nth-child(2) {
-    width: 6%;
+    width: 12%;
 }
 .content .con_bd table.table_header tr th:nth-child(3) {
-    width: 37%;
+    width: 31%;
 }
 .content .con_bd table.table_header tr th:nth-child(4),
 .content .con_bd table.table_header tr th:nth-child(5) {
@@ -150,17 +170,15 @@ body {
 	width: 5%;
 }
 
-.content .con_bd table.table_two tr td:nth-child(2) {
-	width: 6%;
-}
+
 .content .con_bd table.table_two tr td:nth-child(3) {
-	width: 37%;
+	width: 31%;
 }
 .content .con_bd table.table_two tr td:nth-child(4) {
-	width: 1%;
+	width: 11%;
 }
 .content .con_bd table.table_two tr td:nth-child(5) {
-	width: 1%;
+	width: 11%;
 }
 .content .con_bd table.table_two tr td:nth-child(6) {
 	width: 30%;
@@ -168,6 +186,7 @@ body {
 /*时间输入框变窄*/
 .content .con_bd table.table_two tr td input[type="text"] {
     max-width: 70px;
+    padding: 0 0;
 }
 /*整体文字缩小*/
 .content .con_bd table tr td {
@@ -176,20 +195,30 @@ body {
 }
 /*操作按钮*/
 .content .con_bd table.table_two tr td:nth-child(2) {
-    width: 6%;
+    width: 12%;
 }
-
+/*
 .content .con_bd table.table_two tr td .delete {
     width: 60px;
     height: 32px;
     font-size: 16px;
 }
-
-
+*/
+/*解决按钮内文字移除*/
+.infoBox span {
+	font-size: 20px;
+	line-height: 24px;
+}
+.content .con_bd .infoBox {
+    position: absolute;
+    top: 240px;
+    left: 8%;
+    width: 30%;
+}
 /*注意这行代码需要变更html*/
 .content .con_bd .btnTitle {
     display: inline-block;
-    margin-top: 180px;
+   
 }
 
 .content .con_bd .xiezhu {
@@ -205,7 +234,7 @@ body {
     height: 300px;
     /*position: relative;*/
 } 
-.keyboardBox {
+.jianpanBox {
     width: 100%;
     position: absolute;
     left: 0;
@@ -213,13 +242,13 @@ body {
     padding: 0 0 0 0;
     box-sizing: border-box;
 }
-.keyboardBox input[type="button"] {
+.jianpanBox input[type="button"] {
     width: 7%;
     height: 54px;
     margin: 20px 0 0 2.0%;
 }
 
-.keyboardBox input.backspaceBtn {
+.jianpanBox input.backspaceBtn {
     width: 12%;
     text-align: center;
     font-size: 30px;
@@ -327,7 +356,6 @@ body {
 	padding: 40px 0 0 0;
 }
 
-
 /*解决标题栏文字太大，容易隐藏问题*/
 .content .con_bd .btn {
     font-size: 30px;
@@ -337,3 +365,246 @@ body {
 .content .con_bd .settingList li {
     width: 100%;
 }
+
+
+/* 海底捞二期项目修改，
+文泽海，2018-3-19日添加 */
+
+/* 主页面main_2.html DOM结构有变化，三个按钮变成四个按钮 */
+
+
+
+.content .con_bd .btn.sb {
+    font-size: 30px;
+    width: 30%;
+    padding: 0 0 0 15%;
+    height: 190px;
+    margin: 2% 2.5%;
+    text-align: left;
+    line-height: 190px;
+    background: #83c024 url(../images/shangban_bg.png) no-repeat 10% center;
+    background-size: 20%;
+    font-size: 30px;
+}
+.content .con_bd .sb:active {
+    background: #7db427 url(../images/shangban_bg.png) no-repeat 10% center;
+    background-size: 20%;
+}
+.content .con_bd .btn.jj {
+    font-size: 30px;
+    width: 30%;
+    padding: 0 0 0 15%;
+    height: 190px;
+    margin: 2% 2.5%;
+    text-align: left;
+    line-height: 190px;
+    background: #f8af12 url(../images/jijian_bg.png) no-repeat 10% center;
+    font-size: 30px;
+    background-size: 20%;
+}
+.content .con_bd .jj:active {
+    background: #de9d10 url(../images/jijian_bg.png) no-repeat 10% center;
+    background-size: 20%;
+}
+
+/* 协助按钮,DOM结构有变化 */
+.content .con_bd .btn.xz {
+    font-size: 30px;
+    width: 30%;
+    padding: 30px 0 30px 15%;
+    height: 130px;
+    margin: 2% 2.5%;
+    text-align: left;
+    background: #19bd9b url(../images/xiezhu_bg.png) no-repeat 10% center;
+    background-size: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.content .con_bd .xz:active {
+    background: #15a387 url(../images/xiezhu_bg.png) no-repeat 10% center;
+    background-size: 20%;
+}
+
+.content .con_bd .xz .title {
+    font-size: 30px;
+    line-height: 1.5em;
+    display: block;
+}
+.content .con_bd .btn .des {
+    font-size: 14px;
+    line-height: 1.5em;   
+    display: block;
+}
+
+/* 下班按钮 */
+.content .con_bd .btn.xb {
+    font-size: 30px;
+    width: 30%;
+    padding: 0 0 0 15%;
+    height: 190px;
+    margin: 2% 2.5%;
+    text-align: left;
+    line-height: 190px;
+    background: #3399db url(../images/xiagang_bg.png) no-repeat 10% center;
+    font-size: 30px;
+    background-size: 20%;
+}
+.content .con_bd .xb:active {
+    background: #2d86c2 url(../images/xiagang_bg.png) no-repeat 10% center;
+    background-size: 20%;
+}
+
+/* 姓名文字加大,需要改DOM */
+.content .con_hd h3 .name {
+    font-size: 40px;
+    line-height: 70px;
+    color: #e13920;
+}
+
+.content .con_bd .btn.disabled {
+    background-color: #bfbfbf;
+}
+
+
+/* 计件页面操作按钮 */
+.content .con_bd table.table_two tr td .delete {
+	width: 40px;
+    height: 26px;
+	border: 1px solid #2c35dc;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background: #4857e6;
+	background: -webkit-linear-gradient(#4857e6, #323cdb);
+	background: -o-linear-gradient(#4857e6, #323cdb);
+	background: -moz-linear-gradient(#4857e6, #323cdb);
+	background: linear-gradient(#4857e6, #323cdb);
+	color: #FFFFFF;
+	font-size: 14px;
+	outline: none;
+	padding: 1px 0;
+	margin-right: 8px;
+}
+
+.content .con_bd table.table_two tr td .delete:active {
+	background: -webkit-linear-gradient(#323cdb, #4857e6);
+	background: -o-linear-gradient(#323cdb, #4857e6);
+	background: -moz-linear-gradient(#323cdb, #4857e6);
+	background: linear-gradient(#323cdb, #4857e6);
+}
+
+
+
+.content .con_bd table.table_two tr td .modify {
+    width: 40px;
+    height: 26px;
+    font-size: 14px;
+	border: 1px solid #1aa72a;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	background: #46db32;
+	background: -webkit-linear-gradient(#2bbe45,#1da230); 
+    background: -o-linear-gradient(#2bbe45,#1da230); 
+    background: -moz-linear-gradient(#2bbe45,#1da230); 
+    
+    background: linear-gradient(#2bbe45,#1da230); 
+    color: #FFFFFF;
+    outline: none;
+    padding: 1px 0;
+    margin-right: 8px;
+}
+.content .con_bd table.table_two tr td .modify:active {
+	background: -webkit-linear-gradient(#167d25, #209435);
+    background: -o-linear-gradient(#167d25, #209435); 
+    background: -moz-linear-gradient(#167d25, #209435); 
+    background: linear-gradient(#167d25, #209435); 
+}
+
+
+/* 名字改大 */
+.bigName {
+	font-size: 40px;
+}
+
+/* 给设置界面添加按钮 */
+.content .con_bd .xiezhu {
+	margin-top: 30px;
+	text-align: center;
+	width: 35%;
+	margin-left: 5%;
+	height: 430px;
+	line-height: 430px;
+	
+}
+.content .con_bd .jijian {
+	margin-top: 30px;
+	text-indent: 3em;
+	text-align: center;
+	width: 50%;
+	margin-left: 6%;
+	height: 190px;
+	line-height: 190px;
+	background:#ffa766 url(../images/shebeiId_bg.png) no-repeat 80px center;
+	background-size: 20%;
+}
+.content .con_bd .jijian:active {
+	background:#ffa766 url(../images/shebeiId_bg.png) no-repeat 80px center;
+	
+}
+.content .con_bd .xiagang {
+	margin-top: 50px;
+	text-indent: 3em;
+	text-align: center;
+	width: 50%;
+	margin-left: 6%;
+	height: 190px;
+	line-height: 190px;
+	background:#f09eff url(../images/setting_bg.png) no-repeat 80px center;
+	background-size: 20%;
+}
+.content .con_bd .xiagang:active {
+	background:#f09eff url(../images/setting_bg.png) no-repeat 80px center;
+}	
+
+
+/* 文泽海，2018-3-25日修改按钮颜色 */
+/* 禁用文字选择 */
+* {  
+    -webkit-touch-callout:none;  
+    -webkit-user-select:none;  
+    -khtml-user-select:none;  
+    -moz-user-select:none;  
+    -ms-user-select:none;  
+    user-select:none;  
+}
+
+
+/* 文泽海，2018-3-26日修改弹窗 */
+.selfpopup.layui-layer-dialog {
+    min-width: 360px;
+    /* margin-left: -140px; */
+    max-width: 400px;
+}
+.selfpopup .layui-layer-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+.selfpopup .layui-layer-content {
+    font-size: 20px;
+    min-height: 100px;
+}
+.selfpopup .layui-layer-btn a {
+    font-size: 16px;
+    padding: 6px 30px;
+}
+.selfpopup .layui-layer-btn .layui-layer-btn0 {
+    border-color: #f24846;
+    background-color: #f24846;
+    color: #fff;
+}
+
+
+
+
+
